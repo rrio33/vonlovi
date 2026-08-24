@@ -1,0 +1,138 @@
+/* =========================================================
+   VONLOVI — product page
+   ========================================================= */
+
+body.page--product {
+  margin: 0;
+  min-height: 100vh;
+  background: #ffffff;
+  color: #1a1a1a;
+  font-family: "Cormorant Garamond", "Times New Roman", Georgia, serif;
+}
+
+.product {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+}
+
+.product__status {
+  grid-column: 1 / -1;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(26, 26, 26, 0.45);
+}
+
+.product__gallery {
+  display: flex;
+  flex-direction: column;
+  background: #f4f1ec;
+  min-height: 100vh;
+}
+
+.product__gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  aspect-ratio: 4 / 5;
+}
+
+.product__info {
+  position: sticky;
+  top: 0;
+  align-self: start;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(88px, 14vh, 140px) clamp(28px, 5vw, 64px);
+  box-sizing: border-box;
+}
+
+.product__famille {
+  margin: 0 0 1.2em;
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(26, 26, 26, 0.5);
+}
+
+.product__title {
+  margin: 0 0 0.4em;
+  font-size: clamp(22px, 2.6vw, 34px);
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+}
+
+.product__price {
+  margin: 0 0 1.6em;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+}
+
+.product__desc {
+  margin: 0 0 2em;
+  max-width: 38ch;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 1.65;
+  color: rgba(26, 26, 26, 0.62);
+}
+
+.product__cta {
+  align-self: flex-start;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+  padding: 0 0 4px;
+  border: 0;
+  border-bottom: 1px solid #1a1a1a;
+  background: none;
+  font-family: inherit;
+  cursor: pointer;
+  transition: opacity 200ms ease;
+}
+
+.product__cta:hover {
+  opacity: 0.5;
+}
+
+.product__back {
+  margin-top: 2.5em;
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(26, 26, 26, 0.45);
+  text-decoration: none;
+  transition: opacity 200ms ease;
+}
+
+.product__back:hover {
+  opacity: 0.5;
+}
+
+@media (max-width: 900px) {
+  .product {
+    grid-template-columns: 1fr;
+  }
+
+  .product__gallery {
+    min-height: auto;
+  }
+
+  .product__info {
+    position: relative;
+    min-height: auto;
+    padding: 48px 24px 80px;
+  }
+}

@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#0a0908" />
+    <title>About — VONLOVI</title>
+    <meta
+      name="description"
+      content="VONLOVI — À propos. Une réflexion artistique inspirée par le précieux, portée par l'artiste De Rrusie. Paris · Jura · Portugal."
+    />
+    <link rel="icon" type="image/png" href="assets/logo-v-mark.png" />
+    <meta property="og:title" content="About — VONLOVI" />
+    <meta property="og:description" content="VONLOVI — À propos. Une réflexion artistique inspirée par le précieux, portée par l'artiste De Rrusie. Paris · Jura · Portugal." />
+    <meta property="og:url" content="https://vonlovi.vercel.app/about.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="VONLOVI" />
+    <meta property="og:image" content="https://vonlovi.vercel.app/assets/og-image.png?v=1" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="1200" />
+    <meta property="og:image:alt" content="VONLOVI" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:image" content="https://vonlovi.vercel.app/assets/og-image.png?v=1" />
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="chrome.css?v=6" />
+    <link rel="stylesheet" href="about-page.css?v=4" />
+    <style>
+      /* Critical film styles — always apply even if external CSS is cached/blocked */
+      body.page--about-film {
+        margin: 0;
+        background: #0a0908 !important;
+        color: #f7f3ef;
+        --chrome-ink: #fff;
+      }
+      .about-bg {
+        position: fixed;
+        inset: 0;
+        z-index: 0;
+        overflow: hidden;
+        pointer-events: none;
+        background: #0a0908 url("assets/about/polishing-poster.jpg") center / cover no-repeat;
+      }
+      .about-bg__video {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+      .about-bg__veil {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          180deg,
+          rgba(10, 9, 8, 0.5) 0%,
+          rgba(10, 9, 8, 0.28) 45%,
+          rgba(10, 9, 8, 0.62) 100%
+        );
+      }
+      body.page--about-film .about {
+        position: relative;
+        z-index: 1;
+        background: transparent !important;
+        color: #f7f3ef;
+      }
+      body.page--about-film .about__label,
+      body.page--about-film .about__p {
+        color: rgba(247, 243, 239, 0.88) !important;
+      }
+      body.page--about-film .about__poincon-img--maker {
+        width: 36px !important;
+        max-width: 36px !important;
+        height: auto !important;
+      }
+      body.page--about-film .about__poincon-img--750 {
+        width: 48px !important;
+        max-width: 48px !important;
+        height: auto !important;
+      }
+      body.page--about-film .site-chrome__logo {
+        top: 0 !important;
+        transform: translate(-50%, 0) !important;
+      }
+    </style>
+  </head>
+  <body class="page--about page--about-film is-chrome-dark" data-chrome="dark">
+    <div class="about-bg" aria-hidden="true">
+      <video
+        class="about-bg__video"
+        autoplay
+        muted
+        loop
+        playsinline
+        webkit-playsinline
+        preload="auto"
+        poster="assets/about/polishing-poster.jpg"
+        disablepictureinpicture
+      >
+        <source src="assets/about/polishing.mp4" type="video/mp4" />
+        <source src="assets/about/polishing.m4v" type="video/mp4" />
+      </video>
+      <div class="about-bg__veil"></div>
+    </div>
+
+    <div class="site-chrome" id="site-chrome">
+      <header class="site-chrome__header">
+        <div class="site-chrome__corner site-chrome__corner--tl site-chrome__corner--stack">
+          <div class="site-shop" id="site-shop">
+            <button
+              type="button"
+              class="site-chrome__link site-shop__trigger"
+              aria-expanded="false"
+              aria-controls="shop-panel"
+              data-i18n="nav.shop"
+            >
+              Shop
+            </button>
+            <div class="site-shop__panel" id="shop-panel">
+              <a href="collection.html?cat=pendentifs" data-i18n="shop.pendentifs">Pendentifs</a>
+              <a href="collection.html?cat=bagues" data-i18n="shop.bagues">Bagues</a>
+              <a href="collection.html?cat=boucles-d-oreilles" data-i18n="shop.boucles">Boucles d'oreille</a>
+              <a href="collection.html?cat=boutons" data-i18n="shop.boutons">Boutons</a>
+              <a href="collection.html?cat=bracelets" data-i18n="shop.bracelets">Bracelets</a>
+            </div>
+          </div>
+          <a class="site-chrome__link" href="panier.html" data-cart-link>
+            <span data-i18n="nav.panier">Panier</span> <span data-cart-count></span>
+          </a>
+        </div>
+        <div class="site-chrome__corner site-chrome__corner--tr site-chrome__corner--stack site-chrome__corner--end">
+          <a class="site-chrome__link is-active" href="about.html" data-i18n="nav.about" aria-current="page">About</a>
+          <a class="site-chrome__link" href="press.html" data-i18n="nav.press">Press</a>
+        </div>
+        <a class="site-chrome__logo" href="home.html" data-i18n-aria="nav.logo" aria-label="VONLOVI — accueil">
+          <span class="site-chrome__logo-word">
+            <img
+              class="site-chrome__logo-img site-chrome__logo-img--black"
+              src="assets/logo-vonlovi-black.png?v=2"
+              alt="VONLOVI"
+              width="1024"
+              height="421"
+              decoding="async"
+            />
+            <img
+              class="site-chrome__logo-img site-chrome__logo-img--white"
+              src="assets/logo-vonlovi-white.png?v=2"
+              alt=""
+              width="1024"
+              height="421"
+              decoding="async"
+              aria-hidden="true"
+            />
+          </span>
+          <span class="site-chrome__logo-mark" aria-hidden="true">
+            <img
+              class="site-chrome__mark-img site-chrome__mark-img--black"
+              src="assets/logo-mark-black.png"
+              alt=""
+              width="583"
+              height="583"
+              decoding="async"
+            />
+            <img
+              class="site-chrome__mark-img site-chrome__mark-img--white"
+              src="assets/logo-mark-white.png"
+              alt=""
+              width="583"
+              height="583"
+              decoding="async"
+            />
+            <img
+              class="site-chrome__mark-img site-chrome__mark-img--burgundy"
+              src="assets/logo-mark-burgundy.png"
+              alt=""
+              width="583"
+              height="583"
+              decoding="async"
+            />
+            <img
+              class="site-chrome__mark-img site-chrome__mark-img--red"
+              src="assets/logo-mark-red.png"
+              alt=""
+              width="583"
+              height="583"
+              decoding="async"
+            />
+            <img
+              class="site-chrome__mark-img site-chrome__mark-img--purple"
+              src="assets/logo-mark-purple.png"
+              alt=""
+              width="583"
+              height="583"
+              decoding="async"
+            />
+          </span>
+        </a>
+        <a class="site-chrome__link site-chrome__corner--bl" href="contributors.html" data-i18n="nav.regards">Regards</a>
+        <a
+          class="site-chrome__link site-chrome__corner--br"
+          href="https://www.instagram.com/vonlovi/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >@vonlovi</a
+        >
+      </header>
+    </div>
+
+    <main id="top" class="about" aria-label="À propos de VONLOVI">
+      <div class="about__grid">
+        <article class="about__block">
+          <p class="about__label" data-i18n="about.label1">À propos</p>
+          <p class="about__p" data-i18n="about.p1">
+            VONLOVI est une maison de joaillerie contemporaine fondée à Paris par
+            l'artiste De Rrusie. La marque répond à une envie plutôt qu'à un besoin :
+            une création sortie de terre, portée par un peintre qui tisse un lien
+            entre art et joaillerie. Trois syllabes — VON·LO·VI — choisies pour leur
+            musicalité, comme une poésie énigmatique, et comme un rappel de toujours
+            vivre d'amour.
+          </p>
+        </article>
+
+        <article class="about__block">
+          <p class="about__label" data-i18n="about.label2">La maison</p>
+          <p class="about__p" data-i18n="about.p2">
+            Au confluent de l'art et de la peinture, Vonlovi se déploie entre trois
+            territoires : Paris, lieu de toutes les créations ; les montagnes du Jura,
+            où sont taillées les pierres dures ; le Portugal, où les pièces sont
+            fabriquées à la main. Chaque pièce est réalisée sur commande ; trois à
+            cinq semaines sont nécessaires.
+          </p>
+        </article>
+
+        <article class="about__block">
+          <p class="about__label" data-i18n="about.label3">L'artiste</p>
+          <p class="about__p" data-i18n="about.p3">
+            De Rrusie est peintre. Sur ses toiles, il met en scène l'immensité et
+            l'abstraction des ciels. Avec Vonlovi, il s'intéresse au précieux, se
+            rapproche de l'infiniment petit, du délicat. Les bijoux qui en naissent
+            sont physiques, personnels et sensuels.
+          </p>
+        </article>
+
+        <article class="about__block">
+          <p class="about__label" data-i18n="about.label4">Contact</p>
+          <p class="about__p">
+            VONLOVI FRANCE SAS<br />
+            2177 route de la Vie Neuve, 39310 Septmoncel-les-Molunes<br />
+            <a href="mailto:contact@vonlovi.com">contact@vonlovi.com</a>
+          </p>
+        </article>
+      </div>
+
+      <div class="about__poincon" aria-label="Poinçons de garantie Vonlovi — or 18 carats (750)">
+        <img
+          class="about__poincon-img about__poincon-img--maker"
+          src="assets/about/poincon.png?v=4"
+          alt="Poinçon Vonlovi — STE V"
+          width="36"
+          height="23"
+          style="width: 36px; height: auto; max-width: 36px"
+          decoding="async"
+        />
+        <img
+          class="about__poincon-img about__poincon-img--750"
+          src="assets/about/poincon-750.png?v=4"
+          alt="Poinçon or 18 carats — 750"
+          width="48"
+          height="13"
+          style="width: 48px; height: auto; max-width: 48px"
+          decoding="async"
+        />
+      </div>
+    </main>
+
+    <script src="i18n.js"></script>
+    <script src="cart.js"></script>
+    <script src="chrome.js?v=6" defer></script>
+    <script src="about.js?v=4" defer></script>
+  </body>
+</html>

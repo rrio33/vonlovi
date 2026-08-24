@@ -1,0 +1,163 @@
+/* =========================================================
+   VONLOVI — language intro
+   ========================================================= */
+
+:root {
+  --intro-ivory: #f4f0ec;
+  --intro-ink: #ffffff;
+  --intro-muted: rgba(255, 255, 255, 0.4);
+  --intro-serif: "Cormorant Garamond", "Times New Roman", Georgia, serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body.page--intro {
+  margin: 0;
+  min-height: 100%;
+  min-height: 100dvh;
+  font-family: var(--intro-serif);
+  color: var(--intro-ink);
+  background: #0a0908;
+  overflow: hidden;
+}
+
+.intro {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  padding: clamp(24px, 6vw, 48px);
+  background: #0a0908;
+  overflow: hidden;
+}
+
+.intro__video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.intro__veil {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(
+    180deg,
+    rgba(10, 9, 8, 0.28) 0%,
+    rgba(10, 9, 8, 0.18) 45%,
+    rgba(10, 9, 8, 0.42) 100%
+  );
+}
+
+.intro__stage {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(28px, 5vh, 44px);
+  text-align: center;
+}
+
+.intro__logo {
+  /* Match site chrome logo */
+  width: clamp(96px, 14vw, 156px);
+  height: auto;
+  display: block;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: intro-logo 1.1s cubic-bezier(0.22, 1, 0.36, 1) 0.15s forwards;
+}
+
+@media (max-width: 560px) {
+  .intro__logo {
+    width: 88px;
+  }
+}
+
+.intro__langs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(16px, 4vw, 28px);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  opacity: 0;
+  transform: translateY(8px);
+  animation: intro-langs 0.8s ease 0.85s forwards;
+}
+
+.intro__lang {
+  appearance: none;
+  border: 0;
+  background: none;
+  padding: 6px 2px;
+  margin: 0;
+  font-family: var(--intro-serif);
+  font-size: clamp(10px, 0.95vw, 12px);
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--intro-ink);
+  cursor: pointer;
+  transition: opacity 220ms ease;
+}
+
+.intro__lang:hover,
+.intro__lang:focus-visible {
+  opacity: 0.4;
+  outline: none;
+}
+
+.intro__sep {
+  width: 1px;
+  height: 11px;
+  background: var(--intro-muted);
+  opacity: 0;
+  animation: intro-langs 0.8s ease 0.85s forwards;
+}
+
+@keyframes intro-logo {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes intro-langs {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .intro__logo,
+  .intro__langs,
+  .intro__sep {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+
+  .intro__video {
+    display: none;
+  }
+}

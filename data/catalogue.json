@@ -1,0 +1,2406 @@
+[
+ {
+  "id": 1574,
+  "nom": "Bague Cornaline",
+  "slug": "bague-cornaline",
+  "url": "https://vonlovi.com/boutique/bagues/bague-cornaline/",
+  "famille": "Bagues",
+  "pierre": "Cornaline",
+  "diamants": false,
+  "prix": "2 900 €",
+  "description": "Bague en or jaune 750/1000 sertie d’une Cornaline découpée Vonlovi et polie, diamètre 14 mm, VV entretoisés sur l’arrière de la pierre. Guide des tailles de nos bagues",
+  "images": [
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2024/10/BAGUE-CO-1-scaled.jpg",
+    "w": 2560,
+    "alt": "",
+    "local": "assets/bagues/bague-cornaline/01.jpg",
+    "px": [
+     2560,
+     1920
+    ],
+    "type": "packshot",
+    "skin": 0.025,
+    "png": "detoures/bagues/bague-cornaline_01.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2024/10/BAGUE-CO-Verso-scaled.jpg",
+    "w": 2560,
+    "alt": "",
+    "local": "assets/bagues/bague-cornaline/02.jpg",
+    "px": [
+     2560,
+     1921
+    ],
+    "type": "packshot",
+    "skin": 0.05,
+    "png": "detoures/bagues/bague-cornaline_02.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2024/10/BAGUE-CO-3-scaled.jpg",
+    "w": 2560,
+    "alt": "",
+    "local": "assets/bagues/bague-cornaline/03.jpg",
+    "px": [
+     2560,
+     1921
+    ],
+    "type": "packshot",
+    "skin": 0.041,
+    "png": "detoures/bagues/bague-cornaline_03.png"
+   }
+  ],
+  "prix_num": 2900.0
+ },
+ {
+  "id": 2376,
+  "nom": "Bague Lapis Lazuli",
+  "slug": "bague-lapis-lazuli",
+  "url": "https://vonlovi.com/boutique/bagues/bague-lapis-lazuli/",
+  "famille": "Bagues",
+  "pierre": "Lapis Lazuli",
+  "diamants": false,
+  "prix": "2 900 €",
+  "description": "Bague en or jaune 750/1000 sertie d’une pierre dure en lapis lazuli découpée Vonlovi et polie, diamètre 14 mm, VV entretoisés sur l’arrière de la pierre. Guide des tailles de nos bagues",
+  "images": [
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2025/03/BAGUE-LA-1-scaled.jpg",
+    "w": 2560,
+    "alt": "BOUTON NACRE 23_03_14_Vonlovi - Photo Cyrille Robin-21",
+    "local": "assets/bagues/bague-lapis-lazuli/01.jpg",
+    "px": [
+     2560,
+     1920
+    ],
+    "type": "packshot",
+    "skin": 0.022,
+    "png": "detoures/bagues/bague-lapis-lazuli_01.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2025/03/BAGUE-LA-2-scaled.jpg",
+    "w": 2560,
+    "alt": "",
+    "local": "assets/bagues/bague-lapis-lazuli/02.jpg",
+    "px": [
+     2560,
+     1921
+    ],
+    "type": "packshot",
+    "skin": 0.044,
+    "png": "detoures/bagues/bague-lapis-lazuli_02.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2025/03/BAGUE-LA-3-scaled.jpg",
+    "w": 2560,
+    "alt": "",
+    "local": "assets/bagues/bague-lapis-lazuli/03.jpg",
+    "px": [
+     2560,
+     1921
+    ],
+    "type": "packshot",
+    "skin": 0.036,
+    "png": "detoures/bagues/bague-lapis-lazuli_03.png"
+   }
+  ],
+  "prix_num": 2900.0
+ },
+ {
+  "id": 2345,
+  "nom": "Bague Malachite",
+  "slug": "bague-malachite",
+  "url": "https://vonlovi.com/boutique/bagues/bague-malachite/",
+  "famille": "Bagues",
+  "pierre": "Malachite",
+  "diamants": false,
+  "prix": "2 900 €",
+  "description": "Bague en or jaune 750/1000 sertie d’une pierre dure en malachite découpée Vonlovi et polie, diamètre 14 mm, VV entretoisés sur l’arrière de la pierre. Guide des tailles de nos bagues",
+  "images": [
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2025/03/BAGUE-MA-1-scaled.jpg",
+    "w": 2560,
+    "alt": "BAGUE MA 1",
+    "local": "assets/bagues/bague-malachite/01.jpg",
+    "px": [
+     2560,
+     1920
+    ],
+    "type": "packshot",
+    "skin": 0.022,
+    "png": "detoures/bagues/bague-malachite_01.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2025/03/BAGUE-MA-2-scaled.jpg",
+    "w": 2560,
+    "alt": "",
+    "local": "assets/bagues/bague-malachite/02.jpg",
+    "px": [
+     2560,
+     1921
+    ],
+    "type": "packshot",
+    "skin": 0.044,
+    "png": "detoures/bagues/bague-malachite_02.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2025/03/BAGUE-MA-3-scaled.jpg",
+    "w": 2560,
+    "alt": "",
+    "local": "assets/bagues/bague-malachite/03.jpg",
+    "px": [
+     2560,
+     1921
+    ],
+    "type": "packshot",
+    "skin": 0.037,
+    "png": "detoures/bagues/bague-malachite_03.png"
+   }
+  ],
+  "prix_num": 2900.0
+ },
+ {
+  "id": 295,
+  "nom": "Bague Nacre",
+  "slug": "bague-nacre",
+  "url": "https://vonlovi.com/boutique/bagues/bague-nacre/",
+  "famille": "Bagues",
+  "pierre": "Nacre",
+  "diamants": false,
+  "prix": "2 900 €",
+  "description": "Bague en or jaune 750/1000 sertie d’une nacre blanche découpée Vonlovi et polie, diamètre 14 mm, VV entretoisés sur l’arrière de la pierre. Guide des tailles de nos bagues",
+  "images": [
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2023/05/BAGUE-NACRE-1-23_03_14_Vonlovi-Photo-Cyrille-Robin-24.jpg",
+    "w": 1719,
+    "alt": "",
+    "local": "assets/bagues/bague-nacre/01.jpg",
+    "px": [
+     1719,
+     1290
+    ],
+    "type": "packshot",
+    "skin": 0.026,
+    "png": "detoures/bagues/bague-nacre_01.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2023/06/BAGUE-NACRE-dos.jpg",
+    "w": 1719,
+    "alt": "BAGUE-NACRE-dos",
+    "local": "assets/bagues/bague-nacre/02.jpg",
+    "px": [
+     1719,
+     1290
+    ],
+    "type": "packshot",
+    "skin": 0.051,
+    "png": "detoures/bagues/bague-nacre_02.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2023/05/BAGUE-NACRE-2-23_03_14_Vonlovi-Photo-Cyrille-Robin-26.jpg",
+    "w": 1719,
+    "alt": "",
+    "local": "assets/bagues/bague-nacre/03.jpg",
+    "px": [
+     1719,
+     1290
+    ],
+    "type": "packshot",
+    "skin": 0.047,
+    "png": "detoures/bagues/bague-nacre_03.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2023/06/2307_Vonlovi0150-e1693493791562.jpg",
+    "w": 967,
+    "alt": "",
+    "local": "assets/bagues/bague-nacre/04.jpg",
+    "px": [
+     967,
+     1290
+    ],
+    "type": "packshot",
+    "skin": 0.083,
+    "png": "detoures/bagues/bague-nacre_04.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2023/06/2307_Vonlovi0424.jpg",
+    "w": 968,
+    "alt": "",
+    "local": "assets/bagues/bague-nacre/05.jpg",
+    "px": [
+     968,
+     1290
+    ],
+    "type": "lifestyle",
+    "skin": 0.129
+   }
+  ],
+  "prix_num": 2900.0
+ },
+ {
+  "id": 1436,
+  "nom": "Bague Nacre Dorée",
+  "slug": "bague-nacre-doree",
+  "url": "https://vonlovi.com/boutique/bagues/bague-nacre-doree/",
+  "famille": "Bagues",
+  "pierre": "Nacre Dorée",
+  "diamants": false,
+  "prix": "2 900 €",
+  "description": "Bague en or jaune 750/1000 sertie d’une nacre dorée découpée Vonlovi et polie, diamètre 14 mm, VV entretoisés sur l’arrière de la pierre. Guide des tailles de nos bagues",
+  "images": [
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2024/10/BAGUE-NAD-RECTO-2-scaled.jpg",
+    "w": 2560,
+    "alt": "",
+    "local": "assets/bagues/bague-nacre-doree/01.jpg",
+    "px": [
+     2560,
+     1920
+    ],
+    "type": "packshot",
+    "skin": 0.032,
+    "png": "detoures/bagues/bague-nacre-doree_01.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2024/10/BAGUE-NAD-SIDE-2-scaled.jpg",
+    "w": 2560,
+    "alt": "",
+    "local": "assets/bagues/bague-nacre-doree/02.jpg",
+    "px": [
+     2560,
+     1921
+    ],
+    "type": "packshot",
+    "skin": 0.05,
+    "png": "detoures/bagues/bague-nacre-doree_02.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2024/10/BAGUE_NACRE_1_23_03_14_Vonlovi_-_Photo_Cyrille_Robin-24-1-scaled.jpg",
+    "w": 2560,
+    "alt": "",
+    "local": "assets/bagues/bague-nacre-doree/03.jpg",
+    "px": [
+     2560,
+     1921
+    ],
+    "type": "packshot",
+    "skin": 0.052,
+    "png": "detoures/bagues/bague-nacre-doree_03.png"
+   }
+  ],
+  "prix_num": 2900.0
+ },
+ {
+  "id": 16,
+  "nom": "Bague Onyx",
+  "slug": "bague-onyx",
+  "url": "https://vonlovi.com/boutique/bagues/bague-onyx/",
+  "famille": "Bagues",
+  "pierre": "Onyx",
+  "diamants": false,
+  "prix": "2 900 €",
+  "description": "Bague en or jaune 750/1000 sertie d’une pierre dure en onyx découpée Vonlovi et polie, diamètre 14 mm, VV entretoisés sur l’arrière de la pierre. Guide des tailles de nos bagues",
+  "images": [
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2023/05/BAGUE-ONYX-1-23_03_14_VONLOVI-Photo-Cyrille-Robin-0-29_V1-2.jpg",
+    "w": 1719,
+    "alt": "",
+    "local": "assets/bagues/bague-onyx/01.jpg",
+    "px": [
+     1719,
+     1290
+    ],
+    "type": "packshot",
+    "skin": 0.024,
+    "png": "detoures/bagues/bague-onyx_01.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2023/05/BAGUE-ONYX-2-23_03_14_VONLOVI-Photo-Cyrille-Robin-0-40H_V1-2.jpg",
+    "w": 1719,
+    "alt": "",
+    "local": "assets/bagues/bague-onyx/02.jpg",
+    "px": [
+     1719,
+     1290
+    ],
+    "type": "packshot",
+    "skin": 0.039,
+    "png": "detoures/bagues/bague-onyx_02.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2023/05/BAGUE-ONYX-3-23_03_14_Vonlovi-Photo-Cyrille-Robin-10.jpg",
+    "w": 1719,
+    "alt": "",
+    "local": "assets/bagues/bague-onyx/03.jpg",
+    "px": [
+     1719,
+     1290
+    ],
+    "type": "packshot",
+    "skin": 0.046,
+    "png": "detoures/bagues/bague-onyx_03.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2023/05/crop-vonlovi-1.jpg",
+    "w": 968,
+    "alt": "",
+    "local": "assets/bagues/bague-onyx/04.jpg",
+    "px": [
+     968,
+     1290
+    ],
+    "type": "lifestyle",
+    "skin": 0.663
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2023/05/crop-vonlovi-2.jpg",
+    "w": 968,
+    "alt": "",
+    "local": "assets/bagues/bague-onyx/05.jpg",
+    "px": [
+     968,
+     1290
+    ],
+    "type": "lifestyle",
+    "skin": 0.308
+   }
+  ],
+  "prix_num": 2900.0
+ },
+ {
+  "id": 279,
+  "nom": "Bague Œil de Tigre",
+  "slug": "bague-oeil-de-tigre",
+  "url": "https://vonlovi.com/boutique/bagues/bague-oeil-de-tigre/",
+  "famille": "Bagues",
+  "pierre": "Oeil de Tigre",
+  "diamants": false,
+  "prix": "2 900 €",
+  "description": "Bague en or jaune 750/1000 sertie d’une pierre dure en œil de Tigre découpée Vonlovi et polie, diamètre 14 mm, VV entretoisés sur l’arrière de la pierre. Guide des tailles de nos bagues",
+  "images": [
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2023/05/BAGUE-TI-1-23_03_14_VONLOVI-Photo-Cyrille-Robin-0-32H_V1-2.jpg",
+    "w": 1719,
+    "alt": "",
+    "local": "assets/bagues/bague-il-de-tigre/01.jpg",
+    "px": [
+     1719,
+     1290
+    ],
+    "type": "packshot",
+    "skin": 0.025,
+    "png": "detoures/bagues/bague-oeil-de-tigre_01.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2023/05/BAGUE-TI-2-23_03_14_VONLOVI-Photo-Cyrille-Robin-0-48H_V1B.jpg",
+    "w": 1719,
+    "alt": "",
+    "local": "assets/bagues/bague-il-de-tigre/02.jpg",
+    "px": [
+     1719,
+     1290
+    ],
+    "type": "packshot",
+    "skin": 0.05,
+    "png": "detoures/bagues/bague-oeil-de-tigre_02.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2023/06/Bague-ti-dos.jpg",
+    "w": 1719,
+    "alt": "",
+    "local": "assets/bagues/bague-il-de-tigre/03.jpg",
+    "px": [
+     1719,
+     1290
+    ],
+    "type": "packshot",
+    "skin": 0.047,
+    "png": "detoures/bagues/bague-oeil-de-tigre_03.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2023/05/crop-vonlovi-2.jpg",
+    "w": 968,
+    "alt": "",
+    "local": "assets/bagues/bague-il-de-tigre/04.jpg",
+    "px": [
+     968,
+     1290
+    ],
+    "type": "lifestyle",
+    "skin": 0.308
+   }
+  ],
+  "prix_num": 2900.0
+ },
+ {
+  "id": 1730,
+  "nom": "Bague Cornaline Petit Modèle",
+  "slug": "bague-cornaline-petit-modele",
+  "url": "https://vonlovi.com/boutique/bagues-petit-modele/bague-cornaline-petit-modele/",
+  "famille": "Bagues petit modèle",
+  "pierre": "Cornaline",
+  "diamants": false,
+  "prix": "1 900 €",
+  "description": "Bague en or jaune 750/1000 sertie d’une pierre dure en cornaline découpée Vonlovi et polie, diamètre 9 mm, V sur l’arrière de la pierre. Guide des tailles de nos bagues",
+  "images": [
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2025/03/Bague-Cornaline-Recto-PM-scaled.jpg",
+    "w": 2560,
+    "alt": "",
+    "local": "assets/bagues-petit-modele/bague-cornaline-petit-modele/01.jpg",
+    "px": [
+     2560,
+     1920
+    ],
+    "type": "packshot",
+    "skin": 0.012,
+    "png": "detoures/bagues-petit-modele/bague-cornaline-petit-modele_01.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2025/03/Bague-Cornaline-Verso-PM-scaled.jpg",
+    "w": 2560,
+    "alt": "",
+    "local": "assets/bagues-petit-modele/bague-cornaline-petit-modele/02.jpg",
+    "px": [
+     2560,
+     1920
+    ],
+    "type": "packshot",
+    "skin": 0.032,
+    "png": "detoures/bagues-petit-modele/bague-cornaline-petit-modele_02.png"
+   }
+  ],
+  "prix_num": 1900.0
+ },
+ {
+  "id": 1724,
+  "nom": "Bague Lapis Lazuli Petit Modèle",
+  "slug": "bague-lapis-lazuli-petit-modele",
+  "url": "https://vonlovi.com/boutique/bagues-petit-modele/bague-lapis-lazuli-petit-modele/",
+  "famille": "Bagues petit modèle",
+  "pierre": "Lapis Lazuli",
+  "diamants": false,
+  "prix": "1 900 €",
+  "description": "Bague en or jaune 750/1000 sertie d’une pierre dure en lapis lazuli découpée Vonlovi et polie, diamètre 9 mm, V sur l’arrière de la pierre. Guide des tailles de nos bagues",
+  "images": [
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2025/03/BAGUE-LA-PM-Recto-scaled.jpg",
+    "w": 2560,
+    "alt": "",
+    "local": "assets/bagues-petit-modele/bague-lapis-lazuli-petit-modele/01.jpg",
+    "px": [
+     2560,
+     1920
+    ],
+    "type": "packshot",
+    "skin": 0.01,
+    "png": "detoures/bagues-petit-modele/bague-lapis-lazuli-petit-modele_01.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2025/03/BAGUE-LA-PM-Verso-scaled.jpg",
+    "w": 2560,
+    "alt": "",
+    "local": "assets/bagues-petit-modele/bague-lapis-lazuli-petit-modele/02.jpg",
+    "px": [
+     2560,
+     1920
+    ],
+    "type": "packshot",
+    "skin": 0.032,
+    "png": "detoures/bagues-petit-modele/bague-lapis-lazuli-petit-modele_02.png"
+   }
+  ],
+  "prix_num": 1900.0
+ },
+ {
+  "id": 1718,
+  "nom": "Bague Malachite Petit Modèle",
+  "slug": "bague-malachite-petit-modele",
+  "url": "https://vonlovi.com/boutique/bagues-petit-modele/bague-malachite-petit-modele/",
+  "famille": "Bagues petit modèle",
+  "pierre": "Malachite",
+  "diamants": false,
+  "prix": "1 900 €",
+  "description": "Bague en or jaune 750/1000 sertie d’une pierre dure en malachite découpée Vonlovi et polie, diamètre 9 mm, V sur l’arrière de la pierre. Guide des tailles de nos bagues",
+  "images": [
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2025/03/BAGUE-MA-PM-Recto-scaled.jpg",
+    "w": 2560,
+    "alt": "",
+    "local": "assets/bagues-petit-modele/bague-malachite-petit-modele/01.jpg",
+    "px": [
+     2560,
+     1920
+    ],
+    "type": "packshot",
+    "skin": 0.01,
+    "png": "detoures/bagues-petit-modele/bague-malachite-petit-modele_01.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2025/03/BAGUE-MA-PM-Verso-scaled.jpg",
+    "w": 2560,
+    "alt": "",
+    "local": "assets/bagues-petit-modele/bague-malachite-petit-modele/02.jpg",
+    "px": [
+     2560,
+     1920
+    ],
+    "type": "packshot",
+    "skin": 0.031,
+    "png": "detoures/bagues-petit-modele/bague-malachite-petit-modele_02.png"
+   }
+  ],
+  "prix_num": 1900.0
+ },
+ {
+  "id": 2631,
+  "nom": "Bague Nacre Dorée Petit modèle",
+  "slug": "bague-nacre-doree-petit-modele",
+  "url": "https://vonlovi.com/boutique/bagues-petit-modele/bague-nacre-doree-petit-modele/",
+  "famille": "Bagues petit modèle",
+  "pierre": "Nacre Dorée",
+  "diamants": false,
+  "prix": "1 900 €",
+  "description": "Bague en or jaune 750/1000 sertie d’une nacre dorée découpée Vonlovi et polie, diamètre 9 mm, V sur l’arrière de la pierre. Guide des tailles de nos bagues",
+  "images": [
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2025/03/Bague-Nacre-Doree-PM-Recto-scaled.jpg",
+    "w": 2560,
+    "alt": "Bague Nacre Dorée PM Recto",
+    "local": "assets/bagues-petit-modele/bague-nacre-doree-petit-modele/01.jpg",
+    "px": [
+     2560,
+     1920
+    ],
+    "type": "packshot",
+    "skin": 0.014,
+    "png": "detoures/bagues-petit-modele/bague-nacre-doree-petit-modele_01.png"
+   }
+  ],
+  "prix_num": 1900.0
+ },
+ {
+  "id": 2553,
+  "nom": "Bague Nacre Petit modèle",
+  "slug": "bague-nacre-petit-modele",
+  "url": "https://vonlovi.com/boutique/bagues-petit-modele/bague-nacre-petit-modele/",
+  "famille": "Bagues petit modèle",
+  "pierre": "Nacre",
+  "diamants": false,
+  "prix": "1 900 €",
+  "description": "Bague en or jaune 750/1000 sertie d’une nacre blanche découpée Vonlovi et polie, diamètre 9 mm, V sur l’arrière de la pierre. Guide des tailles de nos bagues",
+  "images": [
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2025/03/Bague-Nacre-Recto-PM-scaled.jpg",
+    "w": 2560,
+    "alt": "Bague Nacre Recto PM",
+    "local": "assets/bagues-petit-modele/bague-nacre-petit-modele/01.jpg",
+    "px": [
+     2560,
+     1920
+    ],
+    "type": "packshot",
+    "skin": 0.011,
+    "png": "detoures/bagues-petit-modele/bague-nacre-petit-modele_01.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2025/03/Bague-Nacre-Verso-PM-scaled.jpg",
+    "w": 2560,
+    "alt": "Bague Nacre Verso PM",
+    "local": "assets/bagues-petit-modele/bague-nacre-petit-modele/02.jpg",
+    "px": [
+     2560,
+     1920
+    ],
+    "type": "packshot",
+    "skin": 0.034,
+    "png": "detoures/bagues-petit-modele/bague-nacre-petit-modele_02.png"
+   }
+  ],
+  "prix_num": 1900.0
+ },
+ {
+  "id": 1690,
+  "nom": "Bague Onyx Petit Modèle",
+  "slug": "bague-onyx-petit-modele",
+  "url": "https://vonlovi.com/boutique/bagues-petit-modele/bague-onyx-petit-modele/",
+  "famille": "Bagues petit modèle",
+  "pierre": "Onyx",
+  "diamants": false,
+  "prix": "1 900 €",
+  "description": "Bague en or jaune 750/1000 sertie d’une pierre dure en onyx découpée Vonlovi et polie, diamètre 9 mm, V sur l’arrière de la pierre. Guide des tailles de nos bagues",
+  "images": [
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2025/02/BAGUE-ONYX-PM-Recto-scaled.jpg",
+    "w": 2560,
+    "alt": "",
+    "local": "assets/bagues-petit-modele/bague-onyx-petit-modele/01.jpg",
+    "px": [
+     2560,
+     1920
+    ],
+    "type": "packshot",
+    "skin": 0.011,
+    "png": "detoures/bagues-petit-modele/bague-onyx-petit-modele_01.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2025/02/BAGUE-ONYX-PM-verso-scaled.jpg",
+    "w": 2560,
+    "alt": "",
+    "local": "assets/bagues-petit-modele/bague-onyx-petit-modele/02.jpg",
+    "px": [
+     2560,
+     1920
+    ],
+    "type": "packshot",
+    "skin": 0.033,
+    "png": "detoures/bagues-petit-modele/bague-onyx-petit-modele_02.png"
+   }
+  ],
+  "prix_num": 1900.0
+ },
+ {
+  "id": 1618,
+  "nom": "Boucle d’Oreille Cornaline",
+  "slug": "boucle-doreille-cornaline",
+  "url": "https://vonlovi.com/boutique/boucles-doreilles/boucle-doreille-cornaline/",
+  "famille": "Boucles d'oreilles",
+  "pierre": "Cornaline",
+  "diamants": false,
+  "prix": "800 €",
+  "description": "Boucle d’oreille en or 750/1000 sertie d’une cornaline découpée Vonlovi et polie, diamètre 9 mm. Fermoir sécurité pour oreilles percées. Vendue à l’unité.",
+  "images": [
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2024/10/BO-CO-1-scaled.jpg",
+    "w": 2560,
+    "alt": "",
+    "local": "assets/boucles-d-oreilles/boucle-doreille-cornaline/01.jpg",
+    "px": [
+     2560,
+     1920
+    ],
+    "type": "packshot",
+    "skin": 0.008,
+    "png": "detoures/boucles-d-oreilles/boucle-doreille-cornaline_01.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2024/10/BO-CO-2-scaled.jpg",
+    "w": 2560,
+    "alt": "",
+    "local": "assets/boucles-d-oreilles/boucle-doreille-cornaline/02.jpg",
+    "px": [
+     2560,
+     1921
+    ],
+    "type": "packshot",
+    "skin": 0.011,
+    "png": "detoures/boucles-d-oreilles/boucle-doreille-cornaline_02.png"
+   }
+  ],
+  "prix_num": 800.0
+ },
+ {
+  "id": 2421,
+  "nom": "Boucle d’Oreille Lapis Lazuli",
+  "slug": "boucle-doreille-lapis-lazuli",
+  "url": "https://vonlovi.com/boutique/boucles-doreilles/boucle-doreille-lapis-lazuli/",
+  "famille": "Boucles d'oreilles",
+  "pierre": "Lapis Lazuli",
+  "diamants": false,
+  "prix": "800 €",
+  "description": "Boucle d’oreille en or 750/1000 sertie d’une pierre dure en lapis lazuli découpée Vonlovi et polie, diamètre 9 mm. Fermoir sécurité pour oreilles percées. Vendue à l’unité.",
+  "images": [
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2025/03/BO-LA-1-scaled.jpg",
+    "w": 2560,
+    "alt": "BO LA 1",
+    "local": "assets/boucles-d-oreilles/boucle-doreille-lapis-lazuli/01.jpg",
+    "px": [
+     2560,
+     1920
+    ],
+    "type": "packshot",
+    "skin": 0.006,
+    "png": "detoures/boucles-d-oreilles/boucle-doreille-lapis-lazuli_01.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2025/03/BO-LA-2-scaled.jpg",
+    "w": 2560,
+    "alt": "",
+    "local": "assets/boucles-d-oreilles/boucle-doreille-lapis-lazuli/02.jpg",
+    "px": [
+     2560,
+     1921
+    ],
+    "type": "packshot",
+    "skin": 0.009,
+    "png": "detoures/boucles-d-oreilles/boucle-doreille-lapis-lazuli_02.png"
+   }
+  ],
+  "prix_num": 800.0
+ },
+ {
+  "id": 2415,
+  "nom": "Boucle d’Oreille Malachite",
+  "slug": "boucle-doreille-malachite",
+  "url": "https://vonlovi.com/boutique/boucles-doreilles/boucle-doreille-malachite/",
+  "famille": "Boucles d'oreilles",
+  "pierre": "Malachite",
+  "diamants": false,
+  "prix": "800 €",
+  "description": "Boucle d’oreille en or 750/1000 sertie d’une pierre en malachite découpée Vonlovi et polie, diamètre 9 mm. Fermoir sécurité pour oreilles percées. Vendue à l’unité.",
+  "images": [
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2025/03/BO-MA-1-scaled.jpg",
+    "w": 2560,
+    "alt": "BO MA 1",
+    "local": "assets/boucles-d-oreilles/boucle-doreille-malachite/01.jpg",
+    "px": [
+     2560,
+     1920
+    ],
+    "type": "packshot",
+    "skin": 0.006,
+    "png": "detoures/boucles-d-oreilles/boucle-doreille-malachite_01.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2025/03/BO-MA-2-scaled.jpg",
+    "w": 2560,
+    "alt": "",
+    "local": "assets/boucles-d-oreilles/boucle-doreille-malachite/02.jpg",
+    "px": [
+     2560,
+     1921
+    ],
+    "type": "packshot",
+    "skin": 0.009,
+    "png": "detoures/boucles-d-oreilles/boucle-doreille-malachite_02.png"
+   }
+  ],
+  "prix_num": 800.0
+ },
+ {
+  "id": 316,
+  "nom": "Boucle d’Oreille Nacre",
+  "slug": "puce-doreille-nacre",
+  "url": "https://vonlovi.com/boutique/boucles-doreilles/puce-doreille-nacre/",
+  "famille": "Boucles d'oreilles",
+  "pierre": "Nacre",
+  "diamants": false,
+  "prix": "800 €",
+  "description": "Boucle d’oreille en or 750/1000 sertie d’une nacre blanche découpée Vonlovi et polie, diamètre 9 mm. Fermoir sécurité pour oreilles percées. Vendue à l’unité.",
+  "images": [
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2023/06/BO-NACRE-23_03_14_Vonlovi-Photo-Cyrille-Robin-27.jpg",
+    "w": 1720,
+    "alt": "",
+    "local": "assets/boucles-d-oreilles/boucle-doreille-nacre/01.jpg",
+    "px": [
+     1720,
+     1290
+    ],
+    "type": "packshot",
+    "skin": 0.016,
+    "png": "detoures/boucles-d-oreilles/puce-doreille-nacre_01.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2023/06/Solo-BO-NACRE-23_03_14_VONLOVI-Photo-Cyrille-Robin-0-74H_V1-3.jpg",
+    "w": 1920,
+    "alt": "",
+    "local": "assets/boucles-d-oreilles/boucle-doreille-nacre/02.jpg",
+    "px": [
+     1920,
+     1440
+    ],
+    "type": "packshot",
+    "skin": 0.011,
+    "png": "detoures/boucles-d-oreilles/puce-doreille-nacre_02.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2023/06/2307_Vonlovi0258.jpg",
+    "w": 967,
+    "alt": "",
+    "local": "assets/boucles-d-oreilles/boucle-doreille-nacre/03.jpg",
+    "px": [
+     967,
+     1290
+    ],
+    "type": "lifestyle",
+    "skin": 0.44
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2023/06/2307_Vonlovi0380.jpg",
+    "w": 1720,
+    "alt": "",
+    "local": "assets/boucles-d-oreilles/boucle-doreille-nacre/04.jpg",
+    "px": [
+     1720,
+     1290
+    ],
+    "type": "lifestyle",
+    "skin": 0.39
+   }
+  ],
+  "prix_num": 800.0
+ },
+ {
+  "id": 1587,
+  "nom": "Boucle d’Oreille Nacre Dorée",
+  "slug": "boucle-doreille-nacre-doree",
+  "url": "https://vonlovi.com/boutique/boucles-doreilles/boucle-doreille-nacre-doree/",
+  "famille": "Boucles d'oreilles",
+  "pierre": "Nacre Dorée",
+  "diamants": false,
+  "prix": "800 €",
+  "description": "Boucle d’oreille en or 750/1000 sertie d’une nacre dorée découpée Vonlovi et polie, diamètre 9 mm. Fermoir sécurité pour oreilles percées. Vendue à l’unité.",
+  "images": [
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2024/10/BO-NAD-scaled.jpg",
+    "w": 2560,
+    "alt": "",
+    "local": "assets/boucles-d-oreilles/boucle-doreille-nacre-doree/01.jpg",
+    "px": [
+     2560,
+     1920
+    ],
+    "type": "packshot",
+    "skin": 0.018,
+    "png": "detoures/boucles-d-oreilles/boucle-doreille-nacre-doree_01.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2024/10/BO-NAD-2-scaled.jpg",
+    "w": 2560,
+    "alt": "",
+    "local": "assets/boucles-d-oreilles/boucle-doreille-nacre-doree/02.jpg",
+    "px": [
+     2560,
+     1921
+    ],
+    "type": "packshot",
+    "skin": 0.011,
+    "png": "detoures/boucles-d-oreilles/boucle-doreille-nacre-doree_02.png"
+   }
+  ],
+  "prix_num": 800.0
+ },
+ {
+  "id": 164,
+  "nom": "Boucle d’Oreille Onyx",
+  "slug": "boucle-doreille-onyx",
+  "url": "https://vonlovi.com/boutique/boucles-doreilles/boucle-doreille-onyx/",
+  "famille": "Boucles d'oreilles",
+  "pierre": "Onyx",
+  "diamants": false,
+  "prix": "800 €",
+  "description": "Boucle d’oreille en or 750/1000 sertie d’une pierre dure en onyx découpée Vonlovi et polie, diamètre 9 mm. Fermoir sécurité pour oreilles percées. Vendue à l’unité.",
+  "images": [
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2023/06/BO-ONYX-23_03_14_VONLOVI-Photo-Cyrille-Robin-0-20_B.jpg",
+    "w": 1720,
+    "alt": "",
+    "local": "assets/boucles-d-oreilles/boucle-doreille-onyx/01.jpg",
+    "px": [
+     1720,
+     1290
+    ],
+    "type": "packshot",
+    "skin": 0.009,
+    "png": "detoures/boucles-d-oreilles/boucle-doreille-onyx_01.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2023/06/Solo-BO-Onyx-23_03_14_VONLOVI-Photo-Cyrille-Robin-0-74H_V1-3.jpg",
+    "w": 1920,
+    "alt": "",
+    "local": "assets/boucles-d-oreilles/boucle-doreille-onyx/02.jpg",
+    "px": [
+     1920,
+     1440
+    ],
+    "type": "packshot",
+    "skin": 0.009,
+    "png": "detoures/boucles-d-oreilles/boucle-doreille-onyx_02.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2023/06/2307_Vonlovi0047-copie.jpg",
+    "w": 1720,
+    "alt": "",
+    "local": "assets/boucles-d-oreilles/boucle-doreille-onyx/03.jpg",
+    "px": [
+     1720,
+     1290
+    ],
+    "type": "lifestyle",
+    "skin": 0.305
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2023/06/2307_Vonlovi0119.jpg",
+    "w": 968,
+    "alt": "",
+    "local": "assets/boucles-d-oreilles/boucle-doreille-onyx/04.jpg",
+    "px": [
+     968,
+     1290
+    ],
+    "type": "lifestyle",
+    "skin": 0.327
+   }
+  ],
+  "prix_num": 800.0
+ },
+ {
+  "id": 315,
+  "nom": "Boucle d’Oreille Œil de Tigre",
+  "slug": "puce-doreille-oeil-de-tigre",
+  "url": "https://vonlovi.com/boutique/boucles-doreilles/puce-doreille-oeil-de-tigre/",
+  "famille": "Boucles d'oreilles",
+  "pierre": "Oeil de Tigre",
+  "diamants": false,
+  "prix": "800 €",
+  "description": "Boucle d’oreille en or 750/1000 sertie d’une pierre dure en Œil de Tigre découpée Vonlovi et polie, diamètre 9 mm. Fermoir sécurité pour oreilles percées. Vendue à l’unité.",
+  "images": [
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2023/06/BO-TI-23_03_14_VONLOVI-Photo-Cyrille-Robin-0-22-2.jpg",
+    "w": 1720,
+    "alt": "",
+    "local": "assets/boucles-d-oreilles/boucle-doreille-il-de-tigre/01.jpg",
+    "px": [
+     1720,
+     1290
+    ],
+    "type": "packshot",
+    "skin": 0.01,
+    "png": "detoures/boucles-d-oreilles/puce-doreille-oeil-de-tigre_01.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2023/06/Solo-BO-Oeil-Tigre-23_03_14_VONLOVI-Photo-Cyrille-Robin-0-74H_V1-3.jpg",
+    "w": 1920,
+    "alt": "",
+    "local": "assets/boucles-d-oreilles/boucle-doreille-il-de-tigre/02.jpg",
+    "px": [
+     1920,
+     1440
+    ],
+    "type": "packshot",
+    "skin": 0.014,
+    "png": "detoures/boucles-d-oreilles/puce-doreille-oeil-de-tigre_02.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2023/06/2307_Vonlovi0185.jpg",
+    "w": 967,
+    "alt": "",
+    "local": "assets/boucles-d-oreilles/boucle-doreille-il-de-tigre/03.jpg",
+    "px": [
+     967,
+     1290
+    ],
+    "type": "lifestyle",
+    "skin": 0.448
+   }
+  ],
+  "prix_num": 800.0
+ },
+ {
+  "id": 1630,
+  "nom": "Bouton Cornaline",
+  "slug": "bouton-cornaline",
+  "url": "https://vonlovi.com/boutique/boutons/bouton-cornaline/",
+  "famille": "Boutons",
+  "pierre": "Cornaline",
+  "diamants": false,
+  "prix": "1 100 €",
+  "description": "Bouton réversible en or jaune 750/1000 serti d’une cornaline découpée Vonlovi et polie, diamètre 14 mm.",
+  "images": [
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2024/10/BOUTON-CO-RECTO-scaled.jpg",
+    "w": 2560,
+    "alt": "Bouton Cornaline",
+    "local": "assets/boutons/bouton-cornaline/01.jpg",
+    "px": [
+     2560,
+     1920
+    ],
+    "type": "packshot",
+    "skin": 0.011,
+    "png": "detoures/boutons/bouton-cornaline_01.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2024/10/BOUTON-CO-VERSO-scaled.jpg",
+    "w": 2560,
+    "alt": "Bouton Cornaline",
+    "local": "assets/boutons/bouton-cornaline/02.jpg",
+    "px": [
+     2560,
+     1921
+    ],
+    "type": "packshot",
+    "skin": 0.03,
+    "png": "detoures/boutons/bouton-cornaline_02.png"
+   }
+  ],
+  "prix_num": 1100.0
+ },
+ {
+  "id": 1636,
+  "nom": "Bouton Cornaline et Diamants",
+  "slug": "bouton-cornaline-et-diamants",
+  "url": "https://vonlovi.com/boutique/boutons/bouton-cornaline-et-diamants/",
+  "famille": "Boutons",
+  "pierre": "Cornaline",
+  "diamants": true,
+  "prix": "2 100 €",
+  "description": "Bouton réversible en or jaune 750/1000 serti d’une cornaline découpée Vonlovi et polie, diamètre 14 mm, et de 24 diamants. 0,13 carats. Qualité VS.",
+  "images": [
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2024/10/BOUTON-CO-DI-VERSO-scaled.jpg",
+    "w": 2560,
+    "alt": "",
+    "local": "assets/boutons/bouton-cornaline-et-diamants/01.jpg",
+    "px": [
+     2560,
+     1921
+    ],
+    "type": "packshot",
+    "skin": 0.031,
+    "png": "detoures/boutons/bouton-cornaline-et-diamants_01.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2024/10/BOUTON-CO-RECTO-scaled.jpg",
+    "w": 2560,
+    "alt": "Bouton Cornaline",
+    "local": "assets/boutons/bouton-cornaline-et-diamants/02.jpg",
+    "px": [
+     2560,
+     1920
+    ],
+    "type": "packshot",
+    "skin": 0.011,
+    "png": "detoures/boutons/bouton-cornaline-et-diamants_02.png"
+   }
+  ],
+  "prix_num": 2100.0
+ },
+ {
+  "id": 2444,
+  "nom": "Bouton Lapis Lazuli",
+  "slug": "bouton-lapis-lazuli",
+  "url": "https://vonlovi.com/boutique/boutons/bouton-lapis-lazuli/",
+  "famille": "Boutons",
+  "pierre": "Lapis Lazuli",
+  "diamants": false,
+  "prix": "1 100 €",
+  "description": "Bouton réversible en or jaune 750/1000 serti d’une pierre en lapis lazuli découpée Vonlovi et polie, diamètre 14 mm.",
+  "images": [
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2025/03/BOUTON-LA-RECTO-scaled.jpg",
+    "w": 2560,
+    "alt": "BOUTON LA RECTO",
+    "local": "assets/boutons/bouton-lapis-lazuli/01.jpg",
+    "px": [
+     2560,
+     1920
+    ],
+    "type": "packshot",
+    "skin": 0.007,
+    "png": "detoures/boutons/bouton-lapis-lazuli_01.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2025/03/BOUTON-LA-VERSO-scaled.jpg",
+    "w": 2560,
+    "alt": "BOUTON LA VERSO",
+    "local": "assets/boutons/bouton-lapis-lazuli/02.jpg",
+    "px": [
+     2560,
+     1921
+    ],
+    "type": "packshot",
+    "skin": 0.026,
+    "png": "detoures/boutons/bouton-lapis-lazuli_02.png"
+   }
+  ],
+  "prix_num": 1100.0
+ },
+ {
+  "id": 2463,
+  "nom": "Bouton Lapis Lazuli et Diamants",
+  "slug": "bouton-lapis-lazuli-et-diamants",
+  "url": "https://vonlovi.com/boutique/boutons/bouton-lapis-lazuli-et-diamants/",
+  "famille": "Boutons",
+  "pierre": "Lapis Lazuli",
+  "diamants": true,
+  "prix": "2 100 €",
+  "description": "Bouton réversible en or jaune 750/1000 serti d’une pierre en lapis lazuli découpée Vonlovi et polie, diamètre 14 mm, et de 24 diamants. 0,13 carats. Qualité VS.",
+  "images": [
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2025/03/BOUTON-LA-DI-VERSO-scaled.jpg",
+    "w": 2560,
+    "alt": "BOUTON LA DI VERSO",
+    "local": "assets/boutons/bouton-lapis-lazuli-et-diamants/01.jpg",
+    "px": [
+     2560,
+     1921
+    ],
+    "type": "packshot",
+    "skin": 0.027,
+    "png": "detoures/boutons/bouton-lapis-lazuli-et-diamants_01.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2025/03/BOUTON-LA-RECTO-scaled.jpg",
+    "w": 2560,
+    "alt": "BOUTON LA RECTO",
+    "local": "assets/boutons/bouton-lapis-lazuli-et-diamants/02.jpg",
+    "px": [
+     2560,
+     1920
+    ],
+    "type": "packshot",
+    "skin": 0.007,
+    "png": "detoures/boutons/bouton-lapis-lazuli-et-diamants_02.png"
+   }
+  ],
+  "prix_num": 2100.0
+ },
+ {
+  "id": 2438,
+  "nom": "Bouton Malachite",
+  "slug": "bouton-malachite",
+  "url": "https://vonlovi.com/boutique/boutons/bouton-malachite/",
+  "famille": "Boutons",
+  "pierre": "Malachite",
+  "diamants": false,
+  "prix": "1 100 €",
+  "description": "Bouton réversible en or jaune 750/1000 serti d’une pierre en malachite découpée Vonlovi et polie, diamètre 14 mm.",
+  "images": [
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2025/03/BOUTON-MA-RECTO-scaled.jpg",
+    "w": 2560,
+    "alt": "BOUTON MA RECTO",
+    "local": "assets/boutons/bouton-malachite/01.jpg",
+    "px": [
+     2560,
+     1920
+    ],
+    "type": "packshot",
+    "skin": 0.008,
+    "png": "detoures/boutons/bouton-malachite_01.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2025/03/BOUTON-MA-VERSO-scaled.jpg",
+    "w": 2560,
+    "alt": "BOUTON MA VERSO",
+    "local": "assets/boutons/bouton-malachite/02.jpg",
+    "px": [
+     2560,
+     1921
+    ],
+    "type": "packshot",
+    "skin": 0.026,
+    "png": "detoures/boutons/bouton-malachite_02.png"
+   }
+  ],
+  "prix_num": 1100.0
+ },
+ {
+  "id": 2467,
+  "nom": "Bouton Malachite et Diamants",
+  "slug": "bouton-malachite-et-diamants",
+  "url": "https://vonlovi.com/boutique/boutons/bouton-malachite-et-diamants/",
+  "famille": "Boutons",
+  "pierre": "Malachite",
+  "diamants": true,
+  "prix": "2 100 €",
+  "description": "Bouton réversible en or jaune 750/1000 serti d’une pierre en malachite découpée Vonlovi et polie, diamètre 14 mm, et de 24 diamants. 0,13 carats. Qualité VS.",
+  "images": [
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2025/03/BOUTON-MA-DI-VERSO-scaled.jpg",
+    "w": 2560,
+    "alt": "BOUTON MA DI VERSO",
+    "local": "assets/boutons/bouton-malachite-et-diamants/01.jpg",
+    "px": [
+     2560,
+     1921
+    ],
+    "type": "packshot",
+    "skin": 0.027,
+    "png": "detoures/boutons/bouton-malachite-et-diamants_01.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2025/03/BOUTON-MA-RECTO-scaled.jpg",
+    "w": 2560,
+    "alt": "BOUTON MA RECTO",
+    "local": "assets/boutons/bouton-malachite-et-diamants/02.jpg",
+    "px": [
+     2560,
+     1920
+    ],
+    "type": "packshot",
+    "skin": 0.008,
+    "png": "detoures/boutons/bouton-malachite-et-diamants_02.png"
+   }
+  ],
+  "prix_num": 2100.0
+ },
+ {
+  "id": 312,
+  "nom": "Bouton Nacre",
+  "slug": "boutons-nacre",
+  "url": "https://vonlovi.com/boutique/boutons/boutons-nacre/",
+  "famille": "Boutons",
+  "pierre": "Nacre",
+  "diamants": false,
+  "prix": "1 100 €",
+  "description": "Bouton réversible en or jaune 750/1000 serti d’une nacre blanche découpée Vonlovi et polie, diamètre 14 mm.",
+  "images": [
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2023/06/BOUTON-NACRE-23_03_14_Vonlovi-Photo-Cyrille-Robin-21.jpg",
+    "w": 1720,
+    "alt": "BOUTON-NACRE-",
+    "local": "assets/boutons/bouton-nacre/01.jpg",
+    "px": [
+     1720,
+     1290
+    ],
+    "type": "packshot",
+    "skin": 0.026,
+    "png": "detoures/boutons/boutons-nacre_01.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2023/06/BOUTON-NACRE-VERSO-23_03_14_Vonlovi-Photo-Cyrille-Robin-22.jpg",
+    "w": 1719,
+    "alt": "",
+    "local": "assets/boutons/bouton-nacre/02.jpg",
+    "px": [
+     1719,
+     1290
+    ],
+    "type": "packshot",
+    "skin": 0.039,
+    "png": "detoures/boutons/boutons-nacre_02.png"
+   }
+  ],
+  "prix_num": 1100.0
+ },
+ {
+  "id": 1624,
+  "nom": "Bouton Nacre Dorée",
+  "slug": "bouton-nacre-doree",
+  "url": "https://vonlovi.com/boutique/boutons/bouton-nacre-doree/",
+  "famille": "Boutons",
+  "pierre": "Nacre Dorée",
+  "diamants": false,
+  "prix": "1 100 €",
+  "description": "Bouton réversible en or jaune 750/1000 serti d’une nacre dorée découpée Vonlovi et polie, diamètre 14 mm.",
+  "images": [
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2024/10/BOUTON-NAD-RECTO-scaled.jpg",
+    "w": 2560,
+    "alt": "Bouton Nacre Dorée",
+    "local": "assets/boutons/bouton-nacre-doree/01.jpg",
+    "px": [
+     2560,
+     1920
+    ],
+    "type": "packshot",
+    "skin": 0.014,
+    "png": "detoures/boutons/bouton-nacre-doree_01.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2024/10/BOUTON-NAD-VERSO-scaled.jpg",
+    "w": 2560,
+    "alt": "",
+    "local": "assets/boutons/bouton-nacre-doree/02.jpg",
+    "px": [
+     2560,
+     1921
+    ],
+    "type": "packshot",
+    "skin": 0.034,
+    "png": "detoures/boutons/bouton-nacre-doree_02.png"
+   }
+  ],
+  "prix_num": 1100.0
+ },
+ {
+  "id": 2459,
+  "nom": "Bouton Nacre Dorée et Diamants",
+  "slug": "bouton-nacre-doree-et-diamants",
+  "url": "https://vonlovi.com/boutique/boutons/bouton-nacre-doree-et-diamants/",
+  "famille": "Boutons",
+  "pierre": "Nacre Dorée",
+  "diamants": true,
+  "prix": "2 100 €",
+  "description": "Bouton réversible en or jaune 750/1000 serti d’une nacre dorée découpée Vonlovi et polie, diamètre 14 mm, et de 24 diamants. 0,13 carats. Qualité VS.",
+  "images": [
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2025/03/BOUTON-NAD-DI-VERSO-scaled.jpg",
+    "w": 2560,
+    "alt": "23_03_14_Vonlovi -",
+    "local": "assets/boutons/bouton-nacre-doree-et-diamants/01.jpg",
+    "px": [
+     2560,
+     1921
+    ],
+    "type": "packshot",
+    "skin": 0.035,
+    "png": "detoures/boutons/bouton-nacre-doree-et-diamants_01.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2024/10/BOUTON-NAD-RECTO-scaled.jpg",
+    "w": 2560,
+    "alt": "Bouton Nacre Dorée",
+    "local": "assets/boutons/bouton-nacre-doree-et-diamants/02.jpg",
+    "px": [
+     2560,
+     1920
+    ],
+    "type": "packshot",
+    "skin": 0.014,
+    "png": "detoures/boutons/bouton-nacre-doree-et-diamants_02.png"
+   }
+  ],
+  "prix_num": 2100.0
+ },
+ {
+  "id": 2455,
+  "nom": "Bouton Nacre et Diamants",
+  "slug": "bouton-nacre-et-diamants",
+  "url": "https://vonlovi.com/boutique/boutons/bouton-nacre-et-diamants/",
+  "famille": "Boutons",
+  "pierre": "Nacre",
+  "diamants": true,
+  "prix": "2 100 €",
+  "description": "Bouton réversible en or jaune 750/1000 serti d’une nacre blanche découpée Vonlovi et polie, diamètre 14 mm, et de 24 diamants. 0,13 carats. Qualité VS.",
+  "images": [
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2025/03/BOUTON-NACRE-Diamant-scaled.jpg",
+    "w": 2560,
+    "alt": "BOUTON NACRE Diamant",
+    "local": "assets/boutons/bouton-nacre-et-diamants/01.jpg",
+    "px": [
+     2560,
+     1921
+    ],
+    "type": "packshot",
+    "skin": 0.032,
+    "png": "detoures/boutons/bouton-nacre-et-diamants_01.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2023/06/BOUTON-NACRE-23_03_14_Vonlovi-Photo-Cyrille-Robin-21.jpg",
+    "w": 1720,
+    "alt": "BOUTON-NACRE-",
+    "local": "assets/boutons/bouton-nacre-et-diamants/02.jpg",
+    "px": [
+     1720,
+     1290
+    ],
+    "type": "packshot",
+    "skin": 0.026,
+    "png": "detoures/boutons/bouton-nacre-et-diamants_02.png"
+   }
+  ],
+  "prix_num": 2100.0
+ },
+ {
+  "id": 118,
+  "nom": "Bouton Onyx",
+  "slug": "boutons-onyx",
+  "url": "https://vonlovi.com/boutique/boutons/boutons-onyx/",
+  "famille": "Boutons",
+  "pierre": "Onyx",
+  "diamants": false,
+  "prix": "1 100 €",
+  "description": "Bouton réversible en or jaune 750/1000 serti d’une pierre dure en onyx taillée Vonlovi et polie, diamètre 14 mm.",
+  "images": [
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2023/06/BOUTON-OYNX-23_03_14_Vonlovi-Photo-Cyrille-Robin-21.jpg",
+    "w": 1920,
+    "alt": "",
+    "local": "assets/boutons/bouton-onyx/01.jpg",
+    "px": [
+     1920,
+     1440
+    ],
+    "type": "packshot",
+    "skin": 0.017,
+    "png": "detoures/boutons/boutons-onyx_01.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2023/06/BOUTON-ONYX-VERSO-23_03_14_Vonlovi-Photo-Cyrille-Robin-3.jpg",
+    "w": 1720,
+    "alt": "",
+    "local": "assets/boutons/bouton-onyx/02.jpg",
+    "px": [
+     1720,
+     1290
+    ],
+    "type": "packshot",
+    "skin": 0.028,
+    "png": "detoures/boutons/boutons-onyx_02.png"
+   }
+  ],
+  "prix_num": 1100.0
+ },
+ {
+  "id": 314,
+  "nom": "Bouton Onyx et Diamants",
+  "slug": "boutons-onyx-et-diamants",
+  "url": "https://vonlovi.com/boutique/boutons/boutons-onyx-et-diamants/",
+  "famille": "Boutons",
+  "pierre": "Onyx",
+  "diamants": true,
+  "prix": "2 100 €",
+  "description": "Bouton réversible en or jaune 750/1000 serti d’une pierre dure en onyx découpée Vonlovi et polie, diamètre 14 mm, et de 24 diamants. 0,13 carats. Qualité VS.",
+  "images": [
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2023/06/BOUTON-ONYX-DIA-23_03_14_Vonlovi-Photo-Cyrille-Robin-2.jpg",
+    "w": 1720,
+    "alt": "",
+    "local": "assets/boutons/bouton-onyx-et-diamants/01.jpg",
+    "px": [
+     1720,
+     1290
+    ],
+    "type": "packshot",
+    "skin": 0.028,
+    "png": "detoures/boutons/boutons-onyx-et-diamants_01.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2023/06/BOUTON-OYNX-23_03_14_Vonlovi-Photo-Cyrille-Robin-21.jpg",
+    "w": 1920,
+    "alt": "",
+    "local": "assets/boutons/bouton-onyx-et-diamants/02.jpg",
+    "px": [
+     1920,
+     1440
+    ],
+    "type": "packshot",
+    "skin": 0.017,
+    "png": "detoures/boutons/boutons-onyx-et-diamants_02.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2023/06/2307_Vonlovi0325.jpg",
+    "w": 1032,
+    "alt": "",
+    "local": "assets/boutons/bouton-onyx-et-diamants/03.jpg",
+    "px": [
+     1032,
+     1290
+    ],
+    "type": "lifestyle",
+    "skin": 0.697
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2023/06/2307_Vonlovi0565.jpg",
+    "w": 968,
+    "alt": "",
+    "local": "assets/boutons/bouton-onyx-et-diamants/04.jpg",
+    "px": [
+     968,
+     1290
+    ],
+    "type": "packshot",
+    "skin": 0.001,
+    "png": "detoures/boutons/boutons-onyx-et-diamants_04.png"
+   }
+  ],
+  "prix_num": 2100.0
+ },
+ {
+  "id": 311,
+  "nom": "Bouton Œil de Tigre",
+  "slug": "boutons-oeil-de-tigre",
+  "url": "https://vonlovi.com/boutique/boutons/boutons-oeil-de-tigre/",
+  "famille": "Boutons",
+  "pierre": "Oeil de Tigre",
+  "diamants": false,
+  "prix": "1 100 €",
+  "description": "Bouton réversible en or jaune 750/1000 serti d’une pierre dure en œil de Tigre découpée Vonlovi et polie, diamètre 14 mm.",
+  "images": [
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2023/06/BOUTON-TI-23_03_14_VONLOVI-Photo-Cyrille-Robin-0-9-2.jpg",
+    "w": 1719,
+    "alt": "",
+    "local": "assets/boutons/bouton-il-de-tigre/01.jpg",
+    "px": [
+     1719,
+     1290
+    ],
+    "type": "packshot",
+    "skin": 0.012,
+    "png": "detoures/boutons/boutons-oeil-de-tigre_01.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2023/06/BOUTON-TI-VERSO-23_03_14_Vonlovi-Photo-Cyrille-Robin-13.jpg",
+    "w": 1719,
+    "alt": "",
+    "local": "assets/boutons/bouton-il-de-tigre/02.jpg",
+    "px": [
+     1719,
+     1290
+    ],
+    "type": "packshot",
+    "skin": 0.048,
+    "png": "detoures/boutons/boutons-oeil-de-tigre_02.png"
+   }
+  ],
+  "prix_num": 1100.0
+ },
+ {
+  "id": 2450,
+  "nom": "Bouton Œil de Tigre et Diamants",
+  "slug": "bouton-oeil-de-tigre-et-diamants",
+  "url": "https://vonlovi.com/boutique/boutons/bouton-oeil-de-tigre-et-diamants/",
+  "famille": "Boutons",
+  "pierre": "Oeil de Tigre",
+  "diamants": true,
+  "prix": "2 100 €",
+  "description": "Bouton réversible en or jaune 750/1000 serti d’une pierre dure en œil de Tigre découpée Vonlovi et polie, diamètre 14 mm, et de 24 diamants. 0,13 carats. Qualité VS.",
+  "images": [
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2025/03/BOUTON-TI-DI-VERSO-scaled.jpg",
+    "w": 2560,
+    "alt": "23_03_14_Vonlovi - Photo Cyrille Robin-13",
+    "local": "assets/boutons/bouton-il-de-tigre-et-diamants/01.jpg",
+    "px": [
+     2560,
+     1921
+    ],
+    "type": "packshot",
+    "skin": 0.049,
+    "png": "detoures/boutons/bouton-oeil-de-tigre-et-diamants_01.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2023/06/BOUTON-TI-23_03_14_VONLOVI-Photo-Cyrille-Robin-0-9-2.jpg",
+    "w": 1719,
+    "alt": "",
+    "local": "assets/boutons/bouton-il-de-tigre-et-diamants/02.jpg",
+    "px": [
+     1719,
+     1290
+    ],
+    "type": "packshot",
+    "skin": 0.012,
+    "png": "detoures/boutons/bouton-oeil-de-tigre-et-diamants_02.png"
+   }
+  ],
+  "prix_num": 2100.0
+ },
+ {
+  "id": 409,
+  "nom": "Bracelets cuir",
+  "slug": "bracelets-cuir-noir",
+  "url": "https://vonlovi.com/boutique/bracelets/bracelets-cuir-noir/",
+  "famille": "Bracelets",
+  "pierre": "—",
+  "diamants": false,
+  "prix": "180 €",
+  "description": "Le bracelet en cuir de veau, qu’il soit d’un bordeaux envoûtant ou d’un noir profond, se pare d’un bouton précieux réversible serti d’une pierre dure ou d’une nacre. Il se présente comme une toile vierge, offrant à chacun, la liberté de choisir son propre récit, de le porter recto ou verso, en solitaire ou en accumulation suivant l’humeur. Déclinaison sertie de diamants.",
+  "images": [
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2023/06/BRACELET-NOIR-FERME-23_03_14_VONLOVI-Photo-Cyrille-Robin-0-67H_V1-2.jpg",
+    "w": 1719,
+    "alt": "",
+    "local": "assets/bracelets/bracelets-cuir/01.jpg",
+    "px": [
+     1719,
+     1290
+    ],
+    "type": "packshot",
+    "skin": 0.078,
+    "png": "detoures/bracelets/bracelets-cuir-noir_01.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2023/06/BRACELET-BX-FERME-23_03_14_VONLOVI-Photo-Cyrille-Robin-0-71H_V1-2.jpg",
+    "w": 1719,
+    "alt": "",
+    "local": "assets/bracelets/bracelets-cuir/02.jpg",
+    "px": [
+     1719,
+     1290
+    ],
+    "type": "packshot",
+    "skin": 0.116,
+    "png": "detoures/bracelets/bracelets-cuir-noir_02.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2023/06/BOUTON-ONYX-VERSO-23_03_14_Vonlovi-Photo-Cyrille-Robin-3.jpg",
+    "w": 1720,
+    "alt": "",
+    "local": "assets/bracelets/bracelets-cuir/03.jpg",
+    "px": [
+     1720,
+     1290
+    ],
+    "type": "packshot",
+    "skin": 0.028,
+    "png": "detoures/bracelets/bracelets-cuir-noir_03.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2023/06/2307_Vonlovi0270.jpg",
+    "w": 968,
+    "alt": "",
+    "local": "assets/bracelets/bracelets-cuir/04.jpg",
+    "px": [
+     968,
+     1290
+    ],
+    "type": "lifestyle",
+    "skin": 0.455
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2023/06/crop-vonlovi-3.jpg",
+    "w": 967,
+    "alt": "",
+    "local": "assets/bracelets/bracelets-cuir/05.jpg",
+    "px": [
+     967,
+     1290
+    ],
+    "type": "packshot",
+    "skin": 0.098,
+    "png": "detoures/bracelets/bracelets-cuir-noir_05.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2023/06/2307_Vonlovi0565.jpg",
+    "w": 968,
+    "alt": "",
+    "local": "assets/bracelets/bracelets-cuir/06.jpg",
+    "px": [
+     968,
+     1290
+    ],
+    "type": "packshot",
+    "skin": 0.001,
+    "png": "detoures/bracelets/bracelets-cuir-noir_06.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2023/06/2307_Vonlovi0325.jpg",
+    "w": 1032,
+    "alt": "",
+    "local": "assets/bracelets/bracelets-cuir/07.jpg",
+    "px": [
+     1032,
+     1290
+    ],
+    "type": "lifestyle",
+    "skin": 0.697
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2023/06/2307_Vonlovi0539-copie.jpg",
+    "w": 967,
+    "alt": "",
+    "local": "assets/bracelets/bracelets-cuir/08.jpg",
+    "px": [
+     967,
+     1290
+    ],
+    "type": "lifestyle",
+    "skin": 0.482
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2023/06/2307_Vonlovi0512-copie.jpg",
+    "w": 968,
+    "alt": "",
+    "local": "assets/bracelets/bracelets-cuir/09.jpg",
+    "px": [
+     968,
+     1290
+    ],
+    "type": "lifestyle",
+    "skin": 0.494
+   }
+  ],
+  "prix_num": 180.0
+ },
+ {
+  "id": 1612,
+  "nom": "Pendentif Cornaline",
+  "slug": "pendentif-cornaline",
+  "url": "https://vonlovi.com/boutique/collection-spinea/pendentif-cornaline/",
+  "famille": "Pendentifs",
+  "pierre": "Cornaline",
+  "diamants": false,
+  "prix": "1 700 €",
+  "description": "Pendentif constitué d’un bouton réversible en or 750/1000 serti d’une cornaline, découpée Vonlovi et polie, monté sur une chaine Forçat en or jaune 75/1000 de 50 cm.",
+  "images": [
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2024/10/PEND-RECTO-CO-scaled.jpg",
+    "w": 2560,
+    "alt": "",
+    "local": "assets/pendentifs/pendentif-cornaline/01.jpg",
+    "px": [
+     2560,
+     1920
+    ],
+    "type": "packshot",
+    "skin": 0.03,
+    "png": "detoures/pendentifs/pendentif-cornaline_01.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2024/10/PEND-VERSO-CO-scaled.jpg",
+    "w": 2560,
+    "alt": "",
+    "local": "assets/pendentifs/pendentif-cornaline/02.jpg",
+    "px": [
+     2560,
+     1920
+    ],
+    "type": "packshot",
+    "skin": 0.037,
+    "png": "detoures/pendentifs/pendentif-cornaline_02.png"
+   }
+  ],
+  "prix_num": 1700.0
+ },
+ {
+  "id": 1645,
+  "nom": "Pendentif Cornaline et Diamants",
+  "slug": "pendentif-cornaline-et-diamants",
+  "url": "https://vonlovi.com/boutique/collection-spinea/pendentif-cornaline-et-diamants/",
+  "famille": "Pendentifs",
+  "pierre": "Cornaline",
+  "diamants": true,
+  "prix": "2 800 €",
+  "description": "Pendentif constitué d’un bouton réversible en or jaune 750/1000e serti d’une cornaline découpée Vonlovi et polie, et de diamants, monté sur une chaine forçat en or 750/1000, 50 cm.",
+  "images": [
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2024/10/Pendentif-Cornaline-verso-diamant-scaled.jpg",
+    "w": 2560,
+    "alt": "",
+    "local": "assets/pendentifs/pendentif-cornaline-et-diamants/01.jpg",
+    "px": [
+     2560,
+     1920
+    ],
+    "type": "packshot",
+    "skin": 0.037,
+    "png": "detoures/pendentifs/pendentif-cornaline-et-diamants_01.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2024/10/PEND-RECTO-CO-scaled.jpg",
+    "w": 2560,
+    "alt": "",
+    "local": "assets/pendentifs/pendentif-cornaline-et-diamants/02.jpg",
+    "px": [
+     2560,
+     1920
+    ],
+    "type": "packshot",
+    "skin": 0.03,
+    "png": "detoures/pendentifs/pendentif-cornaline-et-diamants_02.png"
+   }
+  ],
+  "prix_num": 2800.0
+ },
+ {
+  "id": 1699,
+  "nom": "Pendentif Lapis Lazuli",
+  "slug": "pendentif-lapis-lazuli",
+  "url": "https://vonlovi.com/boutique/collection-spinea/pendentif-lapis-lazuli/",
+  "famille": "Pendentifs",
+  "pierre": "Lapis Lazuli",
+  "diamants": false,
+  "prix": "1 700 €",
+  "description": "Pendentif constitué d’un bouton réversible en or 750/1000 serti d’un lapis lazuli, découpée Vonlovi et polie, monté sur une chaine Forçat en or jaune 75/1000 de 50 cm.",
+  "images": [
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2025/03/PEND-LA-RECTO-scaled.jpg",
+    "w": 2560,
+    "alt": "",
+    "local": "assets/pendentifs/pendentif-lapis-lazuli/01.jpg",
+    "px": [
+     2560,
+     1920
+    ],
+    "type": "packshot",
+    "skin": 0.027,
+    "png": "detoures/pendentifs/pendentif-lapis-lazuli_01.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2025/03/PEND-LA-VERSO-scaled.jpg",
+    "w": 2560,
+    "alt": "",
+    "local": "assets/pendentifs/pendentif-lapis-lazuli/02.jpg",
+    "px": [
+     2560,
+     1920
+    ],
+    "type": "packshot",
+    "skin": 0.034,
+    "png": "detoures/pendentifs/pendentif-lapis-lazuli_02.png"
+   }
+  ],
+  "prix_num": 1700.0
+ },
+ {
+  "id": 2427,
+  "nom": "Pendentif Lapis Lazuli et Diamants",
+  "slug": "pendentif-lapis-lazuli-et-diamants",
+  "url": "https://vonlovi.com/boutique/collection-spinea/pendentif-lapis-lazuli-et-diamants/",
+  "famille": "Pendentifs",
+  "pierre": "Lapis Lazuli",
+  "diamants": true,
+  "prix": "2 800 €",
+  "description": "Pendentif constitué d’un bouton réversible en or 750/1000 serti d’un lapis lazuli, découpée Vonlovi et polie, et de diamants, monté sur une chaine Forçat en or jaune 75/1000 de 50 cm.",
+  "images": [
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2025/03/PEND-LA-DI-VERSO--scaled.jpg",
+    "w": 2560,
+    "alt": "PEND LA DI VERSO",
+    "local": "assets/pendentifs/pendentif-lapis-lazuli-et-diamants/01.jpg",
+    "px": [
+     2560,
+     1920
+    ],
+    "type": "packshot",
+    "skin": 0.034,
+    "png": "detoures/pendentifs/pendentif-lapis-lazuli-et-diamants_01.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2025/03/PEND-LA-RECTO-scaled.jpg",
+    "w": 2560,
+    "alt": "",
+    "local": "assets/pendentifs/pendentif-lapis-lazuli-et-diamants/02.jpg",
+    "px": [
+     2560,
+     1920
+    ],
+    "type": "packshot",
+    "skin": 0.027,
+    "png": "detoures/pendentifs/pendentif-lapis-lazuli-et-diamants_02.png"
+   }
+  ],
+  "prix_num": 2800.0
+ },
+ {
+  "id": 1714,
+  "nom": "Pendentif Malachite",
+  "slug": "pendentif-malachite",
+  "url": "https://vonlovi.com/boutique/collection-spinea/pendentif-malachite/",
+  "famille": "Pendentifs",
+  "pierre": "Malachite",
+  "diamants": false,
+  "prix": "1 700 €",
+  "description": "Pendentif constitué d’un bouton réversible en or 750/1000 serti d’une malachite, découpée Vonlovi et polie, monté sur une chaine Forçat en or jaune 75/1000 de 50 cm.",
+  "images": [
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2025/03/BOUTON_NACRE_23_03_14_Vonlovi_-_Photo_Cyrille_Robin-21-scaled.jpg",
+    "w": 2560,
+    "alt": "",
+    "local": "assets/pendentifs/pendentif-malachite/01.jpg",
+    "px": [
+     2560,
+     1920
+    ],
+    "type": "packshot",
+    "skin": 0.027,
+    "png": "detoures/pendentifs/pendentif-malachite_01.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2025/03/PEND-VERSO-MA-scaled.jpg",
+    "w": 2560,
+    "alt": "",
+    "local": "assets/pendentifs/pendentif-malachite/02.jpg",
+    "px": [
+     2560,
+     1920
+    ],
+    "type": "packshot",
+    "skin": 0.034,
+    "png": "detoures/pendentifs/pendentif-malachite_02.png"
+   }
+  ],
+  "prix_num": 1700.0
+ },
+ {
+  "id": 2431,
+  "nom": "Pendentif Malachite et Diamants",
+  "slug": "pendentif-malachite-et-diamants",
+  "url": "https://vonlovi.com/boutique/collection-spinea/pendentif-malachite-et-diamants/",
+  "famille": "Pendentifs",
+  "pierre": "Malachite",
+  "diamants": true,
+  "prix": "2 800 €",
+  "description": "Pendentif constitué d’un bouton réversible en or 750/1000 serti d’une malachite, découpée Vonlovi et polie, et de diamants, monté sur une chaine Forçat en or jaune 75/1000 de 50 cm.",
+  "images": [
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2025/03/PEND-MA-VERSO-Diamant-scaled.jpg",
+    "w": 2560,
+    "alt": "PEND MA VERSO Diamant",
+    "local": "assets/pendentifs/pendentif-malachite-et-diamants/01.jpg",
+    "px": [
+     2560,
+     1920
+    ],
+    "type": "packshot",
+    "skin": 0.034,
+    "png": "detoures/pendentifs/pendentif-malachite-et-diamants_01.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2025/03/BOUTON_NACRE_23_03_14_Vonlovi_-_Photo_Cyrille_Robin-21-scaled.jpg",
+    "w": 2560,
+    "alt": "",
+    "local": "assets/pendentifs/pendentif-malachite-et-diamants/02.jpg",
+    "px": [
+     2560,
+     1920
+    ],
+    "type": "packshot",
+    "skin": 0.027,
+    "png": "detoures/pendentifs/pendentif-malachite-et-diamants_02.png"
+   }
+  ],
+  "prix_num": 2800.0
+ },
+ {
+  "id": 343,
+  "nom": "Pendentif Nacre",
+  "slug": "pendentif-nacre",
+  "url": "https://vonlovi.com/boutique/collection-spinea/pendentif-nacre/",
+  "famille": "Pendentifs",
+  "pierre": "Nacre",
+  "diamants": false,
+  "prix": "1 700 €",
+  "description": "Pendentif constitué d’un bouton réversible en or 750/1000 serti d’une nacre blanche, découpée Vonlovi et polie, monté sur une chaine Forçat en or jaune 75/1000 de 50 cm.",
+  "images": [
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2023/06/PEND-NACRE-23_03_14_Vonlovi-Photo-Cyrille-Robin-23.jpg",
+    "w": 1719,
+    "alt": "",
+    "local": "assets/pendentifs/pendentif-nacre/01.jpg",
+    "px": [
+     1719,
+     1290
+    ],
+    "type": "packshot",
+    "skin": 0.04,
+    "png": "detoures/pendentifs/pendentif-nacre_01.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2023/06/BOUTON-NACRE-VERSO-23_03_14_Vonlovi-Photo-Cyrille-Robin-22.jpg",
+    "w": 1719,
+    "alt": "",
+    "local": "assets/pendentifs/pendentif-nacre/02.jpg",
+    "px": [
+     1719,
+     1290
+    ],
+    "type": "packshot",
+    "skin": 0.039,
+    "png": "detoures/pendentifs/pendentif-nacre_02.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2023/06/2307_Vonlovi0306-Edit-copie.jpg",
+    "w": 968,
+    "alt": "",
+    "local": "assets/pendentifs/pendentif-nacre/03.jpg",
+    "px": [
+     968,
+     1290
+    ],
+    "type": "lifestyle",
+    "skin": 0.305
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2023/06/2307_Vonlovi0320.jpg",
+    "w": 967,
+    "alt": "",
+    "local": "assets/pendentifs/pendentif-nacre/04.jpg",
+    "px": [
+     967,
+     1290
+    ],
+    "type": "lifestyle",
+    "skin": 0.392
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2023/06/2307_Vonlovi0403.jpg",
+    "w": 967,
+    "alt": "",
+    "local": "assets/pendentifs/pendentif-nacre/05.jpg",
+    "px": [
+     967,
+     1290
+    ],
+    "type": "lifestyle",
+    "skin": 0.319
+   }
+  ],
+  "prix_num": 1700.0
+ },
+ {
+  "id": 1606,
+  "nom": "Pendentif Nacre Dorée",
+  "slug": "pendentif-nacre-doree",
+  "url": "https://vonlovi.com/boutique/collection-spinea/pendentif-nacre-doree/",
+  "famille": "Pendentifs",
+  "pierre": "Nacre Dorée",
+  "diamants": false,
+  "prix": "1 700 €",
+  "description": "Pendentif constitué d’un bouton réversible en or 750/1000 serti d’une nacre dorée, découpée Vonlovi et polie, monté sur une chaine Forçat en or jaune 75/1000 de 50 cm.",
+  "images": [
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2024/10/PEND-NAD-RECTO-scaled.jpg",
+    "w": 2560,
+    "alt": "",
+    "local": "assets/pendentifs/pendentif-nacre-doree/01.jpg",
+    "px": [
+     2560,
+     1920
+    ],
+    "type": "packshot",
+    "skin": 0.031,
+    "png": "detoures/pendentifs/pendentif-nacre-doree_01.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2024/10/PEND-NAD-VERSO-scaled.jpg",
+    "w": 2560,
+    "alt": "",
+    "local": "assets/pendentifs/pendentif-nacre-doree/02.jpg",
+    "px": [
+     2560,
+     1920
+    ],
+    "type": "packshot",
+    "skin": 0.038,
+    "png": "detoures/pendentifs/pendentif-nacre-doree_02.png"
+   }
+  ],
+  "prix_num": 1700.0
+ },
+ {
+  "id": 1675,
+  "nom": "Pendentif Nacre Dorée et Diamants",
+  "slug": "pendentif-nacre-doree-et-diamants",
+  "url": "https://vonlovi.com/boutique/collection-spinea/pendentif-nacre-doree-et-diamants/",
+  "famille": "Pendentifs",
+  "pierre": "Nacre Dorée",
+  "diamants": true,
+  "prix": "2 800 €",
+  "description": "Pendentif constitué d’un bouton réversible en or 750/1000 serti d’une nacre dorée, découpée Vonlovi et polie, et 24 diamants, 0,13 carats, qualité VS. Monté sur une chaine forçat en or 750/1000, 50 cm.",
+  "images": [
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2024/10/PEND_TI_VERSO_clean-1-scaled.jpg",
+    "w": 2560,
+    "alt": "",
+    "local": "assets/pendentifs/pendentif-nacre-doree-et-diamants/01.jpg",
+    "px": [
+     2560,
+     1920
+    ],
+    "type": "packshot",
+    "skin": 0.038,
+    "png": "detoures/pendentifs/pendentif-nacre-doree-et-diamants_01.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2024/10/PEND-NAD-RECTO-scaled.jpg",
+    "w": 2560,
+    "alt": "",
+    "local": "assets/pendentifs/pendentif-nacre-doree-et-diamants/02.jpg",
+    "px": [
+     2560,
+     1920
+    ],
+    "type": "packshot",
+    "skin": 0.031,
+    "png": "detoures/pendentifs/pendentif-nacre-doree-et-diamants_02.png"
+   }
+  ],
+  "prix_num": 2800.0
+ },
+ {
+  "id": 1669,
+  "nom": "Pendentif Nacre et Diamants",
+  "slug": "pendentif-nacre-et-diamants",
+  "url": "https://vonlovi.com/boutique/collection-spinea/pendentif-nacre-et-diamants/",
+  "famille": "Pendentifs",
+  "pierre": "Nacre",
+  "diamants": true,
+  "prix": "2 800 €",
+  "description": "Pendentif constitué d’un bouton réversible en or 750/1000 serti d’une nacre blanche, découpée Vonlovi et polie, et 24 diamants, 0,13 carats, qualité VS. Monté sur une chaine forçat en or 750/1000, 50 cm.",
+  "images": [
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2024/10/PEND_TI_VERSO_clean-scaled.jpg",
+    "w": 2560,
+    "alt": "",
+    "local": "assets/pendentifs/pendentif-nacre-et-diamants/01.jpg",
+    "px": [
+     2560,
+     1920
+    ],
+    "type": "packshot",
+    "skin": 0.041,
+    "png": "detoures/pendentifs/pendentif-nacre-et-diamants_01.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2024/10/PEND-NACRE-23_03_14_Vonlovi-Photo-Cyrille-Robin-23-scaled.jpg",
+    "w": 2560,
+    "alt": "",
+    "local": "assets/pendentifs/pendentif-nacre-et-diamants/02.jpg",
+    "px": [
+     2560,
+     1921
+    ],
+    "type": "packshot",
+    "skin": 0.04,
+    "png": "detoures/pendentifs/pendentif-nacre-et-diamants_02.png"
+   }
+  ],
+  "prix_num": 2800.0
+ },
+ {
+  "id": 341,
+  "nom": "Pendentif Onyx",
+  "slug": "pendentif-onyx",
+  "url": "https://vonlovi.com/boutique/collection-spinea/pendentif-onyx/",
+  "famille": "Pendentifs",
+  "pierre": "Onyx",
+  "diamants": false,
+  "prix": "1 700 €",
+  "description": "Pendentif constitué d’un bouton réversible en or 750/1000 serti d’une pierre dure en onyx, découpée Vonlovi et polie, monté sur une chaine Forçat en or jaune 75/1000 de 50 cm.",
+  "images": [
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2023/06/PEND-ONYX-1-23_03_14_VONLOVI-Photo-Cyrille-Robin-0-54H_V1-2.jpg",
+    "w": 1719,
+    "alt": "",
+    "local": "assets/pendentifs/pendentif-onyx/01.jpg",
+    "px": [
+     1719,
+     1290
+    ],
+    "type": "packshot",
+    "skin": 0.028,
+    "png": "detoures/pendentifs/pendentif-onyx_01.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2023/06/PEND-ONYX-VERSO-23_03_14_Vonlovi-Photo-Cyrille-Robin-5.jpg",
+    "w": 1720,
+    "alt": "",
+    "local": "assets/pendentifs/pendentif-onyx/02.jpg",
+    "px": [
+     1720,
+     1290
+    ],
+    "type": "packshot",
+    "skin": 0.035,
+    "png": "detoures/pendentifs/pendentif-onyx_02.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2023/06/2307_Vonlovi0027-copie.jpg",
+    "w": 1720,
+    "alt": "",
+    "local": "assets/pendentifs/pendentif-onyx/03.jpg",
+    "px": [
+     1720,
+     1290
+    ],
+    "type": "lifestyle",
+    "skin": 0.199
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2023/06/2307_Vonlovi0050.jpg",
+    "w": 967,
+    "alt": "",
+    "local": "assets/pendentifs/pendentif-onyx/04.jpg",
+    "px": [
+     967,
+     1290
+    ],
+    "type": "lifestyle",
+    "skin": 0.403
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2023/06/2307_Vonlovi0687.jpg",
+    "w": 968,
+    "alt": "",
+    "local": "assets/pendentifs/pendentif-onyx/05.jpg",
+    "px": [
+     968,
+     1290
+    ],
+    "type": "lifestyle",
+    "skin": 0.134
+   }
+  ],
+  "prix_num": 1700.0
+ },
+ {
+  "id": 384,
+  "nom": "Pendentif Onyx et Diamants",
+  "slug": "pendentif-onyx-et-diamants",
+  "url": "https://vonlovi.com/boutique/collection-spinea/pendentif-onyx-et-diamants/",
+  "famille": "Pendentifs",
+  "pierre": "Onyx",
+  "diamants": true,
+  "prix": "2 800 €",
+  "description": "Pendentif constitué d’un bouton réversible en or jaune 750/1000e serti d’une pierre dure en onyx découpée Vonlovi et polie, et de diamants, monté sur une chaine forçat en or 750/1000, 50 cm",
+  "images": [
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2023/06/PEND-ON-DI-VERSO-scaled.jpg",
+    "w": 2560,
+    "alt": "",
+    "local": "assets/pendentifs/pendentif-onyx-et-diamants/01.jpg",
+    "px": [
+     2560,
+     1920
+    ],
+    "type": "packshot",
+    "skin": 0.035,
+    "png": "detoures/pendentifs/pendentif-onyx-et-diamants_01.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2023/06/PEND-ONYX-1-23_03_14_VONLOVI-Photo-Cyrille-Robin-0-54H_V1-2.jpg",
+    "w": 1719,
+    "alt": "",
+    "local": "assets/pendentifs/pendentif-onyx-et-diamants/02.jpg",
+    "px": [
+     1719,
+     1290
+    ],
+    "type": "packshot",
+    "skin": 0.028,
+    "png": "detoures/pendentifs/pendentif-onyx-et-diamants_02.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2023/06/crop-vonlovi-4.jpg",
+    "w": 968,
+    "alt": "",
+    "local": "assets/pendentifs/pendentif-onyx-et-diamants/03.jpg",
+    "px": [
+     968,
+     1290
+    ],
+    "type": "lifestyle",
+    "skin": 0.13
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2023/06/pendentif-onyx-diamant.jpg",
+    "w": 968,
+    "alt": "",
+    "local": "assets/pendentifs/pendentif-onyx-et-diamants/04.jpg",
+    "px": [
+     968,
+     1290
+    ],
+    "type": "packshot",
+    "skin": 0.004,
+    "png": "detoures/pendentifs/pendentif-onyx-et-diamants_04.png"
+   }
+  ],
+  "prix_num": 2800.0
+ },
+ {
+  "id": 342,
+  "nom": "Pendentif Œil de Tigre",
+  "slug": "pendentif-oeil-de-tigre",
+  "url": "https://vonlovi.com/boutique/collection-spinea/pendentif-oeil-de-tigre/",
+  "famille": "Pendentifs",
+  "pierre": "Oeil de Tigre",
+  "diamants": false,
+  "prix": "1 700 €",
+  "description": "Pendentif constitué d’un bouton réversible en or 750/1000 serti d’une pierre dure en oeil de Tigre, découpée Vonlovi et polie, monté sur une chaine Forçat en or jaune 75/1000 de 50 cm.",
+  "images": [
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2023/06/PEND-TI-1-23_03_14_VONLOVI-Photo-Cyrille-Robin-0-56-2.jpg",
+    "w": 1719,
+    "alt": "",
+    "local": "assets/pendentifs/pendentif-il-de-tigre/01.jpg",
+    "px": [
+     1719,
+     1290
+    ],
+    "type": "packshot",
+    "skin": 0.029,
+    "png": "detoures/pendentifs/pendentif-oeil-de-tigre_01.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2023/06/BOUTON-TI-VERSO-23_03_14_Vonlovi-Photo-Cyrille-Robin-13.jpg",
+    "w": 1719,
+    "alt": "",
+    "local": "assets/pendentifs/pendentif-il-de-tigre/02.jpg",
+    "px": [
+     1719,
+     1290
+    ],
+    "type": "packshot",
+    "skin": 0.048,
+    "png": "detoures/pendentifs/pendentif-oeil-de-tigre_02.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2023/06/2307_Vonlovi0161.jpg",
+    "w": 968,
+    "alt": "",
+    "local": "assets/pendentifs/pendentif-il-de-tigre/03.jpg",
+    "px": [
+     968,
+     1290
+    ],
+    "type": "lifestyle",
+    "skin": 0.758
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2023/06/2307_Vonlovi0403.jpg",
+    "w": 967,
+    "alt": "",
+    "local": "assets/pendentifs/pendentif-il-de-tigre/04.jpg",
+    "px": [
+     967,
+     1290
+    ],
+    "type": "lifestyle",
+    "skin": 0.319
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2023/06/2307_Vonlovi0661.jpg",
+    "w": 968,
+    "alt": "",
+    "local": "assets/pendentifs/pendentif-il-de-tigre/05.jpg",
+    "px": [
+     968,
+     1290
+    ],
+    "type": "lifestyle",
+    "skin": 0.189
+   }
+  ],
+  "prix_num": 1700.0
+ },
+ {
+  "id": 1665,
+  "nom": "Pendentif Œil de Tigre et Diamants",
+  "slug": "pendentif-oeil-de-tigre-et-diamants",
+  "url": "https://vonlovi.com/boutique/collection-spinea/pendentif-oeil-de-tigre-et-diamants/",
+  "famille": "Pendentifs",
+  "pierre": "Oeil de Tigre",
+  "diamants": true,
+  "prix": "2 800 €",
+  "description": "Pendentif constitué d’un bouton réversible en or 750/1000 serti d’une pierre dure en Œil de Tigre, découpée Vonlovi et polie, et 24 diamants, 0,13 carats, qualité VS. Monté sur une chaine forçat en or 750/1000, 50 cm.",
+  "images": [
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2024/10/PEND-TI-DI-VERSO-scaled.jpg",
+    "w": 2560,
+    "alt": "",
+    "local": "assets/pendentifs/pendentif-il-de-tigre-et-diamants/01.jpg",
+    "px": [
+     2560,
+     1920
+    ],
+    "type": "packshot",
+    "skin": 0.037,
+    "png": "detoures/pendentifs/pendentif-oeil-de-tigre-et-diamants_01.png"
+   },
+   {
+    "url": "https://vonlovi.com/wp-content/uploads/2023/06/PEND-TI-1-23_03_14_VONLOVI-Photo-Cyrille-Robin-0-56-2.jpg",
+    "w": 1719,
+    "alt": "",
+    "local": "assets/pendentifs/pendentif-il-de-tigre-et-diamants/02.jpg",
+    "px": [
+     1719,
+     1290
+    ],
+    "type": "packshot",
+    "skin": 0.029,
+    "png": "detoures/pendentifs/pendentif-oeil-de-tigre-et-diamants_02.png"
+   }
+  ],
+  "prix_num": 2800.0
+ }
+]

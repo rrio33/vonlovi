@@ -1,0 +1,835 @@
+{
+  "bague-cornaline": {
+    "en": {
+      "nom": "Carnelian Ring",
+      "famille": "Rings",
+      "description": "Yellow gold 750/1000 ring set with a Carnelian cut and polished by Vonlovi, 14 mm diameter, interlocking VV on the reverse of the stone. See our ring size guide."
+    },
+    "ja": {
+      "nom": "カーネリアンリング",
+      "famille": "リング",
+      "description": "イエローゴールド750/1000のリング。Vonloviカット＆ポリッシュのカーネリアンをセッティング。直径14mm、石の裏側に交差するVVモチーフ。リングサイズガイドをご参照ください。"
+    },
+    "ko": {
+      "nom": "카넬리안 반지",
+      "famille": "반지",
+      "description": "옐로우 골드 750/1000 반지. Vonlovi 커팅·폴리싱의 카넬리안를 세팅. 직경 14mm, 스톤 뒷면에 교차하는 VV 모티브. 반지 사이즈 가이드를 참고해 주세요."
+    }
+  },
+  "bague-lapis-lazuli": {
+    "en": {
+      "nom": "Lapis Lazuli Ring",
+      "famille": "Rings",
+      "description": "Yellow gold 750/1000 ring set with a lapis lazuli hardstone cut and polished by Vonlovi, 14 mm diameter, interlocking VV on the reverse of the stone. See our ring size guide."
+    },
+    "ja": {
+      "nom": "ラピスラズリリング",
+      "famille": "リング",
+      "description": "イエローゴールド750/1000のリング。Vonloviカット＆ポリッシュのラピスラズリの硬石をセッティング。直径14mm、石の裏側に交差するVVモチーフ。リングサイズガイドをご参照ください。"
+    },
+    "ko": {
+      "nom": "라피스 라줄리 반지",
+      "famille": "반지",
+      "description": "옐로우 골드 750/1000 반지. Vonlovi 커팅·폴리싱의 라피스 라줄리를 세팅. 직경 14mm, 스톤 뒷면에 교차하는 VV 모티브. 반지 사이즈 가이드를 참고해 주세요."
+    }
+  },
+  "bague-malachite": {
+    "en": {
+      "nom": "Malachite Ring",
+      "famille": "Rings",
+      "description": "Yellow gold 750/1000 ring set with a malachite hardstone cut and polished by Vonlovi, 14 mm diameter, interlocking VV on the reverse of the stone. See our ring size guide."
+    },
+    "ja": {
+      "nom": "マラカイトリング",
+      "famille": "リング",
+      "description": "イエローゴールド750/1000のリング。Vonloviカット＆ポリッシュのマラカイトの硬石をセッティング。直径14mm、石の裏側に交差するVVモチーフ。リングサイズガイドをご参照ください。"
+    },
+    "ko": {
+      "nom": "말라카이트 반지",
+      "famille": "반지",
+      "description": "옐로우 골드 750/1000 반지. Vonlovi 커팅·폴리싱의 말라카이트를 세팅. 직경 14mm, 스톤 뒷면에 교차하는 VV 모티브. 반지 사이즈 가이드를 참고해 주세요."
+    }
+  },
+  "bague-nacre": {
+    "en": {
+      "nom": "Mother-of-pearl Ring",
+      "famille": "Rings",
+      "description": "Yellow gold 750/1000 ring set with white mother-of-pearl cut and polished by Vonlovi, 14 mm diameter, interlocking VV on the reverse of the stone. See our ring size guide."
+    },
+    "ja": {
+      "nom": "白蝶貝リング",
+      "famille": "リング",
+      "description": "イエローゴールド750/1000のリング。Vonloviカット＆ポリッシュの白蝶貝をセッティング。直径14mm、石の裏側に交差するVVモチーフ。リングサイズガイドをご参照ください。"
+    },
+    "ko": {
+      "nom": "자개 반지",
+      "famille": "반지",
+      "description": "옐로우 골드 750/1000 반지. Vonlovi 커팅·폴리싱의 자개를 세팅. 직경 14mm, 스톤 뒷면에 교차하는 VV 모티브. 반지 사이즈 가이드를 참고해 주세요."
+    }
+  },
+  "bague-nacre-doree": {
+    "en": {
+      "nom": "Golden mother-of-pearl Ring",
+      "famille": "Rings",
+      "description": "Yellow gold 750/1000 ring set with golden mother-of-pearl cut and polished by Vonlovi, 14 mm diameter, interlocking VV on the reverse of the stone. See our ring size guide."
+    },
+    "ja": {
+      "nom": "ゴールドマザーオブパールリング",
+      "famille": "リング",
+      "description": "イエローゴールド750/1000のリング。Vonloviカット＆ポリッシュのゴールドマザーオブパールをセッティング。直径14mm、石の裏側に交差するVVモチーフ。リングサイズガイドをご参照ください。"
+    },
+    "ko": {
+      "nom": "자개 반지",
+      "famille": "반지",
+      "description": "옐로우 골드 750/1000 반지. Vonlovi 커팅·폴리싱의 자개를 세팅. 직경 14mm, 스톤 뒷면에 교차하는 VV 모티브. 반지 사이즈 가이드를 참고해 주세요."
+    }
+  },
+  "bague-onyx": {
+    "en": {
+      "nom": "Onyx Ring",
+      "famille": "Rings",
+      "description": "Yellow gold 750/1000 ring set with an onyx hardstone cut and polished by Vonlovi, 14 mm diameter, interlocking VV on the reverse of the stone. See our ring size guide."
+    },
+    "ja": {
+      "nom": "オニキスリング",
+      "famille": "リング",
+      "description": "イエローゴールド750/1000のリング。Vonloviカット＆ポリッシュのオニキスの硬石をセッティング。直径14mm、石の裏側に交差するVVモチーフ。リングサイズガイドをご参照ください。"
+    },
+    "ko": {
+      "nom": "오닉스 반지",
+      "famille": "반지",
+      "description": "옐로우 골드 750/1000 반지. Vonlovi 커팅·폴리싱의 오닉스를 세팅. 직경 14mm, 스톤 뒷면에 교차하는 VV 모티브. 반지 사이즈 가이드를 참고해 주세요."
+    }
+  },
+  "bague-oeil-de-tigre": {
+    "en": {
+      "nom": "Tiger's eye Ring",
+      "famille": "Rings",
+      "description": "Yellow gold 750/1000 ring set with a tiger's eye hardstone cut and polished by Vonlovi, 14 mm diameter, interlocking VV on the reverse of the stone. See our ring size guide."
+    },
+    "ja": {
+      "nom": "タイガーアイリング",
+      "famille": "リング",
+      "description": "イエローゴールド750/1000のリング。Vonloviカット＆ポリッシュのタイガーアイの硬石をセッティング。直径14mm、石の裏側に交差するVVモチーフ。リングサイズガイドをご参照ください。"
+    },
+    "ko": {
+      "nom": "타이거즈 아이 반지",
+      "famille": "반지",
+      "description": "옐로우 골드 750/1000 반지. Vonlovi 커팅·폴리싱의 타이거즈 아이를 세팅. 직경 14mm, 스톤 뒷면에 교차하는 VV 모티브. 반지 사이즈 가이드를 참고해 주세요."
+    }
+  },
+  "bague-cornaline-petit-modele": {
+    "en": {
+      "nom": "Small Carnelian Ring",
+      "famille": "Small rings",
+      "description": "Yellow gold 750/1000 ring set with a carnelian hardstone cut and polished by Vonlovi, 9 mm diameter, V on the reverse of the stone. See our ring size guide."
+    },
+    "ja": {
+      "nom": "カーネリアンリング（プチ）",
+      "famille": "リング（プチ）",
+      "description": "イエローゴールド750/1000のリング。Vonloviカット＆ポリッシュのカーネリアンの硬石をセッティング。直径9mm、石の裏側にVモチーフ。リングサイズガイドをご参照ください。"
+    },
+    "ko": {
+      "nom": "카넬리안 스몰 반지",
+      "famille": "반지(스몰)",
+      "description": "옐로우 골드 750/1000 반지. Vonlovi 커팅·폴리싱의 카넬리안를 세팅. 직경 14mm, 스톤 뒷면에 교차하는 VV 모티브. 반지 사이즈 가이드를 참고해 주세요."
+    }
+  },
+  "bague-lapis-lazuli-petit-modele": {
+    "en": {
+      "nom": "Small Lapis Lazuli Ring",
+      "famille": "Small rings",
+      "description": "Yellow gold 750/1000 ring set with a lapis lazuli hardstone cut and polished by Vonlovi, 9 mm diameter, V on the reverse of the stone. See our ring size guide."
+    },
+    "ja": {
+      "nom": "ラピスラズリリング（プチ）",
+      "famille": "リング（プチ）",
+      "description": "イエローゴールド750/1000のリング。Vonloviカット＆ポリッシュのラピスラズリの硬石をセッティング。直径9mm、石の裏側にVモチーフ。リングサイズガイドをご参照ください。"
+    },
+    "ko": {
+      "nom": "라피스 라줄리 스몰 반지",
+      "famille": "반지(스몰)",
+      "description": "옐로우 골드 750/1000 반지. Vonlovi 커팅·폴리싱의 라피스 라줄리를 세팅. 직경 14mm, 스톤 뒷면에 교차하는 VV 모티브. 반지 사이즈 가이드를 참고해 주세요."
+    }
+  },
+  "bague-malachite-petit-modele": {
+    "en": {
+      "nom": "Small Malachite Ring",
+      "famille": "Small rings",
+      "description": "Yellow gold 750/1000 ring set with a malachite hardstone cut and polished by Vonlovi, 9 mm diameter, V on the reverse of the stone. See our ring size guide."
+    },
+    "ja": {
+      "nom": "マラカイトリング（プチ）",
+      "famille": "リング（プチ）",
+      "description": "イエローゴールド750/1000のリング。Vonloviカット＆ポリッシュのマラカイトの硬石をセッティング。直径9mm、石の裏側にVモチーフ。リングサイズガイドをご参照ください。"
+    },
+    "ko": {
+      "nom": "말라카이트 스몰 반지",
+      "famille": "반지(스몰)",
+      "description": "옐로우 골드 750/1000 반지. Vonlovi 커팅·폴리싱의 말라카이트를 세팅. 직경 14mm, 스톤 뒷면에 교차하는 VV 모티브. 반지 사이즈 가이드를 참고해 주세요."
+    }
+  },
+  "bague-nacre-doree-petit-modele": {
+    "en": {
+      "nom": "Small Golden mother-of-pearl Ring",
+      "famille": "Small rings",
+      "description": "Yellow gold 750/1000 ring set with golden mother-of-pearl cut and polished by Vonlovi, 9 mm diameter, V on the reverse of the stone. See our ring size guide."
+    },
+    "ja": {
+      "nom": "ゴールドマザーオブパールリング（プチ）",
+      "famille": "リング（プチ）",
+      "description": "イエローゴールド750/1000のリング。Vonloviカット＆ポリッシュのゴールドマザーオブパールをセッティング。直径9mm、石の裏側にVモチーフ。リングサイズガイドをご参照ください。"
+    },
+    "ko": {
+      "nom": "자개 스몰 반지",
+      "famille": "반지(스몰)",
+      "description": "옐로우 골드 750/1000 반지. Vonlovi 커팅·폴리싱의 자개를 세팅. 직경 14mm, 스톤 뒷면에 교차하는 VV 모티브. 반지 사이즈 가이드를 참고해 주세요."
+    }
+  },
+  "bague-nacre-petit-modele": {
+    "en": {
+      "nom": "Small Mother-of-pearl Ring",
+      "famille": "Small rings",
+      "description": "Yellow gold 750/1000 ring set with white mother-of-pearl cut and polished by Vonlovi, 9 mm diameter, V on the reverse of the stone. See our ring size guide."
+    },
+    "ja": {
+      "nom": "白蝶貝リング（プチ）",
+      "famille": "リング（プチ）",
+      "description": "イエローゴールド750/1000のリング。Vonloviカット＆ポリッシュの白蝶貝をセッティング。直径9mm、石の裏側にVモチーフ。リングサイズガイドをご参照ください。"
+    },
+    "ko": {
+      "nom": "자개 스몰 반지",
+      "famille": "반지(스몰)",
+      "description": "옐로우 골드 750/1000 반지. Vonlovi 커팅·폴리싱의 자개를 세팅. 직경 14mm, 스톤 뒷면에 교차하는 VV 모티브. 반지 사이즈 가이드를 참고해 주세요."
+    }
+  },
+  "bague-onyx-petit-modele": {
+    "en": {
+      "nom": "Small Onyx Ring",
+      "famille": "Small rings",
+      "description": "Yellow gold 750/1000 ring set with an onyx hardstone cut and polished by Vonlovi, 9 mm diameter, V on the reverse of the stone. See our ring size guide."
+    },
+    "ja": {
+      "nom": "オニキスリング（プチ）",
+      "famille": "リング（プチ）",
+      "description": "イエローゴールド750/1000のリング。Vonloviカット＆ポリッシュのオニキスの硬石をセッティング。直径9mm、石の裏側にVモチーフ。リングサイズガイドをご参照ください。"
+    },
+    "ko": {
+      "nom": "오닉스 스몰 반지",
+      "famille": "반지(스몰)",
+      "description": "옐로우 골드 750/1000 반지. Vonlovi 커팅·폴리싱의 오닉스를 세팅. 직경 14mm, 스톤 뒷면에 교차하는 VV 모티브. 반지 사이즈 가이드를 참고해 주세요."
+    }
+  },
+  "boucle-doreille-cornaline": {
+    "en": {
+      "nom": "Carnelian Earring",
+      "famille": "Earrings",
+      "description": "Gold 750/1000 earring set with carnelian cut and polished by Vonlovi, 9 mm diameter. Secure clasp for pierced ears. Sold individually."
+    },
+    "ja": {
+      "nom": "カーネリアンピアス",
+      "famille": "イヤリング",
+      "description": "ゴールド750/1000のピアス。Vonloviカット＆ポリッシュのカーネリアンをセッティング。直径9mm。ピアス穴用の安全キャッチ付き。1個売り。"
+    },
+    "ko": {
+      "nom": "카넬리안 귀걸이",
+      "famille": "귀걸이",
+      "description": "옐로우 골드 750/1000 귀걸이. Vonlovi 커팅·폴리싱의 카넬리안를 세팅, 낱개 판매."
+    }
+  },
+  "boucle-doreille-lapis-lazuli": {
+    "en": {
+      "nom": "Lapis Lazuli Earring",
+      "famille": "Earrings",
+      "description": "Gold 750/1000 earring set with a lapis lazuli hardstone cut and polished by Vonlovi, 9 mm diameter. Secure clasp for pierced ears. Sold individually."
+    },
+    "ja": {
+      "nom": "ラピスラズリピアス",
+      "famille": "イヤリング",
+      "description": "ゴールド750/1000のピアス。Vonloviカット＆ポリッシュのラピスラズリの硬石をセッティング。直径9mm。ピアス穴用の安全キャッチ付き。1個売り。"
+    },
+    "ko": {
+      "nom": "라피스 라줄리 귀걸이",
+      "famille": "귀걸이",
+      "description": "옐로우 골드 750/1000 귀걸이. Vonlovi 커팅·폴리싱의 라피스 라줄리를 세팅, 낱개 판매."
+    }
+  },
+  "boucle-doreille-malachite": {
+    "en": {
+      "nom": "Malachite Earring",
+      "famille": "Earrings",
+      "description": "Gold 750/1000 earring set with malachite cut and polished by Vonlovi, 9 mm diameter. Secure clasp for pierced ears. Sold individually."
+    },
+    "ja": {
+      "nom": "マラカイトピアス",
+      "famille": "イヤリング",
+      "description": "ゴールド750/1000のピアス。Vonloviカット＆ポリッシュのマラカイトをセッティング。直径9mm。ピアス穴用の安全キャッチ付き。1個売り。"
+    },
+    "ko": {
+      "nom": "말라카이트 귀걸이",
+      "famille": "귀걸이",
+      "description": "옐로우 골드 750/1000 귀걸이. Vonlovi 커팅·폴리싱의 말라카이트를 세팅, 낱개 판매."
+    }
+  },
+  "puce-doreille-nacre": {
+    "en": {
+      "nom": "Mother-of-pearl Earring",
+      "famille": "Earrings",
+      "description": "Gold 750/1000 earring set with white mother-of-pearl cut and polished by Vonlovi, 9 mm diameter. Secure clasp for pierced ears. Sold individually."
+    },
+    "ja": {
+      "nom": "白蝶貝ピアス",
+      "famille": "イヤリング",
+      "description": "ゴールド750/1000のピアス。Vonloviカット＆ポリッシュの白蝶貝をセッティング。直径9mm。ピアス穴用の安全キャッチ付き。1個売り。"
+    },
+    "ko": {
+      "nom": "자개 귀걸이",
+      "famille": "귀걸이",
+      "description": "옐로우 골드 750/1000 귀걸이. Vonlovi 커팅·폴리싱의 자개를 세팅, 낱개 판매."
+    }
+  },
+  "boucle-doreille-nacre-doree": {
+    "en": {
+      "nom": "Golden mother-of-pearl Earring",
+      "famille": "Earrings",
+      "description": "Gold 750/1000 earring set with golden mother-of-pearl cut and polished by Vonlovi, 9 mm diameter. Secure clasp for pierced ears. Sold individually."
+    },
+    "ja": {
+      "nom": "ゴールドマザーオブパールピアス",
+      "famille": "イヤリング",
+      "description": "ゴールド750/1000のピアス。Vonloviカット＆ポリッシュのゴールドマザーオブパールをセッティング。直径9mm。ピアス穴用の安全キャッチ付き。1個売り。"
+    },
+    "ko": {
+      "nom": "자개 귀걸이",
+      "famille": "귀걸이",
+      "description": "옐로우 골드 750/1000 귀걸이. Vonlovi 커팅·폴리싱의 자개를 세팅, 낱개 판매."
+    }
+  },
+  "boucle-doreille-onyx": {
+    "en": {
+      "nom": "Onyx Earring",
+      "famille": "Earrings",
+      "description": "Gold 750/1000 earring set with an onyx hardstone cut and polished by Vonlovi, 9 mm diameter. Secure clasp for pierced ears. Sold individually."
+    },
+    "ja": {
+      "nom": "オニキスピアス",
+      "famille": "イヤリング",
+      "description": "ゴールド750/1000のピアス。Vonloviカット＆ポリッシュのオニキスの硬石をセッティング。直径9mm。ピアス穴用の安全キャッチ付き。1個売り。"
+    },
+    "ko": {
+      "nom": "오닉스 귀걸이",
+      "famille": "귀걸이",
+      "description": "옐로우 골드 750/1000 귀걸이. Vonlovi 커팅·폴리싱의 오닉스를 세팅, 낱개 판매."
+    }
+  },
+  "puce-doreille-oeil-de-tigre": {
+    "en": {
+      "nom": "Tiger's eye Earring",
+      "famille": "Earrings",
+      "description": "Gold 750/1000 earring set with a tiger's eye hardstone cut and polished by Vonlovi, 9 mm diameter. Secure clasp for pierced ears. Sold individually."
+    },
+    "ja": {
+      "nom": "タイガーアイピアス",
+      "famille": "イヤリング",
+      "description": "ゴールド750/1000のピアス。Vonloviカット＆ポリッシュのタイガーアイの硬石をセッティング。直径9mm。ピアス穴用の安全キャッチ付き。1個売り。"
+    },
+    "ko": {
+      "nom": "타이거즈 아이 귀걸이",
+      "famille": "귀걸이",
+      "description": "옐로우 골드 750/1000 귀걸이. Vonlovi 커팅·폴리싱의 타이거즈 아이를 세팅, 낱개 판매."
+    }
+  },
+  "bouton-cornaline": {
+    "en": {
+      "nom": "Carnelian Button",
+      "famille": "Buttons",
+      "description": "Reversible yellow gold 750/1000 button set with carnelian cut and polished by Vonlovi, 14 mm diameter."
+    },
+    "ja": {
+      "nom": "カーネリアンボタン",
+      "famille": "ボタン",
+      "description": "イエローゴールド750/1000のリバーシブルボタン。Vonloviカット＆ポリッシュのカーネリアンをセッティング。直径14mm。"
+    },
+    "ko": {
+      "nom": "카넬리안 버튼",
+      "famille": "버튼",
+      "description": "옐로우 골드 750/1000 프리셔스 버튼. Vonlovi 커팅·폴리싱의 카넬리안를 세팅. 펜던트나 팔찌 모티브로도."
+    }
+  },
+  "bouton-cornaline-et-diamants": {
+    "en": {
+      "nom": "Carnelian Button and Diamonds",
+      "famille": "Buttons",
+      "description": "Reversible yellow gold 750/1000 button set with carnelian cut and polished by Vonlovi, 14 mm diameter, and 24 diamonds. 0.13 carats. VS quality."
+    },
+    "ja": {
+      "nom": "カーネリアンボタンとダイヤモンド",
+      "famille": "ボタン",
+      "description": "イエローゴールド750/1000のリバーシブルボタン。Vonloviカット＆ポリッシュのカーネリアンとダイヤモンド24石（0.13カラット、VSクオリティ）をセッティング。直径14mm。"
+    },
+    "ko": {
+      "nom": "카넬리안 버튼",
+      "famille": "버튼",
+      "description": "옐로우 골드 750/1000 프리셔스 버튼. Vonlovi 커팅·폴리싱의 카넬리안를 세팅. 펜던트나 팔찌 모티브로도."
+    }
+  },
+  "bouton-lapis-lazuli": {
+    "en": {
+      "nom": "Lapis Lazuli Button",
+      "famille": "Buttons",
+      "description": "Reversible yellow gold 750/1000 button set with a lapis lazuli stone cut and polished by Vonlovi, 14 mm diameter."
+    },
+    "ja": {
+      "nom": "ラピスラズリボタン",
+      "famille": "ボタン",
+      "description": "イエローゴールド750/1000のリバーシブルボタン。Vonloviカット＆ポリッシュのラピスラズリをセッティング。直径14mm。"
+    },
+    "ko": {
+      "nom": "라피스 라줄리 버튼",
+      "famille": "버튼",
+      "description": "옐로우 골드 750/1000 프리셔스 버튼. Vonlovi 커팅·폴리싱의 라피스 라줄리를 세팅. 펜던트나 팔찌 모티브로도."
+    }
+  },
+  "bouton-lapis-lazuli-et-diamants": {
+    "en": {
+      "nom": "Lapis Lazuli Button and Diamonds",
+      "famille": "Buttons",
+      "description": "Reversible yellow gold 750/1000 button set with a lapis lazuli stone cut and polished by Vonlovi, 14 mm diameter, and 24 diamonds. 0.13 carats. VS quality."
+    },
+    "ja": {
+      "nom": "ラピスラズリボタンとダイヤモンド",
+      "famille": "ボタン",
+      "description": "イエローゴールド750/1000のリバーシブルボタン。Vonloviカット＆ポリッシュのラピスラズリとダイヤモンド24石（0.13カラット、VSクオリティ）をセッティング。直径14mm。"
+    },
+    "ko": {
+      "nom": "라피스 라줄리 버튼",
+      "famille": "버튼",
+      "description": "옐로우 골드 750/1000 프리셔스 버튼. Vonlovi 커팅·폴리싱의 라피스 라줄리를 세팅. 펜던트나 팔찌 모티브로도."
+    }
+  },
+  "bouton-malachite": {
+    "en": {
+      "nom": "Malachite Button",
+      "famille": "Buttons",
+      "description": "Reversible yellow gold 750/1000 button set with a malachite stone cut and polished by Vonlovi, 14 mm diameter."
+    },
+    "ja": {
+      "nom": "マラカイトボタン",
+      "famille": "ボタン",
+      "description": "イエローゴールド750/1000のリバーシブルボタン。Vonloviカット＆ポリッシュのマラカイトをセッティング。直径14mm。"
+    },
+    "ko": {
+      "nom": "말라카이트 버튼",
+      "famille": "버튼",
+      "description": "옐로우 골드 750/1000 프리셔스 버튼. Vonlovi 커팅·폴리싱의 말라카이트를 세팅. 펜던트나 팔찌 모티브로도."
+    }
+  },
+  "bouton-malachite-et-diamants": {
+    "en": {
+      "nom": "Malachite Button and Diamonds",
+      "famille": "Buttons",
+      "description": "Reversible yellow gold 750/1000 button set with a malachite stone cut and polished by Vonlovi, 14 mm diameter, and 24 diamonds. 0.13 carats. VS quality."
+    },
+    "ja": {
+      "nom": "マラカイトボタンとダイヤモンド",
+      "famille": "ボタン",
+      "description": "イエローゴールド750/1000のリバーシブルボタン。Vonloviカット＆ポリッシュのマラカイトとダイヤモンド24石（0.13カラット、VSクオリティ）をセッティング。直径14mm。"
+    },
+    "ko": {
+      "nom": "말라카이트 버튼",
+      "famille": "버튼",
+      "description": "옐로우 골드 750/1000 프리셔스 버튼. Vonlovi 커팅·폴리싱의 말라카이트를 세팅. 펜던트나 팔찌 모티브로도."
+    }
+  },
+  "boutons-nacre": {
+    "en": {
+      "nom": "Mother-of-pearl Button",
+      "famille": "Buttons",
+      "description": "Reversible yellow gold 750/1000 button set with white mother-of-pearl cut and polished by Vonlovi, 14 mm diameter."
+    },
+    "ja": {
+      "nom": "白蝶貝ボタン",
+      "famille": "ボタン",
+      "description": "イエローゴールド750/1000のリバーシブルボタン。Vonloviカット＆ポリッシュの白蝶貝をセッティング。直径14mm。"
+    },
+    "ko": {
+      "nom": "자개 버튼",
+      "famille": "버튼",
+      "description": "옐로우 골드 750/1000 프리셔스 버튼. Vonlovi 커팅·폴리싱의 자개를 세팅. 펜던트나 팔찌 모티브로도."
+    }
+  },
+  "bouton-nacre-doree": {
+    "en": {
+      "nom": "Golden mother-of-pearl Button",
+      "famille": "Buttons",
+      "description": "Reversible yellow gold 750/1000 button set with golden mother-of-pearl cut and polished by Vonlovi, 14 mm diameter."
+    },
+    "ja": {
+      "nom": "ゴールドマザーオブパールボタン",
+      "famille": "ボタン",
+      "description": "イエローゴールド750/1000のリバーシブルボタン。Vonloviカット＆ポリッシュのゴールドマザーオブパールをセッティング。直径14mm。"
+    },
+    "ko": {
+      "nom": "자개 버튼",
+      "famille": "버튼",
+      "description": "옐로우 골드 750/1000 프리셔스 버튼. Vonlovi 커팅·폴리싱의 자개를 세팅. 펜던트나 팔찌 모티브로도."
+    }
+  },
+  "bouton-nacre-doree-et-diamants": {
+    "en": {
+      "nom": "Golden mother-of-pearl Button and Diamonds",
+      "famille": "Buttons",
+      "description": "Reversible yellow gold 750/1000 button set with golden mother-of-pearl cut and polished by Vonlovi, 14 mm diameter, and 24 diamonds. 0.13 carats. VS quality."
+    },
+    "ja": {
+      "nom": "ゴールドマザーオブパールボタンとダイヤモンド",
+      "famille": "ボタン",
+      "description": "イエローゴールド750/1000のリバーシブルボタン。Vonloviカット＆ポリッシュのゴールドマザーオブパールとダイヤモンド24石（0.13カラット、VSクオリティ）をセッティング。直径14mm。"
+    },
+    "ko": {
+      "nom": "자개 버튼",
+      "famille": "버튼",
+      "description": "옐로우 골드 750/1000 프리셔스 버튼. Vonlovi 커팅·폴리싱의 자개를 세팅. 펜던트나 팔찌 모티브로도."
+    }
+  },
+  "bouton-nacre-et-diamants": {
+    "en": {
+      "nom": "Mother-of-pearl Button and Diamonds",
+      "famille": "Buttons",
+      "description": "Reversible yellow gold 750/1000 button set with white mother-of-pearl cut and polished by Vonlovi, 14 mm diameter, and 24 diamonds. 0.13 carats. VS quality."
+    },
+    "ja": {
+      "nom": "白蝶貝ボタンとダイヤモンド",
+      "famille": "ボタン",
+      "description": "イエローゴールド750/1000のリバーシブルボタン。Vonloviカット＆ポリッシュの白蝶貝とダイヤモンド24石（0.13カラット、VSクオリティ）をセッティング。直径14mm。"
+    },
+    "ko": {
+      "nom": "자개 버튼",
+      "famille": "버튼",
+      "description": "옐로우 골드 750/1000 프리셔스 버튼. Vonlovi 커팅·폴리싱의 자개를 세팅. 펜던트나 팔찌 모티브로도."
+    }
+  },
+  "boutons-onyx": {
+    "en": {
+      "nom": "Onyx Button",
+      "famille": "Buttons",
+      "description": "Reversible yellow gold 750/1000 button set with an onyx stone cut and polished by Vonlovi, 14 mm diameter."
+    },
+    "ja": {
+      "nom": "オニキスボタン",
+      "famille": "ボタン",
+      "description": "イエローゴールド750/1000のリバーシブルボタン。Vonloviカット＆ポリッシュのオニキスをセッティング。直径14mm。"
+    },
+    "ko": {
+      "nom": "오닉스 버튼",
+      "famille": "버튼",
+      "description": "옐로우 골드 750/1000 프리셔스 버튼. Vonlovi 커팅·폴리싱의 오닉스를 세팅. 펜던트나 팔찌 모티브로도."
+    }
+  },
+  "boutons-onyx-et-diamants": {
+    "en": {
+      "nom": "Onyx Button and Diamonds",
+      "famille": "Buttons",
+      "description": "Reversible yellow gold 750/1000 button set with an onyx stone cut and polished by Vonlovi, 14 mm diameter, and 24 diamonds. 0.13 carats. VS quality."
+    },
+    "ja": {
+      "nom": "オニキスボタンとダイヤモンド",
+      "famille": "ボタン",
+      "description": "イエローゴールド750/1000のリバーシブルボタン。Vonloviカット＆ポリッシュのオニキスとダイヤモンド24石（0.13カラット、VSクオリティ）をセッティング。直径14mm。"
+    },
+    "ko": {
+      "nom": "오닉스 버튼",
+      "famille": "버튼",
+      "description": "옐로우 골드 750/1000 프리셔스 버튼. Vonlovi 커팅·폴리싱의 오닉스를 세팅. 펜던트나 팔찌 모티브로도."
+    }
+  },
+  "boutons-oeil-de-tigre": {
+    "en": {
+      "nom": "Tiger's eye Button",
+      "famille": "Buttons",
+      "description": "Reversible yellow gold 750/1000 button set with a tiger's eye stone cut and polished by Vonlovi, 14 mm diameter."
+    },
+    "ja": {
+      "nom": "タイガーアイボタン",
+      "famille": "ボタン",
+      "description": "イエローゴールド750/1000のリバーシブルボタン。Vonloviカット＆ポリッシュのタイガーアイをセッティング。直径14mm。"
+    },
+    "ko": {
+      "nom": "타이거즈 아이 버튼",
+      "famille": "버튼",
+      "description": "옐로우 골드 750/1000 프리셔스 버튼. Vonlovi 커팅·폴리싱의 타이거즈 아이를 세팅. 펜던트나 팔찌 모티브로도."
+    }
+  },
+  "bouton-oeil-de-tigre-et-diamants": {
+    "en": {
+      "nom": "Tiger's eye Button and Diamonds",
+      "famille": "Buttons",
+      "description": "Reversible yellow gold 750/1000 button set with a tiger's eye stone cut and polished by Vonlovi, 14 mm diameter, and 24 diamonds. 0.13 carats. VS quality."
+    },
+    "ja": {
+      "nom": "タイガーアイボタンとダイヤモンド",
+      "famille": "ボタン",
+      "description": "イエローゴールド750/1000のリバーシブルボタン。Vonloviカット＆ポリッシュのタイガーアイとダイヤモンド24石（0.13カラット、VSクオリティ）をセッティング。直径14mm。"
+    },
+    "ko": {
+      "nom": "타이거즈 아이 버튼",
+      "famille": "버튼",
+      "description": "옐로우 골드 750/1000 프리셔스 버튼. Vonlovi 커팅·폴리싱의 타이거즈 아이를 세팅. 펜던트나 팔찌 모티브로도."
+    }
+  },
+  "bracelets-cuir-noir": {
+    "en": {
+      "nom": "Leather bracelets",
+      "famille": "Bracelets",
+      "description": "The calf-leather bracelet — whether in an enveloping bordeaux or deep black — is adorned with a reversible precious button set with a hardstone or mother-of-pearl. A blank canvas, it offers the freedom to choose one's own story, worn recto or verso, alone or stacked according to mood. Also available with diamonds."
+    },
+    "ja": {
+      "nom": "レザーブレスレット",
+      "famille": "ブレスレット",
+      "description": "仔牛革のブレスレット — 魅惑のボルドー、あるいは深い黒 — は、硬石またはマザーオブパールをセッティングしたリバーシブルの貴石ボタンを添えます。白紙のキャンバスのように、表裏どちらでも、一つでも重ねても、気分に合わせて物語を選べます。ダイヤモンド仕様もあり。"
+    },
+    "ko": {
+      "nom": "Leather bracelets",
+      "famille": "팔찌",
+      "description": "Vonlovi 팔찌. 주문 제작, 3~5주 소요."
+    }
+  },
+  "pendentif-cornaline": {
+    "en": {
+      "nom": "Carnelian Pendant",
+      "famille": "Pendants",
+      "description": "Pendant composed of a reversible gold 750/1000 button set with carnelian cut and polished by Vonlovi, on a 50 cm yellow gold forçat chain."
+    },
+    "ja": {
+      "nom": "カーネリアンペンダント",
+      "famille": "ペンダント",
+      "description": "Vonloviカット＆ポリッシュのカーネリアンをセッティングしたゴールド750/1000のリバーシブルボタンで構成されたペンダント。イエローゴールドのフォルサチェーン50cm付き。"
+    },
+    "ko": {
+      "nom": "카넬리안 펜던트",
+      "famille": "펜던트",
+      "description": "옐로우 골드 750/1000 펜던트. Vonlovi 커팅·폴리싱의 카넬리안를 세팅, 50cm 포사 체인에 착용."
+    }
+  },
+  "pendentif-cornaline-et-diamants": {
+    "en": {
+      "nom": "Carnelian Pendant and Diamonds",
+      "famille": "Pendants",
+      "description": "Pendant composed of a reversible yellow gold 750/1000 button set with carnelian cut and polished by Vonlovi, and diamonds, on a 50 cm yellow gold forçat chain."
+    },
+    "ja": {
+      "nom": "カーネリアンペンダントとダイヤモンド",
+      "famille": "ペンダント",
+      "description": "Vonloviカット＆ポリッシュのカーネリアンとダイヤモンドをセッティングしたイエローゴールド750/1000のリバーシブルボタンで構成されたペンダント。50cmのフォルサチェーン付き。"
+    },
+    "ko": {
+      "nom": "카넬리안 펜던트",
+      "famille": "펜던트",
+      "description": "옐로우 골드 750/1000 펜던트. Vonlovi 커팅·폴리싱의 카넬리안를 세팅, 50cm 포사 체인에 착용."
+    }
+  },
+  "pendentif-lapis-lazuli": {
+    "en": {
+      "nom": "Lapis Lazuli Pendant",
+      "famille": "Pendants",
+      "description": "Pendant composed of a reversible gold 750/1000 button set with lapis lazuli cut and polished by Vonlovi, on a 50 cm yellow gold forçat chain."
+    },
+    "ja": {
+      "nom": "ラピスラズリペンダント",
+      "famille": "ペンダント",
+      "description": "Vonloviカット＆ポリッシュのラピスラズリをセッティングしたゴールド750/1000のリバーシブルボタンで構成されたペンダント。イエローゴールドのフォルサチェーン50cm付き。"
+    },
+    "ko": {
+      "nom": "라피스 라줄리 펜던트",
+      "famille": "펜던트",
+      "description": "옐로우 골드 750/1000 펜던트. Vonlovi 커팅·폴리싱의 라피스 라줄리를 세팅, 50cm 포사 체인에 착용."
+    }
+  },
+  "pendentif-lapis-lazuli-et-diamants": {
+    "en": {
+      "nom": "Lapis Lazuli Pendant and Diamonds",
+      "famille": "Pendants",
+      "description": "Pendant composed of a reversible yellow gold 750/1000 button set with lapis lazuli cut and polished by Vonlovi, and diamonds, on a 50 cm yellow gold forçat chain."
+    },
+    "ja": {
+      "nom": "ラピスラズリペンダントとダイヤモンド",
+      "famille": "ペンダント",
+      "description": "Vonloviカット＆ポリッシュのラピスラズリとダイヤモンドをセッティングしたイエローゴールド750/1000のリバーシブルボタンで構成されたペンダント。50cmのフォルサチェーン付き。"
+    },
+    "ko": {
+      "nom": "라피스 라줄리 펜던트",
+      "famille": "펜던트",
+      "description": "옐로우 골드 750/1000 펜던트. Vonlovi 커팅·폴리싱의 라피스 라줄리를 세팅, 50cm 포사 체인에 착용."
+    }
+  },
+  "pendentif-malachite": {
+    "en": {
+      "nom": "Malachite Pendant",
+      "famille": "Pendants",
+      "description": "Pendant composed of a reversible gold 750/1000 button set with malachite cut and polished by Vonlovi, on a 50 cm yellow gold forçat chain."
+    },
+    "ja": {
+      "nom": "マラカイトペンダント",
+      "famille": "ペンダント",
+      "description": "Vonloviカット＆ポリッシュのマラカイトをセッティングしたゴールド750/1000のリバーシブルボタンで構成されたペンダント。イエローゴールドのフォルサチェーン50cm付き。"
+    },
+    "ko": {
+      "nom": "말라카이트 펜던트",
+      "famille": "펜던트",
+      "description": "옐로우 골드 750/1000 펜던트. Vonlovi 커팅·폴리싱의 말라카이트를 세팅, 50cm 포사 체인에 착용."
+    }
+  },
+  "pendentif-malachite-et-diamants": {
+    "en": {
+      "nom": "Malachite Pendant and Diamonds",
+      "famille": "Pendants",
+      "description": "Pendant composed of a reversible yellow gold 750/1000 button set with malachite cut and polished by Vonlovi, and diamonds, on a 50 cm yellow gold forçat chain."
+    },
+    "ja": {
+      "nom": "マラカイトペンダントとダイヤモンド",
+      "famille": "ペンダント",
+      "description": "Vonloviカット＆ポリッシュのマラカイトとダイヤモンドをセッティングしたイエローゴールド750/1000のリバーシブルボタンで構成されたペンダント。50cmのフォルサチェーン付き。"
+    },
+    "ko": {
+      "nom": "말라카이트 펜던트",
+      "famille": "펜던트",
+      "description": "옐로우 골드 750/1000 펜던트. Vonlovi 커팅·폴리싱의 말라카이트를 세팅, 50cm 포사 체인에 착용."
+    }
+  },
+  "pendentif-nacre": {
+    "en": {
+      "nom": "Mother-of-pearl Pendant",
+      "famille": "Pendants",
+      "description": "Pendant composed of a reversible gold 750/1000 button set with white mother-of-pearl cut and polished by Vonlovi, on a 50 cm yellow gold forçat chain."
+    },
+    "ja": {
+      "nom": "白蝶貝ペンダント",
+      "famille": "ペンダント",
+      "description": "Vonloviカット＆ポリッシュの白蝶貝をセッティングしたゴールド750/1000のリバーシブルボタンで構成されたペンダント。イエローゴールドのフォルサチェーン50cm付き。"
+    },
+    "ko": {
+      "nom": "자개 펜던트",
+      "famille": "펜던트",
+      "description": "옐로우 골드 750/1000 펜던트. Vonlovi 커팅·폴리싱의 자개를 세팅, 50cm 포사 체인에 착용."
+    }
+  },
+  "pendentif-nacre-doree": {
+    "en": {
+      "nom": "Golden mother-of-pearl Pendant",
+      "famille": "Pendants",
+      "description": "Pendant composed of a reversible gold 750/1000 button set with golden mother-of-pearl cut and polished by Vonlovi, on a 50 cm yellow gold forçat chain."
+    },
+    "ja": {
+      "nom": "ゴールドマザーオブパールペンダント",
+      "famille": "ペンダント",
+      "description": "Vonloviカット＆ポリッシュのゴールドマザーオブパールをセッティングしたゴールド750/1000のリバーシブルボタンで構成されたペンダント。イエローゴールドのフォルサチェーン50cm付き。"
+    },
+    "ko": {
+      "nom": "자개 펜던트",
+      "famille": "펜던트",
+      "description": "옐로우 골드 750/1000 펜던트. Vonlovi 커팅·폴리싱의 자개를 세팅, 50cm 포사 체인에 착용."
+    }
+  },
+  "pendentif-nacre-doree-et-diamants": {
+    "en": {
+      "nom": "Golden mother-of-pearl Pendant and Diamonds",
+      "famille": "Pendants",
+      "description": "Pendant composed of a reversible yellow gold 750/1000 button set with golden mother-of-pearl cut and polished by Vonlovi, and diamonds, on a 50 cm yellow gold forçat chain."
+    },
+    "ja": {
+      "nom": "ゴールドマザーオブパールペンダントとダイヤモンド",
+      "famille": "ペンダント",
+      "description": "Vonloviカット＆ポリッシュのゴールドマザーオブパールとダイヤモンドをセッティングしたイエローゴールド750/1000のリバーシブルボタンで構成されたペンダント。50cmのフォルサチェーン付き。"
+    },
+    "ko": {
+      "nom": "자개 펜던트",
+      "famille": "펜던트",
+      "description": "옐로우 골드 750/1000 펜던트. Vonlovi 커팅·폴리싱의 자개를 세팅, 50cm 포사 체인에 착용."
+    }
+  },
+  "pendentif-nacre-et-diamants": {
+    "en": {
+      "nom": "Mother-of-pearl Pendant and Diamonds",
+      "famille": "Pendants",
+      "description": "Pendant composed of a reversible yellow gold 750/1000 button set with white mother-of-pearl cut and polished by Vonlovi, and diamonds, on a 50 cm yellow gold forçat chain."
+    },
+    "ja": {
+      "nom": "白蝶貝ペンダントとダイヤモンド",
+      "famille": "ペンダント",
+      "description": "Vonloviカット＆ポリッシュの白蝶貝とダイヤモンドをセッティングしたイエローゴールド750/1000のリバーシブルボタンで構成されたペンダント。50cmのフォルサチェーン付き。"
+    },
+    "ko": {
+      "nom": "자개 펜던트",
+      "famille": "펜던트",
+      "description": "옐로우 골드 750/1000 펜던트. Vonlovi 커팅·폴리싱의 자개를 세팅, 50cm 포사 체인에 착용."
+    }
+  },
+  "pendentif-onyx": {
+    "en": {
+      "nom": "Onyx Pendant",
+      "famille": "Pendants",
+      "description": "Pendant composed of a reversible gold 750/1000 button set with an onyx hardstone cut and polished by Vonlovi, on a 50 cm yellow gold forçat chain."
+    },
+    "ja": {
+      "nom": "オニキスペンダント",
+      "famille": "ペンダント",
+      "description": "Vonloviカット＆ポリッシュのオニキスの硬石をセッティングしたゴールド750/1000のリバーシブルボタンで構成されたペンダント。イエローゴールドのフォルサチェーン50cm付き。"
+    },
+    "ko": {
+      "nom": "오닉스 펜던트",
+      "famille": "펜던트",
+      "description": "옐로우 골드 750/1000 펜던트. Vonlovi 커팅·폴리싱의 오닉스를 세팅, 50cm 포사 체인에 착용."
+    }
+  },
+  "pendentif-onyx-et-diamants": {
+    "en": {
+      "nom": "Onyx Pendant and Diamonds",
+      "famille": "Pendants",
+      "description": "Pendant composed of a reversible yellow gold 750/1000 button set with an onyx hardstone cut and polished by Vonlovi, and diamonds, on a 50 cm yellow gold forçat chain."
+    },
+    "ja": {
+      "nom": "オニキスペンダントとダイヤモンド",
+      "famille": "ペンダント",
+      "description": "Vonloviカット＆ポリッシュのオニキスの硬石とダイヤモンドをセッティングしたイエローゴールド750/1000のリバーシブルボタンで構成されたペンダント。50cmのフォルサチェーン付き。"
+    },
+    "ko": {
+      "nom": "오닉스 펜던트",
+      "famille": "펜던트",
+      "description": "옐로우 골드 750/1000 펜던트. Vonlovi 커팅·폴리싱의 오닉스를 세팅, 50cm 포사 체인에 착용."
+    }
+  },
+  "pendentif-oeil-de-tigre": {
+    "en": {
+      "nom": "Tiger's eye Pendant",
+      "famille": "Pendants",
+      "description": "Pendant composed of a reversible gold 750/1000 button set with a tiger's eye hardstone cut and polished by Vonlovi, on a 50 cm yellow gold forçat chain."
+    },
+    "ja": {
+      "nom": "タイガーアイペンダント",
+      "famille": "ペンダント",
+      "description": "Vonloviカット＆ポリッシュのタイガーアイの硬石をセッティングしたゴールド750/1000のリバーシブルボタンで構成されたペンダント。イエローゴールドのフォルサチェーン50cm付き。"
+    },
+    "ko": {
+      "nom": "타이거즈 아이 펜던트",
+      "famille": "펜던트",
+      "description": "옐로우 골드 750/1000 펜던트. Vonlovi 커팅·폴리싱의 타이거즈 아이를 세팅, 50cm 포사 체인에 착용."
+    }
+  },
+  "pendentif-oeil-de-tigre-et-diamants": {
+    "en": {
+      "nom": "Tiger's eye Pendant and Diamonds",
+      "famille": "Pendants",
+      "description": "Pendant composed of a reversible yellow gold 750/1000 button set with a tiger's eye hardstone cut and polished by Vonlovi, and diamonds, on a 50 cm yellow gold forçat chain."
+    },
+    "ja": {
+      "nom": "タイガーアイペンダントとダイヤモンド",
+      "famille": "ペンダント",
+      "description": "Vonloviカット＆ポリッシュのタイガーアイの硬石とダイヤモンドをセッティングしたイエローゴールド750/1000のリバーシブルボタンで構成されたペンダント。50cmのフォルサチェーン付き。"
+    },
+    "ko": {
+      "nom": "타이거즈 아이 펜던트",
+      "famille": "펜던트",
+      "description": "옐로우 골드 750/1000 펜던트. Vonlovi 커팅·폴리싱의 타이거즈 아이를 세팅, 50cm 포사 체인에 착용."
+    }
+  }
+}

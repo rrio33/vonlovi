@@ -1,0 +1,285 @@
+/* =========================================================
+   VONLOVI — corner framing chrome (all pages)
+   ========================================================= */
+
+:root {
+  --chrome-ink: #000000;
+  --chrome-serif: "Cormorant Garamond", "Times New Roman", Georgia, serif;
+  --chrome-pad-x: clamp(18px, 3.5vw, 40px);
+  --chrome-pad-y: max(20px, env(safe-area-inset-top));
+  --chrome-pad-b: max(20px, env(safe-area-inset-bottom));
+}
+
+body.is-chrome-dark {
+  --chrome-ink: #ffffff;
+}
+
+.site-chrome {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  pointer-events: none;
+  padding: var(--chrome-pad-y) var(--chrome-pad-x) var(--chrome-pad-b);
+}
+
+.site-chrome__header {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.site-chrome__logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  place-items: center;
+  line-height: 0;
+  pointer-events: auto;
+  z-index: 2;
+}
+
+/* Content pages: keep logo in the top frame so corners stay obvious */
+body[data-chrome="light"] .site-chrome__logo {
+  top: 0;
+  transform: translate(-50%, 0);
+}
+
+.site-chrome__logo-word,
+.site-chrome__logo-mark {
+  grid-area: 1 / 1;
+  display: grid;
+  place-items: center;
+  transition: opacity 280ms ease, visibility 280ms ease;
+}
+
+.site-chrome__logo-mark {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+body.is-scrolled .site-chrome__logo-word {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+body.is-scrolled .site-chrome__logo-mark {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.site-chrome__logo-img {
+  width: clamp(96px, 14vw, 156px);
+  height: auto;
+  display: block;
+  image-rendering: auto;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.site-chrome__mark-img {
+  width: clamp(28px, 3.6vw, 40px);
+  height: auto;
+  display: block;
+}
+
+.site-chrome__logo-img--white,
+.site-chrome__logo-img--burgundy,
+.site-chrome__logo-img--red,
+.site-chrome__logo-img--purple,
+.site-chrome__mark-img--white,
+.site-chrome__mark-img--burgundy,
+.site-chrome__mark-img--red,
+.site-chrome__mark-img--purple {
+  display: none;
+}
+
+body.is-chrome-dark .site-chrome__logo-img--black,
+body.is-chrome-dark .site-chrome__mark-img--black {
+  display: none;
+}
+
+body.is-chrome-dark .site-chrome__logo-img--white,
+body.is-chrome-dark .site-chrome__mark-img--white {
+  display: block;
+}
+
+/* Accent wordmark + mark when B/W contrast is weak */
+body[data-mark-accent] .site-chrome__logo-img--black,
+body[data-mark-accent] .site-chrome__logo-img--white,
+body[data-mark-accent] .site-chrome__mark-img--black,
+body[data-mark-accent] .site-chrome__mark-img--white {
+  display: none;
+}
+
+body[data-mark-accent="burgundy"] .site-chrome__logo-img--burgundy,
+body[data-mark-accent="burgundy"] .site-chrome__mark-img--burgundy,
+body[data-mark-accent="red"] .site-chrome__logo-img--red,
+body[data-mark-accent="red"] .site-chrome__mark-img--red,
+body[data-mark-accent="purple"] .site-chrome__logo-img--purple,
+body[data-mark-accent="purple"] .site-chrome__mark-img--purple {
+  display: block;
+}
+
+.site-chrome__link,
+.site-shop__trigger {
+  font-family: var(--chrome-serif);
+  font-size: clamp(10px, 0.95vw, 12px);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--chrome-ink);
+  background: none;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  transition: opacity 200ms ease, color 280ms ease;
+  white-space: nowrap;
+  pointer-events: auto;
+  line-height: 1;
+  /* Tight edge support — no soft glow halo */
+  text-shadow:
+    0 0 1px rgba(255, 255, 255, 0.95),
+    0 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+body.is-chrome-dark .site-chrome__link,
+body.is-chrome-dark .site-shop__trigger {
+  text-shadow:
+    0 0 1px rgba(0, 0, 0, 0.95),
+    0 1px 0 rgba(0, 0, 0, 0.75);
+}
+
+.site-chrome__link:hover,
+.site-shop__trigger:hover {
+  opacity: 0.5;
+}
+
+.site-chrome__link.is-active {
+  opacity: 1;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* Each corner is independently pinned to the viewport frame */
+.site-chrome__corner,
+.site-chrome__corner--tl,
+.site-chrome__corner--tr,
+.site-chrome__corner--bl,
+.site-chrome__corner--br {
+  position: absolute;
+  pointer-events: auto;
+  z-index: 3;
+}
+
+.site-chrome__corner--tl {
+  top: 0;
+  left: 0;
+}
+
+.site-chrome__corner--tr {
+  top: 0;
+  right: 0;
+}
+
+.site-chrome__corner--bl {
+  bottom: 0;
+  left: 0;
+}
+
+.site-chrome__corner--br {
+  bottom: 0;
+  right: 0;
+}
+
+.site-chrome__corner--stack {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.site-chrome__corner--end {
+  align-items: flex-end;
+  text-align: right;
+}
+
+[data-cart-count]:not([hidden]) {
+  margin-left: 0.35em;
+}
+
+[data-cart-count]:not([hidden])::before {
+  content: "(";
+}
+
+[data-cart-count]:not([hidden])::after {
+  content: ")";
+}
+
+.site-shop__panel {
+  position: absolute;
+  top: calc(100% + 12px);
+  left: 0;
+  min-width: 200px;
+  padding: 14px 0;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  color: #000;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(6px);
+  transition: opacity 220ms ease, transform 220ms ease, visibility 220ms;
+  z-index: 5;
+  pointer-events: auto;
+}
+
+body.is-chrome-dark .site-shop__panel {
+  background: #111;
+  border-color: rgba(255, 255, 255, 0.18);
+  color: #fff;
+}
+
+.site-shop.is-open .site-shop__panel,
+.site-shop:hover .site-shop__panel,
+.site-shop:focus-within .site-shop__panel {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.site-shop__panel a {
+  display: block;
+  padding: 7px 20px;
+  color: inherit;
+  text-decoration: none;
+  text-transform: none;
+  letter-spacing: 0.04em;
+  font-size: 12px;
+  font-family: var(--chrome-serif);
+  transition: opacity 200ms ease;
+}
+
+.site-shop__panel a:hover {
+  opacity: 0.5;
+}
+
+@media (max-width: 560px) {
+  .site-chrome__logo-img {
+    width: 88px;
+  }
+
+  .site-chrome__mark-img {
+    width: 32px;
+  }
+
+  .site-chrome__link,
+  .site-shop__trigger {
+    font-size: 10px;
+    letter-spacing: 0.12em;
+  }
+}

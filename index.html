@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#0a0908" />
+    <title>VONLOVI</title>
+    <meta
+      name="description"
+      content="Vonlovi — joaillerie sculpturale. FR / EN / JA / KO"
+    />
+    <link rel="icon" type="image/png" href="assets/logo-v-mark.png" />
+    <meta property="og:title" content="VONLOVI" />
+    <meta property="og:description" content="Vonlovi — joaillerie sculpturale. FR / EN / JA / KO" />
+    <meta property="og:url" content="https://vonlovi.vercel.app/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="VONLOVI" />
+    <meta property="og:image" content="https://vonlovi.vercel.app/assets/og-image.png?v=1" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="1200" />
+    <meta property="og:image:alt" content="VONLOVI" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:image" content="https://vonlovi.vercel.app/assets/og-image.png?v=1" />
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="intro.css" />
+    <style>
+      body.page--intro.is-leaving .intro__stage {
+        opacity: 0;
+        transition: opacity 260ms ease;
+      }
+      body.page--intro.is-leaving .intro__video,
+      body.page--intro.is-leaving .intro__veil {
+        opacity: 0;
+        transition: opacity 260ms ease;
+      }
+    </style>
+  </head>
+  <body class="page--intro">
+    <main class="intro" aria-label="VONLOVI">
+      <video
+        class="intro__video"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="auto"
+        aria-hidden="true"
+      >
+        <source src="assets/intro/bg.m4v" type="video/mp4" />
+        <source src="assets/intro/bg.mp4" type="video/mp4" />
+      </video>
+      <div class="intro__veil" aria-hidden="true"></div>
+      <div class="intro__stage">
+        <img
+          class="intro__logo"
+          src="assets/logo-vonlovi-white.png?v=2"
+          alt="VONLOVI"
+          width="1024"
+          height="421"
+          decoding="sync"
+          fetchpriority="high"
+        />
+
+        <ul class="intro__langs" role="list">
+          <li>
+            <button type="button" class="intro__lang" data-lang="fr" lang="fr" aria-label="Français">
+              FR
+            </button>
+          </li>
+          <li class="intro__sep" aria-hidden="true"></li>
+          <li>
+            <button type="button" class="intro__lang" data-lang="en" lang="en" aria-label="English">
+              EN
+            </button>
+          </li>
+          <li class="intro__sep" aria-hidden="true"></li>
+          <li>
+            <button type="button" class="intro__lang" data-lang="ja" lang="ja" aria-label="日本語">
+              JA
+            </button>
+          </li>
+          <li class="intro__sep" aria-hidden="true"></li>
+          <li>
+            <button type="button" class="intro__lang" data-lang="ko" lang="ko" aria-label="한국어">
+              KO
+            </button>
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <script src="i18n.js"></script>
+    <script src="intro.js"></script>
+  </body>
+</html>

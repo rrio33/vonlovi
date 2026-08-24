@@ -1,0 +1,155 @@
+{
+  "contributors": [
+    {
+      "id": "amanda-elise-k",
+      "name": "Amanda Elise K",
+      "cover": "assets/contributors/amanda-elise-k/01.jpg",
+      "images": [
+        "assets/contributors/amanda-elise-k/01.jpg",
+        "assets/contributors/amanda-elise-k/16.jpg",
+        "assets/contributors/amanda-elise-k/02.jpg",
+        "assets/contributors/amanda-elise-k/03.jpg",
+        "assets/contributors/amanda-elise-k/04.jpg",
+        "assets/contributors/amanda-elise-k/05.jpg",
+        "assets/contributors/amanda-elise-k/06.jpg",
+        "assets/contributors/amanda-elise-k/07.jpg",
+        "assets/contributors/amanda-elise-k/08.jpg",
+        "assets/contributors/amanda-elise-k/09.jpg",
+        "assets/contributors/amanda-elise-k/10.jpg",
+        "assets/contributors/amanda-elise-k/11.jpg",
+        "assets/contributors/amanda-elise-k/12.jpg",
+        "assets/contributors/amanda-elise-k/13.jpg",
+        "assets/contributors/amanda-elise-k/14.jpg",
+        "assets/contributors/amanda-elise-k/15.jpg"
+      ]
+    },
+    {
+      "id": "stanislas-motz",
+      "name": "Stanislas Motz",
+      "cover": "assets/contributors/stanislas-motz/01.jpg",
+      "images": [
+        "assets/contributors/stanislas-motz/01.jpg",
+        "assets/contributors/stanislas-motz/02.jpg",
+        "assets/contributors/stanislas-motz/03.jpg",
+        "assets/contributors/stanislas-motz/04.jpg",
+        "assets/contributors/stanislas-motz/05.jpg",
+        "assets/contributors/stanislas-motz/06.jpg",
+        "assets/contributors/stanislas-motz/07.jpg",
+        "assets/contributors/stanislas-motz/08.jpg",
+        "assets/contributors/stanislas-motz/09.jpg",
+        "assets/contributors/stanislas-motz/10.jpg"
+      ]
+    },
+    {
+      "id": "celia-spenard-ko",
+      "name": "Celia Spenard-Ko",
+      "cover": "assets/contributors/celia-spenard-ko/01.jpg",
+      "images": [
+        "assets/contributors/celia-spenard-ko/01.jpg",
+        "assets/contributors/celia-spenard-ko/02.jpg",
+        "assets/contributors/celia-spenard-ko/03.jpg",
+        "assets/contributors/celia-spenard-ko/04.jpg",
+        "assets/contributors/celia-spenard-ko/05.jpg",
+        "assets/contributors/celia-spenard-ko/06.jpg",
+        "assets/contributors/celia-spenard-ko/07.jpg",
+        "assets/contributors/celia-spenard-ko/08.jpg",
+        "assets/contributors/celia-spenard-ko/09.jpg",
+        "assets/contributors/celia-spenard-ko/10.jpg",
+        "assets/contributors/celia-spenard-ko/11.jpg",
+        "assets/contributors/celia-spenard-ko/12.jpg"
+      ]
+    },
+    {
+      "id": "goldie-williams",
+      "name": "Goldie Williams",
+      "cover": "assets/contributors/goldie-williams/01.jpg",
+      "images": [
+        "assets/contributors/goldie-williams/01.jpg",
+        "assets/contributors/goldie-williams/02.jpg",
+        "assets/contributors/goldie-williams/03.jpg",
+        "assets/contributors/goldie-williams/04.jpg",
+        "assets/contributors/goldie-williams/05.jpg",
+        "assets/contributors/goldie-williams/06.jpg",
+        "assets/contributors/goldie-williams/07.jpg",
+        "assets/contributors/goldie-williams/08.jpg",
+        "assets/contributors/goldie-williams/09.jpg",
+        "assets/contributors/goldie-williams/10.jpg",
+        "assets/contributors/goldie-williams/11.jpg",
+        "assets/contributors/goldie-williams/12.jpg",
+        "assets/contributors/goldie-williams/13.jpg",
+        "assets/contributors/goldie-williams/14.jpg",
+        "assets/contributors/goldie-williams/15.jpg",
+        "assets/contributors/goldie-williams/16.jpg",
+        "assets/contributors/goldie-williams/17.jpg"
+      ]
+    },
+    {
+      "id": "cyrille-robin",
+      "name": "Cyrille Robin",
+      "cover": "assets/contributors/cyrille-robin/01.jpg",
+      "images": [
+        "assets/contributors/cyrille-robin/01.jpg",
+        "assets/contributors/cyrille-robin/02.jpg",
+        "assets/contributors/cyrille-robin/03.jpg",
+        "assets/contributors/cyrille-robin/04.jpg",
+        "assets/contributors/cyrille-robin/05.jpg",
+        "assets/contributors/cyrille-robin/06.jpg",
+        "assets/contributors/cyrille-robin/07.jpg",
+        "assets/contributors/cyrille-robin/08.jpg",
+        "assets/contributors/cyrille-robin/09.jpg",
+        "assets/contributors/cyrille-robin/10.jpg"
+      ]
+    },
+    {
+      "id": "xavier-rosny",
+      "name": "Xavier Rosny",
+      "cover": "assets/contributors/xavier-rosny/01.jpg",
+      "images": [
+        "assets/contributors/xavier-rosny/01.jpg",
+        "assets/contributors/xavier-rosny/02.jpg",
+        "assets/contributors/xavier-rosny/03.jpg",
+        "assets/contributors/xavier-rosny/04.jpg"
+      ]
+    },
+    {
+      "id": "cristian-hunter",
+      "name": "Cristian Hunter",
+      "cover": "assets/contributors/cristian-hunter/01.jpg",
+      "images": [
+        "assets/contributors/cristian-hunter/01.jpg",
+        "assets/contributors/cristian-hunter/02.jpg",
+        "assets/contributors/cristian-hunter/03.jpg"
+      ]
+    },
+    {
+      "id": "maxime-wolff",
+      "name": "Maxime Wolff",
+      "cover": "assets/contributors/maxime-wolff/01.jpg",
+      "images": [
+        "assets/contributors/maxime-wolff/01.jpg"
+      ]
+    },
+    {
+      "id": "delawhere",
+      "name": "Delawhere",
+      "cover": "assets/contributors/delawhere/01.mp4",
+      "coverType": "video",
+      "images": [
+        "assets/contributors/delawhere/01.mp4"
+      ]
+    },
+    {
+      "id": "ls-archives",
+      "name": "L.S. Archives",
+      "cover": "assets/contributors/ls-archives/01.jpg",
+      "images": [
+        "assets/contributors/ls-archives/01.jpg",
+        "assets/contributors/ls-archives/02.jpg",
+        "assets/contributors/ls-archives/03.jpg",
+        "assets/contributors/ls-archives/04.jpg",
+        "assets/contributors/ls-archives/05.jpg",
+        "assets/contributors/ls-archives/06.jpg"
+      ]
+    }
+  ]
+}

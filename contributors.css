@@ -1,0 +1,186 @@
+/* =========================================================
+   VONLOVI — contributors (name list + hover cover)
+   ========================================================= */
+
+body.page--contributors {
+  margin: 0;
+  min-height: 100vh;
+  background: #ffffff;
+  color: #1a1a1a;
+  font-family: "Cormorant Garamond", "Times New Roman", Georgia, serif;
+}
+
+.contributors {
+  padding: clamp(110px, 16vh, 150px) clamp(18px, 3.5vw, 40px) 96px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.contributors__stage {
+  display: grid;
+  grid-template-columns: minmax(240px, 1fr) minmax(280px, 1.15fr);
+  gap: clamp(32px, 6vw, 80px);
+  align-items: center;
+  min-height: min(62vh, 640px);
+}
+
+.contributors__intro {
+  margin: 0 0 clamp(28px, 5vh, 48px);
+}
+
+.contributors__title {
+  margin: 0;
+  font-size: clamp(22px, 3vw, 34px);
+  font-weight: 300;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.contributors__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15em;
+}
+
+.contributors__name {
+  display: inline-block;
+  padding: 0.28em 0;
+  font-size: clamp(20px, 2.8vw, 34px);
+  font-weight: 300;
+  letter-spacing: 0.04em;
+  line-height: 1.25;
+  text-decoration: none;
+  color: rgba(26, 26, 26, 0.34);
+  transition: color 220ms ease;
+}
+
+.contributors__name:hover,
+.contributors__name:focus-visible,
+.contributors__name.is-active {
+  color: #1a1a1a;
+}
+
+.contributors__preview {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  max-height: min(72vh, 720px);
+  justify-self: end;
+  width: min(100%, 460px);
+  background: #f4f1ec;
+  overflow: hidden;
+}
+
+.contributors__preview .contributors__media {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transform: scale(1.03);
+  transition: opacity 320ms ease, transform 700ms cubic-bezier(0.22, 0.61, 0.36, 1);
+  pointer-events: none;
+}
+
+.contributors__preview .contributors__media.is-visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.contributors__preview video.contributors__media {
+  background: #0a0908;
+}
+
+.contributors__back {
+  display: inline-block;
+  margin: 0 0 1.6em;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgba(26, 26, 26, 0.55);
+}
+
+.contributors__back:hover {
+  opacity: 0.5;
+}
+
+.contributors__person-title {
+  margin: 0 0 0.4em;
+  font-size: clamp(20px, 2.6vw, 30px);
+  font-weight: 300;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.contributors__person-role {
+  margin: 0 0 2em;
+  font-size: 13px;
+  font-style: italic;
+  color: rgba(26, 26, 26, 0.55);
+}
+
+.contributors__gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(8px, 1.2vw, 14px);
+}
+
+.contributors__shot {
+  margin: 0;
+  background: #f4f1ec;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+}
+
+.contributors__shot img,
+.contributors__shot video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.contributors__shot--video {
+  grid-column: 1 / -1;
+  aspect-ratio: 1 / 1;
+  max-width: 720px;
+}
+
+.contributors__status {
+  text-align: center;
+  padding: 4rem 1rem;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(26, 26, 26, 0.45);
+}
+
+@media (max-width: 820px) {
+  .contributors__stage {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    min-height: 0;
+  }
+
+  .contributors__preview {
+    order: -1;
+    width: 100%;
+    max-width: none;
+    max-height: 48vh;
+    justify-self: stretch;
+  }
+
+  .contributors__name {
+    font-size: clamp(18px, 5.5vw, 26px);
+  }
+}
+
+@media (max-width: 560px) {
+  .contributors__gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+}

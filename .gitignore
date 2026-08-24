@@ -1,0 +1,11 @@
+.DS_Store
+.vercel
+node_modules
+.env
+.env.*
+*.log
+
+# iCloud placeholders (not real assets)
+*.icloud
+**/*.icloud
+.*icloud

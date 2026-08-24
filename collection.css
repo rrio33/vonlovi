@@ -1,0 +1,91 @@
+/* =========================================================
+   VONLOVI — collection / category grid
+   ========================================================= */
+
+body.page--collection {
+  margin: 0;
+  min-height: 100vh;
+  background: #ffffff;
+  color: #1a1a1a;
+  font-family: "Cormorant Garamond", "Times New Roman", Georgia, serif;
+}
+
+.collection {
+  padding: clamp(96px, 16vh, 140px) clamp(16px, 3vw, 32px) 80px;
+}
+
+.collection__intro {
+  text-align: center;
+  margin-bottom: clamp(28px, 5vh, 48px);
+}
+
+.collection__title {
+  margin: 0;
+  font-size: clamp(18px, 2vw, 26px);
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.collection__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(8px, 1.2vw, 14px);
+}
+
+.collection__card {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  background: #f4f1ec;
+  overflow: hidden;
+  aspect-ratio: 3 / 4;
+}
+
+.collection__card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 600ms cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.collection__card:hover img {
+  transform: scale(1.03);
+}
+
+.collection__card-label {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 18px 12px;
+  text-align: center;
+  font-size: clamp(11px, 1vw, 13px);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0));
+}
+
+.collection__empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 4rem 1rem;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(26, 26, 26, 0.45);
+}
+
+@media (max-width: 900px) {
+  .collection__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .collection__grid {
+    grid-template-columns: 1fr;
+  }
+}
