@@ -38,12 +38,17 @@
       ${items
         .map((item) => {
           const labels = labelFor(item);
+          const sizeLine = item.size
+            ? `<p class="panier__size">${VonloviCart.formatSize(item.size, t)}</p>`
+            : "";
+          const sizeAttr = item.size ? ` data-size="${item.size}"` : "";
           return `
-        <article class="panier__row" data-slug="${item.slug}">
+        <article class="panier__row" data-slug="${item.slug}"${sizeAttr}>
           <img class="panier__thumb" src="${window.VonloviAsset ? VonloviAsset.url(item.image) : item.image}" alt="" />
           <div class="panier__meta">
             <h2 class="panier__name"><a href="product.html?slug=${encodeURIComponent(item.slug)}">${labels.nom}</a></h2>
             <p class="panier__famille">${labels.famille}</p>
+            ${sizeLine}
             <p class="panier__line">${item.prix || VonloviCart.formatMoney(item.prix_num || 0)}</p>
           </div>
           <div class="panier__controls">
@@ -71,13 +76,16 @@
     const row = btn.closest("[data-slug]");
     if (!row) return;
     const slug = row.getAttribute("data-slug");
-    const item = VonloviCart.read().find((entry) => entry.slug === slug);
+    const size = row.getAttribute("data-size") || "";
+    const item = VonloviCart.read().find(
+      (entry) => entry.slug === slug && (entry.size || "") === size
+    );
     if (!item) return;
 
     const action = btn.getAttribute("data-action");
-    if (action === "inc") VonloviCart.setQty(slug, item.qty + 1);
-    if (action === "dec") VonloviCart.setQty(slug, item.qty - 1);
-    if (action === "remove") VonloviCart.remove(slug);
+    if (action === "inc") VonloviCart.setQty(slug, item.qty + 1, size);
+    if (action === "dec") VonloviCart.setQty(slug, item.qty - 1, size);
+    if (action === "remove") VonloviCart.remove(slug, size);
     render();
   });
 

@@ -107,6 +107,70 @@ body.page--product {
   opacity: 0.5;
 }
 
+.product__size {
+  margin: 0 0 1.6em;
+}
+
+.product__size-label {
+  display: block;
+  margin: 0 0 8px;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(26, 26, 26, 0.55);
+}
+
+.product__size select {
+  display: block;
+  min-width: 14em;
+  max-width: 100%;
+  margin: 0;
+  padding: 6px 0 8px;
+  border: 0;
+  border-bottom: 1px solid #1a1a1a;
+  border-radius: 0;
+  background: transparent;
+  font: inherit;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  color: inherit;
+  appearance: auto;
+}
+
+.product__size select:focus {
+  outline: none;
+  border-bottom-color: #1a1a1a;
+}
+
+.product__size-guide {
+  margin: 0.75em 0 0;
+  max-width: 38ch;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 1.55;
+  color: rgba(26, 26, 26, 0.5);
+}
+
+.product__assurances {
+  margin: 2.2em 0 0;
+  max-width: 42ch;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 1.7;
+  color: rgba(26, 26, 26, 0.5);
+}
+
+.product__assurances a {
+  color: inherit;
+  text-underline-offset: 3px;
+}
+
+.product__cta.is-waiting {
+  opacity: 0.4;
+}
+
 .product__back {
   margin-top: 2.5em;
   font-size: 10px;

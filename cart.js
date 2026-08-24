@@ -17,13 +17,22 @@
     window.dispatchEvent(new CustomEvent("vonlovi:cart", { detail: items }));
   }
 
+  function sizeKey(item) {
+    return item?.size ? String(item.size) : "";
+  }
+
+  function sameLine(item, slug, size) {
+    return item.slug === slug && sizeKey(item) === (size || "");
+  }
+
   function count(items = read()) {
     return items.reduce((sum, item) => sum + (item.qty || 1), 0);
   }
 
-  function add(product, qty = 1) {
+  function add(product, qty = 1, extras = {}) {
     const items = read();
-    const existing = items.find((item) => item.slug === product.slug);
+    const size = extras.size ? String(extras.size) : "";
+    const existing = items.find((item) => sameLine(item, product.slug, size));
     if (existing) {
       existing.qty += qty;
     } else {
@@ -34,6 +43,7 @@
         prix_num: product.prix_num || 0,
         image: product.images?.[0]?.local || "",
         famille: product.famille || "",
+        size,
         qty,
       });
     }
@@ -41,19 +51,22 @@
     return items;
   }
 
-  function setQty(slug, qty) {
+  function setQty(slug, qty, size) {
     let items = read();
+    const sizeVal = size || "";
     if (qty <= 0) {
-      items = items.filter((item) => item.slug !== slug);
+      items = items.filter((item) => !sameLine(item, slug, sizeVal));
     } else {
-      items = items.map((item) => (item.slug === slug ? { ...item, qty } : item));
+      items = items.map((item) =>
+        sameLine(item, slug, sizeVal) ? { ...item, qty } : item
+      );
     }
     write(items);
     return items;
   }
 
-  function remove(slug) {
-    return setQty(slug, 0);
+  function remove(slug, size) {
+    return setQty(slug, 0, size);
   }
 
   function clear() {
@@ -70,6 +83,13 @@
       currency: "EUR",
       maximumFractionDigits: 0,
     }).format(n);
+  }
+
+  function formatSize(size, translate) {
+    if (!size) return "";
+    const mm = (Number(size) / Math.PI).toFixed(1).replace(".", ",");
+    const prefix = typeof translate === "function" ? translate("panier.size") : "Taille";
+    return `${prefix} EU ${size} — Ø ${mm} mm`;
   }
 
   function updateBadges() {
@@ -94,6 +114,7 @@
     clear,
     total,
     formatMoney,
+    formatSize,
     updateBadges,
   };
 

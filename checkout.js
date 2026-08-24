@@ -12,6 +12,40 @@
     return;
   }
 
+  function renderItems() {
+    const holder = document.getElementById("checkout-items");
+    if (!holder) return;
+    const items = VonloviCart.read();
+    holder.innerHTML = `
+      <ul class="checkout__list">
+        ${items
+          .map((item) => {
+            const loc = window.VonloviI18n
+              ? VonloviI18n.localizeProduct({
+                  slug: item.slug,
+                  nom: item.nom,
+                  famille: item.famille,
+                  description: "",
+                })
+              : item;
+            const name = loc.nom || item.nom;
+            const size = item.size ? ` · ${VonloviCart.formatSize(item.size, t)}` : "";
+            const line = `${name}${size} · ${item.qty} · ${
+              item.prix || VonloviCart.formatMoney(item.prix_num || 0)
+            }`;
+            return `<li>${line}</li>`;
+          })
+          .join("")}
+      </ul>
+      <p class="checkout__items-total">${t("panier.total")} · ${VonloviCart.formatMoney(
+        VonloviCart.total(items)
+      )}</p>
+    `;
+  }
+
+  renderItems();
+  window.addEventListener("vonlovi:lang", renderItems);
+
   form.addEventListener("submit", (e) => {
     e.preventDefault();
     const data = new FormData(form);
