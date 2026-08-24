@@ -1,11 +1,47 @@
 {
   "cleanUrls": true,
+  "trailingSlash": false,
   "headers": [
     {
       "source": "/assets/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400, stale-while-revalidate=604800"
+        }
       ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/assets/bagues/bague-il-de-tigre/:file",
+      "destination": "/assets/bagues/bague-oeil-de-tigre/:file",
+      "permanent": true
+    },
+    {
+      "source": "/assets/boucles-d-oreilles/boucle-doreille-il-de-tigre/:file",
+      "destination": "/assets/boucles-d-oreilles/boucle-doreille-oeil-de-tigre/:file",
+      "permanent": true
+    },
+    {
+      "source": "/assets/boutons/bouton-il-de-tigre/:file",
+      "destination": "/assets/boutons/bouton-oeil-de-tigre/:file",
+      "permanent": true
+    },
+    {
+      "source": "/assets/boutons/bouton-il-de-tigre-et-diamants/:file",
+      "destination": "/assets/boutons/bouton-oeil-de-tigre-et-diamants/:file",
+      "permanent": true
+    },
+    {
+      "source": "/assets/pendentifs/pendentif-il-de-tigre/:file",
+      "destination": "/assets/pendentifs/pendentif-oeil-de-tigre/:file",
+      "permanent": true
+    },
+    {
+      "source": "/assets/pendentifs/pendentif-il-de-tigre-et-diamants/:file",
+      "destination": "/assets/pendentifs/pendentif-oeil-de-tigre-et-diamants/:file",
+      "permanent": true
     }
   ]
 }

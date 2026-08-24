@@ -110,7 +110,7 @@ html {
   margin: 0;
   background: transparent;
   cursor: pointer;
-  color: #fff;
+  color: #111111;
 }
 
 .home-hero__hit--prev {
@@ -128,21 +128,22 @@ html {
   top: 50%;
   display: grid;
   place-items: center;
-  width: 14px;
-  height: 28px;
-  opacity: 0.55;
+  width: 22px;
+  height: 40px;
+  opacity: 0.92;
   transform: translateY(-50%);
   transition: opacity 280ms ease, transform 280ms ease;
-  filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.55))
-    drop-shadow(0 1px 2px rgba(0, 0, 0, 0.35));
+  filter: drop-shadow(0 0 1px #ffffff)
+    drop-shadow(0 1px 2px rgba(255, 255, 255, 0.95))
+    drop-shadow(0 0 1px rgba(0, 0, 0, 0.45));
   pointer-events: none;
   animation: home-hero-arrow-breathe 3.6s ease-in-out infinite;
 }
 
 .home-hero__arrow svg {
   display: block;
-  width: 11px;
-  height: 22px;
+  width: 16px;
+  height: 32px;
 }
 
 .home-hero__hit--prev .home-hero__arrow {
@@ -172,23 +173,23 @@ html {
 @keyframes home-hero-arrow-breathe {
   0%,
   100% {
-    opacity: 0.42;
+    opacity: 0.82;
   }
   50% {
-    opacity: 0.72;
+    opacity: 1;
   }
 }
 
 @media (max-width: 560px) {
   .home-hero__arrow {
-    width: 12px;
-    height: 24px;
-    opacity: 0.62;
+    width: 18px;
+    height: 34px;
+    opacity: 0.94;
   }
 
   .home-hero__arrow svg {
-    width: 9px;
-    height: 18px;
+    width: 14px;
+    height: 28px;
   }
 
   .home-hero__hit--prev .home-hero__arrow {
@@ -213,7 +214,7 @@ html {
 
   .home-hero__arrow {
     animation: none;
-    opacity: 0.6;
+    opacity: 0.94;
   }
 }
 

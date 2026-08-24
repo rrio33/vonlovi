@@ -77,6 +77,13 @@
       "footer.email.ph": "Votre e-mail",
       "footer.send": "Envoyer",
       "product.add": "Ajouter au panier",
+      "product.size": "Taille",
+      "product.size.choose": "Choisir la taille",
+      "product.size.guide":
+        "Taille européenne : circonférence intérieure, en millimètres. Le diamètre du doigt figure entre parenthèses.",
+      "product.assurances":
+        "Sur commande, trois à cinq semaines. Or jaune 750/1000, poinçons de garantie. Livraison DHL. Retours sous 14 jours, hors pièces personnalisées. <a href=\"shipping.html\">Livraison</a> · <a href=\"returns.html\">Retours</a> · <a href=\"care.html\">Entretien</a>.",
+      "panier.size": "Taille",
       "product.missing": "Produit introuvable.",
       "product.unavailable": "Catalogue indisponible.",
       "product.loading": "Chargement…",
@@ -182,7 +189,7 @@
         "VONLOVI est une maison de joaillerie contemporaine fondée à Paris par l'artiste De Rrusie. La marque répond à une envie plutôt qu'à un besoin : une création sortie de terre, portée par un peintre qui tisse un lien entre art et joaillerie. Trois syllabes — VON·LO·VI — choisies pour leur musicalité, comme une poésie énigmatique, et comme un rappel de toujours vivre d'amour.",
       "about.label2": "La maison",
       "about.p2":
-        "Au confluent de l'art et de la peinture, Vonlovi se déploie entre trois territoires : Paris, lieu de toutes les créations ; les montagnes du Jura, où sont taillées les pierres dures ; le Portugal, où les pièces sont fabriquées à la main. Chaque pièce est réalisée sur commande ; trois à cinq semaines sont nécessaires.",
+        "Au confluent de l'art et de la peinture, Vonlovi se déploie entre trois territoires. C'est une rencontre, dans le Jura, avec un lapidaire, qui a donné aux pierres dures leur coupe : Paris crée ; le Jura taille ; le Portugal fait à la main. Chaque pièce est réalisée sur commande ; trois à cinq semaines sont nécessaires.",
       "about.label3": "L'artiste",
       "about.p3":
         "De Rrusie est peintre. Sur ses toiles, il met en scène l'immensité et l'abstraction des ciels. Avec Vonlovi, il s'intéresse au précieux, se rapproche de l'infiniment petit, du délicat. Les bijoux qui en naissent sont physiques, personnels et sensuels.",
@@ -260,6 +267,13 @@
       "footer.email.ph": "Your email",
       "footer.send": "Send",
       "product.add": "Add to bag",
+      "product.size": "Size",
+      "product.size.choose": "Choose a size",
+      "product.size.guide":
+        "European size: inner circumference, in millimetres. Finger diameter is shown in parentheses.",
+      "product.assurances":
+        "Made to order, three to five weeks. 18k yellow gold 750/1000, hallmarks of guarantee. DHL delivery. Returns within 14 days, except personalised pieces. <a href=\"shipping.html\">Shipping</a> · <a href=\"returns.html\">Returns</a> · <a href=\"care.html\">Care</a>.",
+      "panier.size": "Size",
       "product.missing": "Product not found.",
       "product.unavailable": "Catalogue unavailable.",
       "product.loading": "Loading…",
@@ -366,7 +380,7 @@
         "VONLOVI is a contemporary jewellery house founded in Paris by the artist De Rrusie. The brand answers a desire rather than a need: a creation drawn from the earth, carried by a painter who weaves art and jewellery together. Three syllables — VON·LO·VI — chosen for their music, like an enigmatic poem, and as a reminder to always live from love.",
       "about.label2": "The house",
       "about.p2":
-        "At the confluence of art and painting, Vonlovi unfolds across three territories: Paris, where every creation begins; the Jura mountains, where hardstones are cut; Portugal, where pieces are made by hand. Each piece is made to order; three to five weeks are required.",
+        "At the confluence of art and painting, Vonlovi unfolds across three territories. It was a meeting, in the Jura, with a lapidary that gave the hardstones their cut: Paris creates; the Jura cuts; Portugal makes by hand. Each piece is made to order; three to five weeks are required.",
       "about.label3": "The artist",
       "about.p3":
         "De Rrusie is a painter. On his canvases he stages the immensity and abstraction of skies. With Vonlovi he turns to the precious, drawing closer to the infinitely small, the delicate. The jewels that follow are physical, personal and sensual.",
@@ -444,6 +458,13 @@
       "footer.email.ph": "メールアドレス",
       "footer.send": "送信",
       "product.add": "カートに入れる",
+      "product.size": "サイズ",
+      "product.size.choose": "サイズを選ぶ",
+      "product.size.guide":
+        "欧州サイズ：内周（ミリメートル）。括弧内は指の直径です。",
+      "product.assurances":
+        "受注制作、3〜5週間。イエローゴールド750/1000、保証の刻印。DHL配送。受領後14日以内の返品（特注を除く）。<a href=\"shipping.html\">配送</a> · <a href=\"returns.html\">返品</a> · <a href=\"care.html\">お手入れ</a>。",
+      "panier.size": "サイズ",
       "product.missing": "商品が見つかりません。",
       "product.unavailable": "カタログを読み込めません。",
       "product.loading": "読み込み中…",
@@ -550,7 +571,7 @@
         "VONLOVIは、アーティスト De Rrusie によりパリで創設されたコンテンポラリージュエリーのメゾンです。必要ではなく欲求に応えるブランド — 画家がアートとジュエリーを織りなす、土から生まれた創造。三つの音節 — VON·LO·VI — は音楽性のために選ばれ、謎めいた詩のようであり、常に愛から生きることを思い起こさせるためでもあります。",
       "about.label2": "メゾン",
       "about.p2":
-        "アートと絵画の合流点で、Vonloviは三つの地に広がります。創造の場であるパリ、硬石が削られるジュラの山々、手作りで仕上げられるポルトガル。すべて受注制作で、3〜5週間を要します。",
+        "アートと絵画の合流点で、Vonloviは三つの地に広がります。ジュラで宝石職人との出会いがあり、硬石はそのカットを得ました。パリが創り、ジュラが削り、ポルトガルが手で仕上げる。すべて受注制作で、3〜5週間を要します。",
       "about.label3": "アーティスト",
       "about.p3":
         "De Rrusie は画家です。キャンバスでは空の広大さと抽象を描き、Vonloviでは貴さへ、無限に小さなもの、繊細さへと近づきます。そこから生まれるジュエリーは身体的で、個人的で、官能的です。",
@@ -626,6 +647,13 @@
       "footer.email.ph": "이메일 주소",
       "footer.send": "보내기",
       "product.add": "장바구니에 담기",
+      "product.size": "사이즈",
+      "product.size.choose": "사이즈 선택",
+      "product.size.guide":
+        "유럽 사이즈: 안쪽 둘레(밀리미터). 괄호 안은 손가락 지름입니다.",
+      "product.assurances":
+        "주문 제작, 3~5주. 옐로우 골드 750/1000, 보증 펀치. DHL 배송. 수령 후 14일 이내 반품(맞춤 제작 제외). <a href=\"shipping.html\">배송</a> · <a href=\"returns.html\">반품</a> · <a href=\"care.html\">관리</a>.",
+      "panier.size": "사이즈",
       "product.missing": "상품을 찾을 수 없습니다.",
       "product.unavailable": "카탈로그를 불러올 수 없습니다.",
       "product.loading": "불러오는 중…",
@@ -727,7 +755,7 @@
         "VONLOVI는 아티스트 De Rrusie가 파리에서 설립한 컨템포러리 주얼리 메종입니다. 필요보다 욕망에 응답하는 브랜드 — 화가가 예술과 주얼리를 엮어 내는, 땅에서 비롯된 창조. 세 음절 — VON·LO·VI — 은 음악성을 위해 선택되었고, 수수께끼 같은 시처럼, 언제나 사랑으로부터 살라는 상기이기도 합니다.",
       "about.label2": "메종",
       "about.p2":
-        "예술과 회화의 합류점에서 Vonlovi는 세 지역에 펼쳐집니다. 창조의 장소인 파리, 경석이 깎이는 쥐라의 산들, 손으로 완성되는 포르투갈. 모두 주문 제작이며 3~5주가 필요합니다.",
+        "예술과 회화의 합류점에서 Vonlovi는 세 지역에 펼쳐집니다. 쥐라에서 보석 세공사와의 만남이 경석에 커팅을 주었습니다. 파리가 만들고, 쥐라가 깎고, 포르투갈이 손으로 완성합니다. 모두 주문 제작이며 3~5주가 필요합니다.",
       "about.label3": "아티스트",
       "about.p3":
         "De Rrusie는 화가입니다. 캔버스에서는 하늘의 광대함과 추상을 그리고, Vonlovi에서는 귀함으로, 무한히 작은 것, 섬세함으로 다가갑니다. 그로부터 태어나는 주얼리는 신체적이고, 개인적이며, 감각적입니다.",
@@ -927,7 +955,7 @@
 
   function loadProducts() {
     if (!productDictPromise) {
-      productDictPromise = fetch("data/products-i18n.json", { cache: "no-store" })
+      productDictPromise = fetch("/data/products-i18n.json", { cache: "no-store" })
         .then((res) => (res.ok ? res.json() : {}))
         .then((data) => {
           productDict = data || {};
@@ -994,6 +1022,32 @@
     };
     return FAM[code]?.[famille] || famille;
   }
+
+  /** Root-absolute asset URL so /collection (cleanUrls) does not resolve relative to itself. */
+  function assetUrl(path) {
+    if (!path) return "";
+    let p = String(path).trim().replace(/^\.\//, "");
+    if (/^https?:\/\//i.test(p)) return p;
+    if (!p.startsWith("/")) p = "/" + p;
+    const qIndex = p.indexOf("?");
+    const base = qIndex >= 0 ? p.slice(0, qIndex) : p;
+    const qs = qIndex >= 0 ? p.slice(qIndex + 1) : "";
+    const params = new URLSearchParams(qs);
+    if (!params.has("v")) params.set("v", "2");
+    return encodeURI(base) + "?" + params.toString();
+  }
+
+  function productThumbUrl(localPath) {
+    const parts = String(localPath || "")
+      .split("/")
+      .filter((seg) => seg && seg !== ".");
+    if (parts.length < 2) return "";
+    const folder = parts[parts.length - 2];
+    if (!folder) return "";
+    return assetUrl("assets/products/" + folder + ".jpg");
+  }
+
+  window.VonloviAsset = { url: assetUrl, thumbUrl: productThumbUrl };
 
   window.VonloviI18n = {
     get,

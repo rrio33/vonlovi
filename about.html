@@ -29,8 +29,8 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="chrome.css?v=6" />
-    <link rel="stylesheet" href="about-page.css?v=4" />
+    <link rel="stylesheet" href="chrome.css?v=8" />
+    <link rel="stylesheet" href="about-page.css?v=5" />
     <style>
       /* Critical film styles — always apply even if external CSS is cached/blocked */
       body.page--about-film {
@@ -72,7 +72,8 @@
         color: #f7f3ef;
       }
       body.page--about-film .about__label,
-      body.page--about-film .about__p {
+      body.page--about-film .about__p,
+      body.page--about-film .about__assurances {
         color: rgba(247, 243, 239, 0.88) !important;
       }
       body.page--about-film .about__poincon-img--maker {
@@ -93,20 +94,6 @@
   </head>
   <body class="page--about page--about-film is-chrome-dark" data-chrome="dark">
     <div class="about-bg" aria-hidden="true">
-      <video
-        class="about-bg__video"
-        autoplay
-        muted
-        loop
-        playsinline
-        webkit-playsinline
-        preload="auto"
-        poster="assets/about/polishing-poster.jpg"
-        disablepictureinpicture
-      >
-        <source src="assets/about/polishing.mp4" type="video/mp4" />
-        <source src="assets/about/polishing.m4v" type="video/mp4" />
-      </video>
       <div class="about-bg__veil"></div>
     </div>
 
@@ -231,9 +218,9 @@
           <p class="about__label" data-i18n="about.label2">La maison</p>
           <p class="about__p" data-i18n="about.p2">
             Au confluent de l'art et de la peinture, Vonlovi se déploie entre trois
-            territoires : Paris, lieu de toutes les créations ; les montagnes du Jura,
-            où sont taillées les pierres dures ; le Portugal, où les pièces sont
-            fabriquées à la main. Chaque pièce est réalisée sur commande ; trois à
+            territoires. C'est une rencontre, dans le Jura, avec un lapidaire, qui a
+            donné aux pierres dures leur coupe : Paris crée ; le Jura taille ; le
+            Portugal fait à la main. Chaque pièce est réalisée sur commande ; trois à
             cinq semaines sont nécessaires.
           </p>
         </article>
@@ -258,6 +245,13 @@
         </article>
       </div>
 
+      <p class="about__assurances" data-i18n="product.assurances" data-i18n-html>
+        Sur commande, trois à cinq semaines. Or jaune 750/1000, poinçons de garantie.
+        Livraison DHL. Retours sous 14 jours, hors pièces personnalisées.
+        <a href="shipping.html">Livraison</a> · <a href="returns.html">Retours</a> ·
+        <a href="care.html">Entretien</a>.
+      </p>
+
       <div class="about__poincon" aria-label="Poinçons de garantie Vonlovi — or 18 carats (750)">
         <img
           class="about__poincon-img about__poincon-img--maker"
@@ -280,8 +274,8 @@
       </div>
     </main>
 
-    <script src="i18n.js"></script>
-    <script src="cart.js"></script>
+    <script src="i18n.js?v=3"></script>
+    <script src="cart.js?v=2"></script>
     <script src="chrome.js?v=6" defer></script>
     <script src="about.js?v=4" defer></script>
   </body>

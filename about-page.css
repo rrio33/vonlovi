@@ -160,6 +160,25 @@ body.page--about-film .about__p {
   padding: 0;
 }
 
+.about__assurances {
+  margin: 0 0 2.4em;
+  max-width: 52ch;
+  font-size: 13px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 1.7;
+  color: rgba(26, 26, 26, 0.55);
+}
+
+.about__assurances a {
+  color: inherit;
+  text-underline-offset: 3px;
+}
+
+body.page--about-film .about__assurances {
+  color: rgba(247, 243, 239, 0.72);
+}
+
 .about__poincon-img {
   display: block;
   height: auto;
