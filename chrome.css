@@ -128,12 +128,12 @@ body[data-mark-accent="purple"] .site-chrome__mark-img--purple {
 .site-chrome__link,
 .site-shop__trigger {
   font-family: var(--chrome-serif);
-  font-size: clamp(12px, 1.2vw, 15px);
-  font-weight: 400;
-  letter-spacing: 0.14em;
+  font-size: clamp(13px, 1.35vw, 16px);
+  font-weight: 500;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   text-decoration: none;
-  color: #111111;
+  color: #0a0908;
   background: none;
   border: 0;
   padding: 0;
@@ -143,16 +143,21 @@ body[data-mark-accent="purple"] .site-chrome__mark-img--purple {
   white-space: nowrap;
   pointer-events: auto;
   line-height: 1.15;
-  /* Read on cream and on pale campaign stills: dark ink + thin light edge */
+  -webkit-text-stroke: 0.25px #0a0908;
+  /* Dark ink holds on cream and pale campaign stills; light edge for darker patches */
   text-shadow:
-    0 0 1px rgba(255, 255, 255, 1),
-    0 1px 2px rgba(255, 255, 255, 0.9),
-    0 0 1px rgba(0, 0, 0, 0.28);
+    0 0 1px #ffffff,
+    0 1px 2px rgba(255, 255, 255, 0.95),
+    0 0 1px rgba(10, 9, 8, 0.35);
 }
 
-body.is-chrome-dark .site-chrome__link,
-body.is-chrome-dark .site-shop__trigger {
+/* Logo may invert with the photo; corner labels stay dark unless the page is a dark film */
+body[data-chrome="dark"] .site-chrome__link,
+body[data-chrome="dark"] .site-shop__trigger,
+body.page--about-film .site-chrome__link,
+body.page--about-film .site-shop__trigger {
   color: #f7f3ef;
+  -webkit-text-stroke: 0.25px #f7f3ef;
   text-shadow:
     0 0 1px rgba(0, 0, 0, 0.95),
     0 1px 3px rgba(0, 0, 0, 0.65);
@@ -282,7 +287,7 @@ body.is-chrome-dark .site-shop__panel {
 
   .site-chrome__link,
   .site-shop__trigger {
-    font-size: 12px;
-    letter-spacing: 0.12em;
+    font-size: 13px;
+    letter-spacing: 0.1em;
   }
 }
