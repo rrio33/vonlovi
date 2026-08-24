@@ -927,7 +927,7 @@
 
   function loadProducts() {
     if (!productDictPromise) {
-      productDictPromise = fetch("data/products-i18n.json", { cache: "no-store" })
+      productDictPromise = fetch("/data/products-i18n.json", { cache: "no-store" })
         .then((res) => (res.ok ? res.json() : {}))
         .then((data) => {
           productDict = data || {};
@@ -994,6 +994,32 @@
     };
     return FAM[code]?.[famille] || famille;
   }
+
+  /** Root-absolute asset URL so /collection (cleanUrls) does not resolve relative to itself. */
+  function assetUrl(path) {
+    if (!path) return "";
+    let p = String(path).trim().replace(/^\.\//, "");
+    if (/^https?:\/\//i.test(p)) return p;
+    if (!p.startsWith("/")) p = "/" + p;
+    const qIndex = p.indexOf("?");
+    const base = qIndex >= 0 ? p.slice(0, qIndex) : p;
+    const qs = qIndex >= 0 ? p.slice(qIndex + 1) : "";
+    const params = new URLSearchParams(qs);
+    if (!params.has("v")) params.set("v", "2");
+    return encodeURI(base) + "?" + params.toString();
+  }
+
+  function productThumbUrl(localPath) {
+    const parts = String(localPath || "")
+      .split("/")
+      .filter((seg) => seg && seg !== ".");
+    if (parts.length < 2) return "";
+    const folder = parts[parts.length - 2];
+    if (!folder) return "";
+    return assetUrl("assets/products/" + folder + ".jpg");
+  }
+
+  window.VonloviAsset = { url: assetUrl, thumbUrl: productThumbUrl };
 
   window.VonloviI18n = {
     get,

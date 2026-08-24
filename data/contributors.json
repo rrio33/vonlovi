@@ -131,12 +131,7 @@
     },
     {
       "id": "delawhere",
-      "name": "Delawhere",
-      "cover": "assets/contributors/delawhere/01.mp4",
-      "coverType": "video",
-      "images": [
-        "assets/contributors/delawhere/01.mp4"
-      ]
+      "name": "Delawhere"
     },
     {
       "id": "ls-archives",

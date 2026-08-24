@@ -40,7 +40,7 @@
           const labels = labelFor(item);
           return `
         <article class="panier__row" data-slug="${item.slug}">
-          <img class="panier__thumb" src="${item.image}" alt="" />
+          <img class="panier__thumb" src="${window.VonloviAsset ? VonloviAsset.url(item.image) : item.image}" alt="" />
           <div class="panier__meta">
             <h2 class="panier__name"><a href="product.html?slug=${encodeURIComponent(item.slug)}">${labels.nom}</a></h2>
             <p class="panier__famille">${labels.famille}</p>

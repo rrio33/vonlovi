@@ -35,14 +35,15 @@
     document.title = `${loc.nom} — VONLOVI`;
     const images = (product.images || [])
       .map((img) => img.local)
-      .filter(Boolean);
+      .filter(Boolean)
+      .map((src) => (window.VonloviAsset ? VonloviAsset.url(src) : src));
 
     root.innerHTML = `
       <div class="product__gallery" data-chrome-surface>
         ${images
           .map(
             (src, i) =>
-              `<img src="${src}" alt="${loc.nom}" ${i === 0 ? 'fetchpriority="high"' : 'loading="lazy"'} />`
+              `<img src="${src}" alt="${loc.nom}" ${i === 0 ? 'fetchpriority="high"' : 'loading="lazy"'} onerror="this.remove()" />`
           )
           .join("")}
       </div>
@@ -73,7 +74,7 @@
 
     try {
       if (window.VonloviI18n?.loadProducts) await VonloviI18n.loadProducts();
-      const res = await fetch("data/catalogue.json", { cache: "no-store" });
+      const res = await fetch("/data/catalogue.json", { cache: "no-store" });
       const catalogue = await res.json();
       product = catalogue.find((item) => item.slug === slug) || null;
       if (!product) {

@@ -35,10 +35,16 @@
     grid.innerHTML = products
       .map((p) => {
         const loc = window.VonloviI18n ? VonloviI18n.localizeProduct(p) : p;
-        const img = p.images?.[0]?.local || "";
+        const local = p.images?.[0]?.local || "";
+        const img = window.VonloviAsset ? VonloviAsset.url(local) : local;
+        const fallback = window.VonloviAsset ? VonloviAsset.thumbUrl(local) : "";
+        const onerror =
+          fallback && fallback !== img
+            ? ` onerror="this.onerror=null;this.src='${fallback}'"`
+            : "";
         return `
           <a class="collection__card" href="product.html?slug=${encodeURIComponent(p.slug)}" data-chrome-surface>
-            <img src="${img}" alt="${loc.nom}" loading="lazy" />
+            <img src="${img}" alt="${loc.nom}" loading="lazy"${onerror} />
             <span class="collection__card-label">${loc.nom}</span>
           </a>
         `;
@@ -49,7 +55,7 @@
   async function init() {
     try {
       if (window.VonloviI18n?.loadProducts) await VonloviI18n.loadProducts();
-      const res = await fetch("data/catalogue.json", { cache: "no-store" });
+      const res = await fetch("/data/catalogue.json", { cache: "no-store" });
       const catalogue = await res.json();
       products = meta.familles
         ? catalogue.filter((p) => meta.familles.includes(p.famille))
