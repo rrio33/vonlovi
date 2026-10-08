@@ -5,13 +5,56 @@
   if (!buttons.length || !window.VonloviI18n) return;
 
   const video = document.querySelector(".intro__video");
+  let langsReleased = false;
+
+  const releaseLangs = () => {
+    if (langsReleased) return;
+    langsReleased = true;
+    document.body.classList.add("is-film-live");
+  };
+
   if (video) {
+    video.muted = true;
+    video.defaultMuted = true;
+    video.setAttribute("muted", "");
+    video.playsInline = true;
+    video.setAttribute("playsinline", "");
+    video.setAttribute("webkit-playsinline", "");
+    video.loop = true;
+    video.preload = "auto";
+
     const tryPlay = () => {
-      video.play().catch(() => {});
+      const p = video.play();
+      if (p && typeof p.catch === "function") p.catch(() => {});
     };
-    tryPlay();
+
+    const startAtBeginning = () => {
+      try {
+        if (!Number.isNaN(video.currentTime) && video.currentTime > 0.08) {
+          video.currentTime = 0;
+        }
+      } catch (_) {
+        /* ignore until metadata is ready */
+      }
+      tryPlay();
+    };
+
+    startAtBeginning();
+    video.addEventListener("loadedmetadata", startAtBeginning, { once: true });
     video.addEventListener("loadeddata", tryPlay, { once: true });
+    video.addEventListener("canplay", tryPlay, { once: true });
+
+    // Hold FR/EN/JA/KO a beat so the first movement is on screen before a click.
+    video.addEventListener(
+      "playing",
+      () => window.setTimeout(releaseLangs, 420),
+      { once: true }
+    );
+    video.addEventListener("error", releaseLangs, { once: true });
   }
+
+  // Never trap the visitor on a silent intro if the film 404s or autoplay is blocked.
+  window.setTimeout(releaseLangs, 1600);
 
   buttons.forEach((btn) => {
     btn.addEventListener("click", () => {

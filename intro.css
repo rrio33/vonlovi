@@ -101,7 +101,12 @@ body.page--intro {
   list-style: none;
   opacity: 0;
   transform: translateY(8px);
-  animation: intro-langs 0.8s ease 0.85s forwards;
+  pointer-events: none;
+}
+
+body.is-film-live .intro__langs {
+  pointer-events: auto;
+  animation: intro-langs 0.8s ease 0.12s forwards;
 }
 
 .intro__lang {
@@ -131,7 +136,10 @@ body.page--intro {
   height: 11px;
   background: var(--intro-muted);
   opacity: 0;
-  animation: intro-langs 0.8s ease 0.85s forwards;
+}
+
+body.is-film-live .intro__sep {
+  animation: intro-langs 0.8s ease 0.12s forwards;
 }
 
 @keyframes intro-logo {
@@ -155,6 +163,7 @@ body.page--intro {
     animation: none;
     opacity: 1;
     transform: none;
+    pointer-events: auto;
   }
 
   .intro__video {
