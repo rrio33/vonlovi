@@ -92,6 +92,34 @@
     return `${prefix} EU ${size} — Ø ${mm} mm`;
   }
 
+  const WOO_CART = {
+    fr: "https://vonlovi.com/panier/",
+    en: "https://vonlovi.com/en/cart/",
+    ja: "https://vonlovi.com/en/cart/",
+    ko: "https://vonlovi.com/en/cart/",
+  };
+
+  function lang() {
+    return window.VonloviI18n?.get?.() || "fr";
+  }
+
+  function cartUrl(code = lang()) {
+    return WOO_CART[code] || WOO_CART.fr;
+  }
+
+  function addToCartUrl(productId) {
+    const url = new URL(cartUrl());
+    url.searchParams.set("add-to-cart", String(productId));
+    return url.toString();
+  }
+
+  function bindShopCartLinks() {
+    const href = cartUrl();
+    document.querySelectorAll("[data-cart-link]").forEach((el) => {
+      el.setAttribute("href", href);
+    });
+  }
+
   function updateBadges() {
     const n = count();
     document.querySelectorAll("[data-cart-count]").forEach((el) => {
@@ -102,6 +130,7 @@
     document.querySelectorAll("[data-cart-link]").forEach((el) => {
       el.classList.toggle("has-items", n > 0);
     });
+    bindShopCartLinks();
   }
 
   window.VonloviCart = {
@@ -116,8 +145,12 @@
     formatMoney,
     formatSize,
     updateBadges,
+    cartUrl,
+    addToCartUrl,
+    bindShopCartLinks,
   };
 
   document.addEventListener("DOMContentLoaded", updateBadges);
+  window.addEventListener("vonlovi:lang", bindShopCartLinks);
   updateBadges();
 })();

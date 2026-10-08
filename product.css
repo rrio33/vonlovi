@@ -89,6 +89,7 @@ body.page--product {
 
 .product__cta {
   align-self: flex-start;
+  display: inline-block;
   font-size: 10px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
