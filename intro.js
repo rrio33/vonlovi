@@ -43,9 +43,13 @@
     video.addEventListener("loadedmetadata", startAtBeginning, { once: true });
     video.addEventListener("loadeddata", tryPlay, { once: true });
     video.addEventListener("canplay", tryPlay, { once: true });
-    window.addEventListener("pageshow", tryPlay);
+    const wakeFilm = () => {
+      document.body.classList.remove("is-leaving");
+      tryPlay();
+    };
+    window.addEventListener("pageshow", wakeFilm);
     document.addEventListener("visibilitychange", () => {
-      if (document.visibilityState === "visible") tryPlay();
+      if (document.visibilityState === "visible") wakeFilm();
     });
 
     // Hold FR/EN/JA/KO until the chain is already moving on the dark field.
