@@ -17,12 +17,12 @@
     window.dispatchEvent(new CustomEvent("vonlovi:cart", { detail: items }));
   }
 
-  function sizeKey(item) {
-    return item?.size ? String(item.size) : "";
+  function extrasKey(item) {
+    return [item?.size || "", item?.length || "", item?.color || ""].join("|");
   }
 
-  function sameLine(item, slug, size) {
-    return item.slug === slug && sizeKey(item) === (size || "");
+  function sameLine(item, slug, extras = {}) {
+    return item.slug === slug && extrasKey(item) === extrasKey(extras);
   }
 
   function count(items = read()) {
@@ -31,19 +31,28 @@
 
   function add(product, qty = 1, extras = {}) {
     const items = read();
-    const size = extras.size ? String(extras.size) : "";
-    const existing = items.find((item) => sameLine(item, product.slug, size));
+    const line = {
+      size: extras.size ? String(extras.size) : "",
+      length: extras.length ? String(extras.length) : "",
+      color: extras.color ? String(extras.color) : "",
+      wooId: extras.wooId || product.id || null,
+    };
+    const existing = items.find((item) => sameLine(item, product.slug, line));
     if (existing) {
       existing.qty += qty;
+      if (line.wooId) existing.wooId = line.wooId;
     } else {
       items.push({
         slug: product.slug,
         nom: product.nom,
         prix: product.prix,
         prix_num: product.prix_num || 0,
-        image: product.images?.[0]?.local || "",
+        image: product.images?.[0]?.local || product.image || "",
         famille: product.famille || "",
-        size,
+        size: line.size,
+        length: line.length,
+        color: line.color,
+        wooId: line.wooId,
         qty,
       });
     }
@@ -51,22 +60,21 @@
     return items;
   }
 
-  function setQty(slug, qty, size) {
+  function setQty(slug, qty, extras = {}) {
     let items = read();
-    const sizeVal = size || "";
     if (qty <= 0) {
-      items = items.filter((item) => !sameLine(item, slug, sizeVal));
+      items = items.filter((item) => !sameLine(item, slug, extras));
     } else {
       items = items.map((item) =>
-        sameLine(item, slug, sizeVal) ? { ...item, qty } : item
+        sameLine(item, slug, extras) ? { ...item, qty } : item
       );
     }
     write(items);
     return items;
   }
 
-  function remove(slug, size) {
-    return setQty(slug, 0, size);
+  function remove(slug, extras = {}) {
+    return setQty(slug, 0, extras);
   }
 
   function clear() {
@@ -92,32 +100,28 @@
     return `${prefix} EU ${size} — Ø ${mm} mm`;
   }
 
-  const WOO_CART = {
-    fr: "https://vonlovi.com/panier/",
-    en: "https://vonlovi.com/en/cart/",
-    ja: "https://vonlovi.com/en/cart/",
-    ko: "https://vonlovi.com/en/cart/",
-  };
-
-  function lang() {
-    return window.VonloviI18n?.get?.() || "fr";
+  function formatOptions(item, translate) {
+    const t = typeof translate === "function" ? translate : () => "";
+    const bits = [];
+    if (item.size) bits.push(formatSize(item.size, translate));
+    if (item.length) {
+      const label = t("product.bracelet.length") || "Longueur";
+      bits.push(`${label} ${String(item.length).replace(/mm$/i, " mm")}`);
+    }
+    if (item.color) {
+      const colorKey = `product.color.${item.color}`;
+      const color = t(colorKey);
+      bits.push(color === colorKey ? item.color : color);
+    }
+    return bits.join(" · ");
   }
 
-  function cartUrl(code = lang()) {
-    return WOO_CART[code] || WOO_CART.fr;
-  }
-
-  function addToCartUrl(productId) {
-    const url = new URL(cartUrl());
-    url.searchParams.set("add-to-cart", String(productId));
-    return url.toString();
-  }
-
-  function bindShopCartLinks() {
-    const href = cartUrl();
-    document.querySelectorAll("[data-cart-link]").forEach((el) => {
-      el.setAttribute("href", href);
-    });
+  function extrasFrom(el) {
+    return {
+      size: el?.getAttribute("data-size") || "",
+      length: el?.getAttribute("data-length") || "",
+      color: el?.getAttribute("data-color") || "",
+    };
   }
 
   function updateBadges() {
@@ -129,8 +133,11 @@
     });
     document.querySelectorAll("[data-cart-link]").forEach((el) => {
       el.classList.toggle("has-items", n > 0);
+      const href = el.getAttribute("href") || "";
+      if (!href || href.startsWith("http")) {
+        el.setAttribute("href", "panier.html");
+      }
     });
-    bindShopCartLinks();
   }
 
   window.VonloviCart = {
@@ -144,13 +151,11 @@
     total,
     formatMoney,
     formatSize,
-    updateBadges,
-    cartUrl,
-    addToCartUrl,
-    bindShopCartLinks,
+    formatOptions,
+    extrasFrom,
+    extrasKey,
   };
 
   document.addEventListener("DOMContentLoaded", updateBadges);
-  window.addEventListener("vonlovi:lang", bindShopCartLinks);
   updateBadges();
 })();

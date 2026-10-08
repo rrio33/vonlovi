@@ -327,6 +327,26 @@
       "source": "/boutique/bagues/bague-onyx",
       "destination": "/product.html?slug=bague-onyx",
       "permanent": true
+    },
+    {
+      "source": "/commande",
+      "destination": "/checkout.html",
+      "permanent": true
+    },
+    {
+      "source": "/cart",
+      "destination": "/panier.html",
+      "permanent": true
+    },
+    {
+      "source": "/en/cart",
+      "destination": "/panier.html",
+      "permanent": true
+    },
+    {
+      "source": "/en/checkout",
+      "destination": "/checkout.html",
+      "permanent": true
     }
   ]
 }

@@ -168,8 +168,10 @@ body.page--product {
   text-underline-offset: 3px;
 }
 
-.product__cta.is-waiting {
+.product__cta.is-waiting,
+.product__cta:disabled {
   opacity: 0.4;
+  cursor: default;
 }
 
 .product__back {

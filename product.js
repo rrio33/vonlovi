@@ -86,23 +86,20 @@
     return null;
   }
 
-  function shopHref() {
-    const variation = findVariation();
-    if (variation?.id && window.VonloviCart?.addToCartUrl) {
-      return VonloviCart.addToCartUrl(variation.id);
-    }
-    if (woo?.type === "variable" || isRing() || isBracelet()) {
-      return woo?.url || product?.url || "";
-    }
-    const id = woo?.id || product?.id;
-    if (id && window.VonloviCart?.addToCartUrl) return VonloviCart.addToCartUrl(id);
-    return woo?.url || product?.url || "";
-  }
-
   function optionsReady() {
     if (isRing()) return Boolean(selectedSize() && findVariation());
     if (isBracelet()) return Boolean(selectedLength() && selectedColor() && findVariation());
-    return Boolean(woo?.id || product?.id || woo?.url || product?.url);
+    return Boolean(product);
+  }
+
+  function lineExtras() {
+    const variation = findVariation();
+    return {
+      size: selectedSize(),
+      length: selectedLength(),
+      color: selectedColor(),
+      wooId: variation?.id || woo?.id || product?.id || null,
+    };
   }
 
   function sizeOptionsHtml(selected) {
@@ -179,11 +176,8 @@
 
   function syncCta(cta) {
     if (!cta) return;
-    const href = shopHref();
-    const ready = optionsReady() && href;
-    cta.setAttribute("href", ready ? href : "#");
-    cta.classList.toggle("is-waiting", !ready);
-    cta.setAttribute("aria-disabled", ready ? "false" : "true");
+    cta.classList.toggle("is-waiting", !optionsReady());
+    cta.disabled = !optionsReady();
   }
 
   function render() {
@@ -215,7 +209,7 @@
         <p class="product__price">${product.prix || ""}</p>
         <p class="product__desc">${loc.description || ""}</p>
         ${optionsHtml()}
-        <a class="product__cta" id="add-to-cart" href="#">${t("product.add")}</a>
+        <button type="button" class="product__cta" id="add-to-cart">${t("product.add")}</button>
         ${assurancesHtml()}
         <a class="product__back" href="collection.html?cat=${catParam(product.famille)}">← ${familleLabel || "Collection"}</a>
       </div>
@@ -227,12 +221,16 @@
     root.querySelectorAll("select").forEach((select) => {
       select.addEventListener("change", () => syncCta(cta));
     });
-    cta?.addEventListener("click", (event) => {
-      if (optionsReady() && shopHref()) return;
-      event.preventDefault();
-      const firstEmpty = [...root.querySelectorAll("select")].find((el) => !el.value);
-      firstEmpty?.focus();
-      cta.classList.add("is-waiting");
+    cta?.addEventListener("click", () => {
+      if (!window.VonloviCart) return;
+      if (!optionsReady()) {
+        const firstEmpty = [...root.querySelectorAll("select")].find((el) => !el.value);
+        firstEmpty?.focus();
+        cta.classList.add("is-waiting");
+        return;
+      }
+      VonloviCart.add(product, 1, lineExtras());
+      window.location.href = "panier.html";
     });
     syncCta(cta);
   }
