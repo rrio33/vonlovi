@@ -44,17 +44,17 @@
     video.addEventListener("loadeddata", tryPlay, { once: true });
     video.addEventListener("canplay", tryPlay, { once: true });
 
-    // Hold FR/EN/JA/KO a beat so the first movement is on screen before a click.
+    // Hold FR/EN/JA/KO until the chain is already moving on the dark field.
     video.addEventListener(
       "playing",
-      () => window.setTimeout(releaseLangs, 420),
+      () => window.setTimeout(releaseLangs, 1100),
       { once: true }
     );
     video.addEventListener("error", releaseLangs, { once: true });
   }
 
   // Never trap the visitor on a silent intro if the film 404s or autoplay is blocked.
-  window.setTimeout(releaseLangs, 1600);
+  window.setTimeout(releaseLangs, 2400);
 
   buttons.forEach((btn) => {
     btn.addEventListener("click", () => {
