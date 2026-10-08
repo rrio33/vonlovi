@@ -43,6 +43,10 @@
     video.addEventListener("loadedmetadata", startAtBeginning, { once: true });
     video.addEventListener("loadeddata", tryPlay, { once: true });
     video.addEventListener("canplay", tryPlay, { once: true });
+    window.addEventListener("pageshow", tryPlay);
+    document.addEventListener("visibilitychange", () => {
+      if (document.visibilityState === "visible") tryPlay();
+    });
 
     // Hold FR/EN/JA/KO until the chain is already moving on the dark field.
     video.addEventListener(
