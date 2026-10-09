@@ -4,9 +4,12 @@
   const root = document.getElementById("contributors-root");
   if (!root) return;
 
+  const FLOW_MS = 3200;
   const t = (key) => (window.VonloviI18n ? VonloviI18n.t(key) : key);
   const params = new URLSearchParams(window.location.search);
   const personId = params.get("id");
+  const prefersReducedMotion = () =>
+    window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   function roleFor(id) {
     return t(`contributors.role.${id}`);
@@ -17,15 +20,29 @@
     return /\.(mp4|webm|mov)(\?|$)/i.test(src || "");
   }
 
+  function stillsFor(person) {
+    if (!person) return [];
+    if (isVideo(person.cover, person)) return person.cover ? [person.cover] : [];
+    const seen = new Set();
+    const out = [];
+    (person.images && person.images.length ? person.images : [person.cover]).forEach((src) => {
+      if (!src || seen.has(src)) return;
+      seen.add(src);
+      out.push(src);
+    });
+    return out;
+  }
+
   function mediaMarkup(person, { visible = false, eager = false } = {}) {
-    const src = person.cover;
-    if (!src) return "";
-    if (isVideo(src, person)) {
+    const srcs = stillsFor(person);
+    if (!srcs.length) return "";
+    if (isVideo(srcs[0], person)) {
       return `
         <video
           class="contributors__media${visible ? " is-visible" : ""}"
           data-id="${person.id}"
-          src="${src}"
+          data-frame="0"
+          src="${srcs[0]}"
           muted
           loop
           playsinline
@@ -33,16 +50,21 @@
         ></video>
       `;
     }
-    return `
-      <img
-        class="contributors__media${visible ? " is-visible" : ""}"
-        src="${src}"
-        alt=""
-        data-id="${person.id}"
-        loading="${eager ? "eager" : "lazy"}"
-        decoding="async"
-      />
-    `;
+    return srcs
+      .map(
+        (src, i) => `
+        <img
+          class="contributors__media${visible && i === 0 ? " is-visible" : ""}"
+          src="${src}"
+          alt=""
+          data-id="${person.id}"
+          data-frame="${i}"
+          loading="${eager && i < 2 ? "eager" : "lazy"}"
+          decoding="async"
+        />
+      `
+      )
+      .join("");
   }
 
   function bindHoverPreview(rootEl, list) {
@@ -51,16 +73,47 @@
     if (!names.length) return;
 
     const firstWithCover = list.find((p) => p.cover)?.id || list[0]?.id || null;
+    let timer = null;
+
+    function stopFlow() {
+      if (timer) {
+        clearInterval(timer);
+        timer = null;
+      }
+    }
+
+    function framesFor(id) {
+      return media.filter((el) => el.dataset.id === id);
+    }
+
+    function showFrame(frames, index) {
+      frames.forEach((el, i) => el.classList.toggle("is-visible", i === index));
+    }
+
+    function startFlow(id) {
+      stopFlow();
+      const frames = framesFor(id);
+      if (frames.length < 2 || frames[0].tagName === "VIDEO" || prefersReducedMotion()) return;
+      frames.forEach((el) => {
+        if (el.tagName === "IMG") el.loading = "eager";
+      });
+      let frame = 0;
+      timer = setInterval(() => {
+        frame = (frame + 1) % frames.length;
+        showFrame(frames, frame);
+      }, FLOW_MS);
+    }
 
     function show(id) {
       names.forEach((el) => el.classList.toggle("is-active", el.dataset.id === id));
       media.forEach((el) => {
         const on = el.dataset.id === id;
-        el.classList.toggle("is-visible", on);
         if (el.tagName === "VIDEO") {
           if (on) {
+            el.classList.add("is-visible");
             el.play().catch(() => {});
           } else {
+            el.classList.remove("is-visible");
             el.pause();
             try {
               el.currentTime = 0;
@@ -68,8 +121,11 @@
               /* ignore */
             }
           }
+          return;
         }
+        el.classList.toggle("is-visible", on && el.dataset.frame === "0");
       });
+      startFlow(id);
     }
 
     names.forEach((el) => {
@@ -77,6 +133,8 @@
       el.addEventListener("mouseenter", () => show(id));
       el.addEventListener("focus", () => show(id));
     });
+
+    window.addEventListener("pagehide", stopFlow);
 
     if (firstWithCover) show(firstWithCover);
   }

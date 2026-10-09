@@ -41,6 +41,16 @@
       "assets/contributors/celia-spenard-ko/10.jpg",
       "assets/contributors/celia-spenard-ko/09.jpg",
     ],
+    "errol-rainey": [
+      "assets/contributors/errol-rainey/01.jpg",
+      "assets/contributors/errol-rainey/02.jpg",
+      "assets/contributors/errol-rainey/03.jpg",
+    ],
+    "camneh": [
+      "assets/contributors/camneh/01.jpg",
+      "assets/contributors/camneh/02.jpg",
+      "assets/contributors/camneh/03.jpg",
+    ],
     "goldie-williams": [
       "assets/contributors/goldie-williams/14.jpg",
       "assets/contributors/goldie-williams/17.jpg",
@@ -107,8 +117,10 @@
     slides.forEach((slide, n) => {
       slide.classList.toggle("is-active", n === index);
     });
-    // Refresh chrome contrast against the new slide
+    // Refresh chrome contrast against the new slide (and once the pixels have settled)
     window.dispatchEvent(new Event("scroll"));
+    setTimeout(() => window.dispatchEvent(new Event("scroll")), 80);
+    setTimeout(() => window.dispatchEvent(new Event("scroll")), 420);
   }
 
   function next() {
@@ -181,6 +193,21 @@
 
     build();
     show(0);
+
+    const reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (!reduce && slides.length > 1) {
+      let flow = setInterval(next, 5500);
+      document.addEventListener("visibilitychange", () => {
+        if (document.hidden) {
+          if (flow) {
+            clearInterval(flow);
+            flow = null;
+          }
+        } else if (!flow) {
+          flow = setInterval(next, 5500);
+        }
+      });
+    }
   }
 
   init();
