@@ -62,10 +62,10 @@
     {
       "id": "delawhere",
       "name": "Delawhere",
-      "cover": "assets/intro/bg.mp4",
+      "cover": "assets/contributors/delawhere/01.mp4",
       "coverType": "video",
       "images": [
-        "assets/intro/bg.mp4"
+        "assets/contributors/delawhere/01.mp4"
       ]
     },
     {
