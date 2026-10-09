@@ -548,7 +548,7 @@
       "cookies.papers.label": "文書",
       "cookies.papers.text":
         "公式の文書：<a href=\"https://vonlovi.com/mentions-legales/\">法的表記</a>、<a href=\"https://vonlovi.com/cgv/\">利用規約</a>、<a href=\"https://vonlovi.com/politique-de-confidentialite/\">プライバシー</a>、<a href=\"https://vonlovi.com/politique-de-cookies-ue/\">クッキー方針</a>。",
-      "cookies.done": "通いは記されました。",
+      "cookies.done": "訪れは記されました。",
       "notfound.text": "この頁は、もうありません。",
       "notfound.back": "戻る",
       "product.add": "カートに入れる",
