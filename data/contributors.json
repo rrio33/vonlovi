@@ -82,6 +82,16 @@
       ]
     },
     {
+      "id": "camneh",
+      "name": "Camneh",
+      "cover": "assets/contributors/camneh/01.jpg",
+      "images": [
+        "assets/contributors/camneh/01.jpg",
+        "assets/contributors/camneh/02.jpg",
+        "assets/contributors/camneh/03.jpg"
+      ]
+    },
+    {
       "id": "goldie-williams",
       "name": "Goldie Williams",
       "cover": "assets/contributors/goldie-williams/01.jpg",

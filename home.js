@@ -46,6 +46,11 @@
       "assets/contributors/errol-rainey/02.jpg",
       "assets/contributors/errol-rainey/03.jpg",
     ],
+    "camneh": [
+      "assets/contributors/camneh/01.jpg",
+      "assets/contributors/camneh/02.jpg",
+      "assets/contributors/camneh/03.jpg",
+    ],
     "goldie-williams": [
       "assets/contributors/goldie-williams/14.jpg",
       "assets/contributors/goldie-williams/17.jpg",
