@@ -105,6 +105,24 @@
     return Boolean(woo?.id || product?.id || woo?.url || product?.url);
   }
 
+  function esc(value) {
+    return String(value || "")
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/"/g, "&quot;");
+  }
+
+  function setMeta(selector, attr, content) {
+    const el = document.querySelector(selector);
+    if (el) el.setAttribute(attr, content);
+  }
+
+  function optionErrorText() {
+    if (isRing()) return t("product.size.error");
+    if (isBracelet()) return t("product.options.error");
+    return "";
+  }
+
   function sizeOptionsHtml(selected) {
     const sizes = unique(variations().map((v) => v.size)).sort((a, b) => Number(a) - Number(b));
     const choose = t("product.size.choose");
@@ -184,6 +202,8 @@
     cta.setAttribute("href", ready ? href : "#");
     cta.classList.toggle("is-waiting", !ready);
     cta.setAttribute("aria-disabled", ready ? "false" : "true");
+    const err = document.getElementById("product-option-error");
+    if (ready && err) err.hidden = true;
   }
 
   function render() {
@@ -195,29 +215,49 @@
       "";
 
     document.title = `${loc.nom} — VONLOVI`;
+    const desc = loc.description || `${loc.nom} — Vonlovi, or jaune 750, sur commande.`;
+    const pageUrl = `https://vonlovi.vercel.app/product?slug=${encodeURIComponent(slug)}`;
+    setMeta('meta[name="description"]', "content", desc);
+    setMeta('meta[property="og:title"]', "content", document.title);
+    setMeta('meta[property="og:description"]', "content", desc);
+    setMeta('meta[property="og:url"]', "content", pageUrl);
+    setMeta('link[rel="canonical"]', "href", pageUrl);
     const images = (product.images || [])
       .map((img) => img.local)
       .filter(Boolean)
       .map((src) => (window.VonloviAsset ? VonloviAsset.url(src) : src));
+    if (images[0]) {
+      const abs = images[0].startsWith("http")
+        ? images[0]
+        : `https://vonlovi.vercel.app/${images[0].replace(/^\//, "")}`;
+      setMeta('meta[property="og:image"]', "content", abs);
+      setMeta('meta[name="twitter:image"]', "content", abs);
+    }
+
+    const name = esc(loc.nom);
+    const family = esc(familleLabel);
+    const price = esc(product.prix || "");
+    const copy = esc(loc.description || "");
 
     root.innerHTML = `
       <div class="product__gallery" data-chrome-surface>
         ${images
           .map(
             (src, i) =>
-              `<img src="${src}" alt="${loc.nom}" ${i === 0 ? 'fetchpriority="high"' : 'loading="lazy"'} onerror="this.remove()" />`
+              `<img src="${src}" alt="${name}" ${i === 0 ? 'fetchpriority="high"' : 'loading="lazy"'} onerror="this.remove()" />`
           )
           .join("")}
       </div>
       <div class="product__info">
-        <p class="product__famille">${familleLabel}</p>
-        <h1 class="product__title">${loc.nom}</h1>
-        <p class="product__price">${product.prix || ""}</p>
-        <p class="product__desc">${loc.description || ""}</p>
+        <p class="product__famille">${family}</p>
+        <h1 class="product__title">${name}</h1>
+        <p class="product__price">${price}</p>
+        <p class="product__desc">${copy}</p>
         ${optionsHtml()}
+        <p class="product__size-error" id="product-option-error" hidden>${esc(optionErrorText())}</p>
         <a class="product__cta" id="add-to-cart" href="#">${t("product.add")}</a>
         ${assurancesHtml()}
-        <a class="product__back" href="collection.html?cat=${catParam(product.famille)}">← ${familleLabel || "Collection"}</a>
+        <a class="product__back" href="collection.html?cat=${catParam(product.famille)}">← ${family || "Collection"}</a>
       </div>
     `;
     root.setAttribute("aria-busy", "false");
@@ -233,6 +273,11 @@
       const firstEmpty = [...root.querySelectorAll("select")].find((el) => !el.value);
       firstEmpty?.focus();
       cta.classList.add("is-waiting");
+      const err = document.getElementById("product-option-error");
+      if (err) {
+        err.textContent = optionErrorText();
+        err.hidden = false;
+      }
     });
     syncCta(cta);
   }

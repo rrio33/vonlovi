@@ -22,10 +22,32 @@
   const meta = CAT_MAP[cat] || CAT_MAP.all;
   let products = [];
 
+  function esc(value) {
+    return String(value || "")
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/"/g, "&quot;");
+  }
+
+  function setMeta(selector, attr, content) {
+    const el = document.querySelector(selector);
+    if (el) el.setAttribute(attr, content);
+  }
+
   function render() {
     const label = t(meta.labelKey);
     if (titleEl) titleEl.textContent = label;
     document.title = `${label} — VONLOVI`;
+    const desc =
+      cat === "all"
+        ? "Collection Vonlovi — pendentifs, bagues, boucles d'oreille, boutons et bracelets. Or jaune 750, sur commande."
+        : `${label} Vonlovi — or jaune 750, sur commande.`;
+    setMeta('meta[name="description"]', "content", desc);
+    setMeta('meta[property="og:title"]', "content", document.title);
+    setMeta('meta[property="og:description"]', "content", desc);
+    const pageUrl = `https://vonlovi.vercel.app/collection${cat !== "all" ? `?cat=${encodeURIComponent(cat)}` : ""}`;
+    setMeta('meta[property="og:url"]', "content", pageUrl);
+    setMeta('link[rel="canonical"]', "href", pageUrl);
 
     if (!products.length) {
       grid.innerHTML = `<p class="collection__empty">${t("collection.empty")}</p>`;
@@ -42,10 +64,11 @@
           fallback && fallback !== img
             ? ` onerror="this.onerror=null;this.src='${fallback}'"`
             : "";
+        const name = esc(loc.nom);
         return `
           <a class="collection__card" href="product.html?slug=${encodeURIComponent(p.slug)}" data-chrome-surface>
-            <img src="${img}" alt="${loc.nom}" loading="lazy"${onerror} />
-            <span class="collection__card-label">${loc.nom}</span>
+            <img src="${img}" alt="${name}" loading="lazy"${onerror} />
+            <span class="collection__card-label">${name}</span>
           </a>
         `;
       })
