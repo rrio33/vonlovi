@@ -64,18 +64,35 @@
     ];
   }
 
+  function isPaintedMedia(el) {
+    if (!el) return false;
+    if (el.tagName === "IMG") return Boolean(el.naturalWidth);
+    if (el.tagName === "VIDEO") return Boolean(el.videoWidth || el.readyState >= 2);
+    return false;
+  }
+
+  function mediaCoveringPoint(x, y) {
+    const nodes = document.querySelectorAll(
+      ".home-hero__slide.is-active img, .home-hero__slide.is-active video, .about-bg__video, .about-bg img, [data-chrome-surface] > img, [data-chrome-surface] img, .product__gallery img"
+    );
+    for (const el of nodes) {
+      if (!isPaintedMedia(el)) continue;
+      const r = el.getBoundingClientRect();
+      if (x >= r.left && x <= r.right && y >= r.top && y <= r.bottom) return el;
+    }
+    return null;
+  }
+
   function elementUnderPoint(x, y) {
     const stack = document.elementsFromPoint(x, y);
     for (const el of stack) {
-      if (el.closest?.(".site-chrome")) continue;
+      if (el.closest?.(".site-chrome") || el.closest?.(".site-cookie")) continue;
       if (el.tagName === "IMG" && el.naturalWidth) return el;
       if (el.tagName === "VIDEO") return el;
-      const img = el.querySelector?.("img");
-      if (img?.naturalWidth) return img;
-      const video = el.querySelector?.("video");
-      if (video) return video;
     }
-    return null;
+    // Home slides (and some films) use pointer-events: none, so the hit stack
+    // never includes the photograph — look up the visible still instead.
+    return mediaCoveringPoint(x, y);
   }
 
   /**
