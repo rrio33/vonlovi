@@ -434,6 +434,14 @@
     window.gtag("config", GA_ID, { anonymize_ip: true });
   }
 
+  function markContinueDone() {
+    const cta = document.getElementById("cookie-continue");
+    if (!cta) return;
+    cta.textContent = t("cookies.done", "Le passage est noté.");
+    cta.classList.add("is-done");
+    cta.setAttribute("disabled", "true");
+  }
+
   function rememberPassage() {
     try {
       localStorage.setItem(COOKIE_KEY, "1");
@@ -441,6 +449,7 @@
       /* ignore */
     }
     document.getElementById("vonlovi-cookie")?.remove();
+    markContinueDone();
     loadAnalytics();
   }
 
@@ -453,8 +462,11 @@
   }
 
   function showCookieNote() {
-    if (hasPassage() || document.getElementById("vonlovi-cookie")) {
+    const quietPage =
+      body.classList.contains("page--cookies") || body.classList.contains("page--lost");
+    if (hasPassage() || document.getElementById("vonlovi-cookie") || quietPage) {
       if (hasPassage()) loadAnalytics();
+      if (hasPassage()) markContinueDone();
       return;
     }
     const bar = document.createElement("div");
@@ -462,19 +474,25 @@
     bar.className = "site-cookie";
     bar.innerHTML = `<p>${t("cookie.text", "Ce lieu se souvient du passage.")}</p>
       <button type="button" class="site-cookie__ok">${t("cookie.ok", "Continuer")}</button>
-      <a class="site-cookie__more" href="https://vonlovi.com/politique-de-cookies-ue/">${t("cookie.more", "Confidentialité")}</a>`;
+      <a class="site-cookie__more" href="cookies.html">${t("cookie.more", "Passage")}</a>`;
     bar.querySelector(".site-cookie__ok")?.addEventListener("click", rememberPassage);
     document.body.appendChild(bar);
   }
 
+  document.getElementById("cookie-continue")?.addEventListener("click", rememberPassage);
   showCookieNote();
   window.addEventListener("vonlovi:lang", () => {
     const bar = document.getElementById("vonlovi-cookie");
-    if (!bar) return;
-    bar.querySelector("p").textContent = t("cookie.text", "Ce lieu se souvient du passage.");
-    const ok = bar.querySelector(".site-cookie__ok");
-    if (ok) ok.textContent = t("cookie.ok", "Continuer");
-    const more = bar.querySelector(".site-cookie__more");
-    if (more) more.textContent = t("cookie.more", "Confidentialité");
+    if (bar) {
+      bar.querySelector("p").textContent = t("cookie.text", "Ce lieu se souvient du passage.");
+      const ok = bar.querySelector(".site-cookie__ok");
+      if (ok) ok.textContent = t("cookie.ok", "Continuer");
+      const more = bar.querySelector(".site-cookie__more");
+      if (more) more.textContent = t("cookie.more", "Passage");
+    }
+    const cta = document.getElementById("cookie-continue");
+    if (cta?.classList.contains("is-done")) {
+      cta.textContent = t("cookies.done", "Le passage est noté.");
+    }
   });
 })();

@@ -5,63 +5,150 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="theme-color" content="#f4f0ec" />
     <title>Page introuvable — VONLOVI</title>
-    <link rel="canonical" href="https://vonlovi.vercel.app/home" />
-    <meta name="description" content="Cette page n'existe pas. Retour à VONLOVI." />
-    <meta name="robots" content="noindex" />
+    <meta
+      name="description"
+      content="Cette page n'existe pas. Retour à VONLOVI."
+    />
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png" />
     <link rel="shortcut icon" href="assets/favicon.ico" />
     <link rel="icon" type="image/png" href="assets/logo-v-mark.png" />
+    <meta property="og:title" content="Page introuvable — VONLOVI" />
+    <meta property="og:description" content="Cette page n'existe pas. Retour à VONLOVI." />
+    <meta property="og:url" content="https://vonlovi.vercel.app/home" />
+    <link rel="canonical" href="https://vonlovi.vercel.app/home" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="VONLOVI" />
+    <meta property="og:image" content="https://vonlovi.vercel.app/assets/og-image.png?v=1" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="1200" />
+    <meta property="og:image:alt" content="VONLOVI" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:image" content="https://vonlovi.vercel.app/assets/og-image.png?v=1" />
+    <meta name="robots" content="noindex" />
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap"
       rel="stylesheet"
     />
-    <style>
-      html,
-      body {
-        height: 100%;
-        margin: 0;
-      }
-      body {
-        min-height: 100dvh;
-        display: grid;
-        place-items: center;
-        background: #f4f0ec;
-        color: #0a0908;
-        font-family: "Cormorant Garamond", "Times New Roman", Georgia, serif;
-        text-align: center;
-        padding: 32px;
-      }
-      img {
-        width: clamp(96px, 14vw, 140px);
-        height: auto;
-        margin-bottom: 36px;
-      }
-      p {
-        margin: 0 0 28px;
-        font-size: 13px;
-        font-weight: 300;
-        letter-spacing: 0.08em;
-        line-height: 1.7;
-      }
-      a {
-        color: inherit;
-        font-size: 10px;
-        font-weight: 300;
-        letter-spacing: 0.22em;
-        text-transform: uppercase;
-        text-decoration: none;
-      }
-      a:hover {
-        opacity: 0.45;
-      }
-    </style>
+    <link rel="stylesheet" href="chrome.css?v=10" />
+    <link rel="stylesheet" href="about-page.css?v=7" />
   </head>
-  <body>
-    <main>
-      <img src="assets/logo-vonlovi-black.png" alt="VONLOVI" width="1024" height="421" />
-      <p>Cette page n’est plus.</p>
-      <a href="home.html">Retour</a>
+  <body class="page--about page--lost" data-chrome="light">
+    <div class="site-chrome" id="site-chrome">
+      <header class="site-chrome__header">
+        <div class="site-chrome__corner site-chrome__corner--tl site-chrome__corner--stack">
+          <div class="site-shop" id="site-shop">
+            <button
+              type="button"
+              class="site-chrome__link site-shop__trigger"
+              aria-expanded="false"
+              aria-controls="shop-panel"
+              data-i18n="nav.shop"
+            >
+              Shop
+            </button>
+            <div class="site-shop__panel" id="shop-panel">
+              <a href="collection.html?cat=pendentifs" data-i18n="shop.pendentifs">Pendentifs</a>
+              <a href="collection.html?cat=bagues" data-i18n="shop.bagues">Bagues</a>
+              <a href="collection.html?cat=boucles-d-oreilles" data-i18n="shop.boucles">Boucles d'oreille</a>
+              <a href="collection.html?cat=boutons" data-i18n="shop.boutons">Boutons</a>
+              <a href="collection.html?cat=bracelets" data-i18n="shop.bracelets">Bracelets</a>
+            </div>
+          </div>
+          <a class="site-chrome__link" href="panier.html" data-cart-link>
+            <span data-i18n="nav.panier">Panier</span> <span data-cart-count></span>
+          </a>
+        </div>
+        <div class="site-chrome__corner site-chrome__corner--tr site-chrome__corner--stack site-chrome__corner--end">
+          <a class="site-chrome__link" href="about.html" data-i18n="nav.about">About</a>
+          <a class="site-chrome__link" href="press.html" data-i18n="nav.press">Press</a>
+        </div>
+        <a class="site-chrome__logo" href="home.html" data-i18n-aria="nav.logo" aria-label="VONLOVI — accueil">
+          <span class="site-chrome__logo-word">
+            <img
+              class="site-chrome__logo-img site-chrome__logo-img--black"
+              src="assets/logo-vonlovi-black.png?v=2"
+              alt="VONLOVI"
+              width="1024"
+              height="421"
+              decoding="async"
+            />
+            <img
+              class="site-chrome__logo-img site-chrome__logo-img--white"
+              src="assets/logo-vonlovi-white.png?v=2"
+              alt=""
+              width="1024"
+              height="421"
+              decoding="async"
+              aria-hidden="true"
+            />
+          </span>
+          <span class="site-chrome__logo-mark" aria-hidden="true">
+            <img
+              class="site-chrome__mark-img site-chrome__mark-img--black"
+              src="assets/logo-mark-black.png"
+              alt=""
+              width="583"
+              height="583"
+              decoding="async"
+            />
+            <img
+              class="site-chrome__mark-img site-chrome__mark-img--white"
+              src="assets/logo-mark-white.png"
+              alt=""
+              width="583"
+              height="583"
+              decoding="async"
+            />
+            <img
+              class="site-chrome__mark-img site-chrome__mark-img--burgundy"
+              src="assets/logo-mark-burgundy.png"
+              alt=""
+              width="583"
+              height="583"
+              decoding="async"
+            />
+            <img
+              class="site-chrome__mark-img site-chrome__mark-img--red"
+              src="assets/logo-mark-red.png"
+              alt=""
+              width="583"
+              height="583"
+              decoding="async"
+            />
+            <img
+              class="site-chrome__mark-img site-chrome__mark-img--purple"
+              src="assets/logo-mark-purple.png"
+              alt=""
+              width="583"
+              height="583"
+              decoding="async"
+            />
+          </span>
+        </a>
+        <a class="site-chrome__link site-chrome__corner--bl" href="contributors.html" data-i18n="nav.regards">Regards</a>
+        <a
+          class="site-chrome__link site-chrome__corner--br"
+          href="https://www.instagram.com/vonlovi/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >@vonlovi</a
+        >
+      </header>
+    </div>
+
+        <main class="about about--lost" aria-label="Page introuvable">
+      <p class="about__lost" data-i18n="notfound.text">Cette page n’est plus.</p>
+      <a class="about__lost-back" href="home.html" data-i18n="notfound.back">Retour</a>
     </main>
+
+
+    <script src="i18n.js?v=7"></script>
+    <script src="cart.js?v=3"></script>
+    <script src="chrome.js?v=10" defer></script>
   </body>
 </html>
