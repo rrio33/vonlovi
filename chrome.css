@@ -128,9 +128,9 @@ body[data-mark-accent="purple"] .site-chrome__mark-img--purple {
 .site-chrome__link,
 .site-shop__trigger {
   font-family: var(--chrome-serif);
-  font-size: clamp(13px, 1.35vw, 16px);
-  font-weight: 500;
-  letter-spacing: 0.12em;
+  font-size: clamp(9px, 0.72vw, 11px);
+  font-weight: 300;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
   text-decoration: none;
   color: #0a0908;
@@ -142,13 +142,9 @@ body[data-mark-accent="purple"] .site-chrome__mark-img--purple {
   transition: opacity 200ms ease, color 280ms ease;
   white-space: nowrap;
   pointer-events: auto;
-  line-height: 1.15;
-  -webkit-text-stroke: 0.25px #0a0908;
-  /* Dark ink holds on cream and pale campaign stills; light edge for darker patches */
-  text-shadow:
-    0 0 1px #ffffff,
-    0 1px 2px rgba(255, 255, 255, 0.95),
-    0 0 1px rgba(10, 9, 8, 0.35);
+  line-height: 1.2;
+  -webkit-text-stroke: 0;
+  text-shadow: 0 0 12px rgba(255, 255, 255, 0.55);
 }
 
 /* Logo may invert with the photo; corner labels stay dark unless the page is a dark film */
@@ -157,10 +153,8 @@ body[data-chrome="dark"] .site-shop__trigger,
 body.page--about-film .site-chrome__link,
 body.page--about-film .site-shop__trigger {
   color: #f7f3ef;
-  -webkit-text-stroke: 0.25px #f7f3ef;
-  text-shadow:
-    0 0 1px rgba(0, 0, 0, 0.95),
-    0 1px 3px rgba(0, 0, 0, 0.65);
+  -webkit-text-stroke: 0;
+  text-shadow: 0 0 14px rgba(0, 0, 0, 0.55);
 }
 
 .site-chrome__link:hover,
@@ -209,7 +203,7 @@ body.page--about-film .site-shop__trigger {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 12px;
+  gap: 9px;
 }
 
 .site-chrome__corner--end {
@@ -276,6 +270,57 @@ body.is-chrome-dark .site-shop__panel {
   opacity: 0.5;
 }
 
+.site-cookie {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 320;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 14px 22px;
+  padding: 14px var(--chrome-pad-x) max(14px, env(safe-area-inset-bottom));
+  background: rgba(244, 240, 236, 0.92);
+  color: #0a0908;
+  font-family: var(--chrome-serif);
+  font-size: 10px;
+  font-weight: 300;
+  letter-spacing: 0.14em;
+  pointer-events: auto;
+}
+
+.site-cookie p {
+  margin: 0;
+  flex: 1 1 180px;
+}
+
+.site-cookie__ok,
+.site-cookie__more {
+  appearance: none;
+  border: 0;
+  background: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.site-cookie__ok:hover,
+.site-cookie__more:hover {
+  opacity: 0.45;
+}
+
+body.is-chrome-dark .site-cookie,
+body.page--about-film .site-cookie {
+  background: rgba(10, 9, 8, 0.88);
+  color: #f7f3ef;
+}
+
 @media (max-width: 560px) {
   .site-chrome__logo-img {
     width: 88px;
@@ -287,7 +332,7 @@ body.is-chrome-dark .site-shop__panel {
 
   .site-chrome__link,
   .site-shop__trigger {
-    font-size: 13px;
-    letter-spacing: 0.1em;
+    font-size: 10px;
+    letter-spacing: 0.18em;
   }
 }

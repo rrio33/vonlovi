@@ -29,6 +29,7 @@
   tryPlay();
   video.addEventListener("loadeddata", tryPlay, { once: true });
   video.addEventListener("canplay", tryPlay, { once: true });
+  window.addEventListener("pageshow", tryPlay);
 
   document.addEventListener("visibilitychange", () => {
     if (!document.hidden) tryPlay();

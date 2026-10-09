@@ -405,6 +405,14 @@ html {
   outline: none;
 }
 
+.site-footer__form-error {
+  width: 100%;
+  margin: 4px 0 0;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  color: #7a3a32;
+}
+
 .site-footer__form button {
   border: 0;
   background: transparent;

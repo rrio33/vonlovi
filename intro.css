@@ -156,6 +156,46 @@ body.is-film-live .intro__sep {
   }
 }
 
+.site-cookie {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 320;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 14px 22px;
+  padding: 14px clamp(24px, 6vw, 48px) max(14px, env(safe-area-inset-bottom));
+  background: rgba(10, 9, 8, 0.72);
+  color: #f7f3ef;
+  font-family: var(--intro-serif);
+  font-size: 10px;
+  font-weight: 300;
+  letter-spacing: 0.14em;
+  pointer-events: auto;
+}
+
+.site-cookie p {
+  margin: 0;
+  flex: 1 1 180px;
+}
+
+.site-cookie__ok,
+.site-cookie__more {
+  appearance: none;
+  border: 0;
+  background: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .intro__logo,
   .intro__langs,
