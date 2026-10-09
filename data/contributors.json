@@ -60,6 +60,15 @@
       ]
     },
     {
+      "id": "delawhere",
+      "name": "Delawhere",
+      "cover": "assets/intro/bg.mp4",
+      "coverType": "video",
+      "images": [
+        "assets/intro/bg.mp4"
+      ]
+    },
+    {
       "id": "goldie-williams",
       "name": "Goldie Williams",
       "cover": "assets/contributors/goldie-williams/01.jpg",
@@ -128,10 +137,6 @@
       "images": [
         "assets/contributors/maxime-wolff/01.jpg"
       ]
-    },
-    {
-      "id": "delawhere",
-      "name": "Delawhere"
     },
     {
       "id": "ls-archives",
