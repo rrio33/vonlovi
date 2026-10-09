@@ -69,6 +69,19 @@
       ]
     },
     {
+      "id": "errol-rainey",
+      "name": "Errol Rainey",
+      "cover": "assets/contributors/errol-rainey/01.jpg",
+      "images": [
+        "assets/contributors/errol-rainey/01.jpg",
+        "assets/contributors/errol-rainey/02.jpg",
+        "assets/contributors/errol-rainey/03.jpg",
+        "assets/contributors/errol-rainey/04.jpg",
+        "assets/contributors/errol-rainey/05.jpg",
+        "assets/contributors/errol-rainey/06.jpg"
+      ]
+    },
+    {
       "id": "goldie-williams",
       "name": "Goldie Williams",
       "cover": "assets/contributors/goldie-williams/01.jpg",

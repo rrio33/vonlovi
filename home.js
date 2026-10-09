@@ -41,6 +41,11 @@
       "assets/contributors/celia-spenard-ko/10.jpg",
       "assets/contributors/celia-spenard-ko/09.jpg",
     ],
+    "errol-rainey": [
+      "assets/contributors/errol-rainey/01.jpg",
+      "assets/contributors/errol-rainey/02.jpg",
+      "assets/contributors/errol-rainey/03.jpg",
+    ],
     "goldie-williams": [
       "assets/contributors/goldie-williams/14.jpg",
       "assets/contributors/goldie-williams/17.jpg",
@@ -183,6 +188,21 @@
 
     build();
     show(0);
+
+    const reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (!reduce && slides.length > 1) {
+      let flow = setInterval(next, 5500);
+      document.addEventListener("visibilitychange", () => {
+        if (document.hidden) {
+          if (flow) {
+            clearInterval(flow);
+            flow = null;
+          }
+        } else if (!flow) {
+          flow = setInterval(next, 5500);
+        }
+      });
+    }
   }
 
   init();
