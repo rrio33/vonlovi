@@ -1,0 +1,10 @@
+{
+  "name": "Vonlovi static site",
+  "ports": [5173],
+  "terminals": [
+    {
+      "name": "web",
+      "command": "python3 -m http.server 5173"
+    }
+  ]
+}
