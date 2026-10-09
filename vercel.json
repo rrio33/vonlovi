@@ -42,6 +42,291 @@
       "source": "/assets/pendentifs/pendentif-il-de-tigre-et-diamants/:file",
       "destination": "/assets/pendentifs/pendentif-oeil-de-tigre-et-diamants/:file",
       "permanent": true
+    },
+    {
+      "source": "/boutique",
+      "destination": "/collection.html",
+      "permanent": true
+    },
+    {
+      "source": "/boutique/bagues",
+      "destination": "/collection.html?cat=bagues",
+      "permanent": true
+    },
+    {
+      "source": "/boutique/bagues-petit-modele",
+      "destination": "/collection.html?cat=bagues",
+      "permanent": true
+    },
+    {
+      "source": "/boutique/boutons",
+      "destination": "/collection.html?cat=boutons",
+      "permanent": true
+    },
+    {
+      "source": "/boutique/boucles-doreilles",
+      "destination": "/collection.html?cat=boucles-d-oreilles",
+      "permanent": true
+    },
+    {
+      "source": "/boutique/collection-spinea",
+      "destination": "/collection.html?cat=pendentifs",
+      "permanent": true
+    },
+    {
+      "source": "/boutique/pendentifs",
+      "destination": "/collection.html?cat=pendentifs",
+      "permanent": true
+    },
+    {
+      "source": "/boutique/bracelets",
+      "destination": "/collection.html?cat=bracelets",
+      "permanent": true
+    },
+    {
+      "source": "/boutique/bagues-petit-modele/bague-nacre-doree-petit-modele",
+      "destination": "/product.html?slug=bague-nacre-doree-petit-modele",
+      "permanent": true
+    },
+    {
+      "source": "/boutique/bagues-petit-modele/bague-nacre-petit-modele",
+      "destination": "/product.html?slug=bague-nacre-petit-modele",
+      "permanent": true
+    },
+    {
+      "source": "/boutique/boutons/bouton-malachite-et-diamants",
+      "destination": "/product.html?slug=bouton-malachite-et-diamants",
+      "permanent": true
+    },
+    {
+      "source": "/boutique/boutons/bouton-lapis-lazuli-et-diamants",
+      "destination": "/product.html?slug=bouton-lapis-lazuli-et-diamants",
+      "permanent": true
+    },
+    {
+      "source": "/boutique/boutons/bouton-nacre-doree-et-diamants",
+      "destination": "/product.html?slug=bouton-nacre-doree-et-diamants",
+      "permanent": true
+    },
+    {
+      "source": "/boutique/boutons/bouton-nacre-et-diamants",
+      "destination": "/product.html?slug=bouton-nacre-et-diamants",
+      "permanent": true
+    },
+    {
+      "source": "/boutique/boutons/bouton-oeil-de-tigre-et-diamants",
+      "destination": "/product.html?slug=bouton-oeil-de-tigre-et-diamants",
+      "permanent": true
+    },
+    {
+      "source": "/boutique/boutons/bouton-lapis-lazuli",
+      "destination": "/product.html?slug=bouton-lapis-lazuli",
+      "permanent": true
+    },
+    {
+      "source": "/boutique/boutons/bouton-malachite",
+      "destination": "/product.html?slug=bouton-malachite",
+      "permanent": true
+    },
+    {
+      "source": "/boutique/collection-spinea/pendentif-malachite-et-diamants",
+      "destination": "/product.html?slug=pendentif-malachite-et-diamants",
+      "permanent": true
+    },
+    {
+      "source": "/boutique/collection-spinea/pendentif-lapis-lazuli-et-diamants",
+      "destination": "/product.html?slug=pendentif-lapis-lazuli-et-diamants",
+      "permanent": true
+    },
+    {
+      "source": "/boutique/boucles-doreilles/boucle-doreille-lapis-lazuli",
+      "destination": "/product.html?slug=boucle-doreille-lapis-lazuli",
+      "permanent": true
+    },
+    {
+      "source": "/boutique/boucles-doreilles/boucle-doreille-malachite",
+      "destination": "/product.html?slug=boucle-doreille-malachite",
+      "permanent": true
+    },
+    {
+      "source": "/boutique/bagues/bague-lapis-lazuli",
+      "destination": "/product.html?slug=bague-lapis-lazuli",
+      "permanent": true
+    },
+    {
+      "source": "/boutique/bagues/bague-malachite",
+      "destination": "/product.html?slug=bague-malachite",
+      "permanent": true
+    },
+    {
+      "source": "/boutique/bagues-petit-modele/bague-cornaline-petit-modele",
+      "destination": "/product.html?slug=bague-cornaline-petit-modele",
+      "permanent": true
+    },
+    {
+      "source": "/boutique/bagues-petit-modele/bague-lapis-lazuli-petit-modele",
+      "destination": "/product.html?slug=bague-lapis-lazuli-petit-modele",
+      "permanent": true
+    },
+    {
+      "source": "/boutique/bagues-petit-modele/bague-malachite-petit-modele",
+      "destination": "/product.html?slug=bague-malachite-petit-modele",
+      "permanent": true
+    },
+    {
+      "source": "/boutique/collection-spinea/pendentif-malachite",
+      "destination": "/product.html?slug=pendentif-malachite",
+      "permanent": true
+    },
+    {
+      "source": "/boutique/collection-spinea/pendentif-lapis-lazuli",
+      "destination": "/product.html?slug=pendentif-lapis-lazuli",
+      "permanent": true
+    },
+    {
+      "source": "/boutique/bagues-petit-modele/bague-onyx-petit-modele",
+      "destination": "/product.html?slug=bague-onyx-petit-modele",
+      "permanent": true
+    },
+    {
+      "source": "/boutique/collection-spinea/pendentif-nacre-doree-et-diamants",
+      "destination": "/product.html?slug=pendentif-nacre-doree-et-diamants",
+      "permanent": true
+    },
+    {
+      "source": "/boutique/collection-spinea/pendentif-nacre-et-diamants",
+      "destination": "/product.html?slug=pendentif-nacre-et-diamants",
+      "permanent": true
+    },
+    {
+      "source": "/boutique/collection-spinea/pendentif-oeil-de-tigre-et-diamants",
+      "destination": "/product.html?slug=pendentif-oeil-de-tigre-et-diamants",
+      "permanent": true
+    },
+    {
+      "source": "/boutique/collection-spinea/pendentif-cornaline-et-diamants",
+      "destination": "/product.html?slug=pendentif-cornaline-et-diamants",
+      "permanent": true
+    },
+    {
+      "source": "/boutique/boutons/bouton-cornaline-et-diamants",
+      "destination": "/product.html?slug=bouton-cornaline-et-diamants",
+      "permanent": true
+    },
+    {
+      "source": "/boutique/boutons/bouton-cornaline",
+      "destination": "/product.html?slug=bouton-cornaline",
+      "permanent": true
+    },
+    {
+      "source": "/boutique/boutons/bouton-nacre-doree",
+      "destination": "/product.html?slug=bouton-nacre-doree",
+      "permanent": true
+    },
+    {
+      "source": "/boutique/boucles-doreilles/boucle-doreille-cornaline",
+      "destination": "/product.html?slug=boucle-doreille-cornaline",
+      "permanent": true
+    },
+    {
+      "source": "/boutique/collection-spinea/pendentif-cornaline",
+      "destination": "/product.html?slug=pendentif-cornaline",
+      "permanent": true
+    },
+    {
+      "source": "/boutique/collection-spinea/pendentif-nacre-doree",
+      "destination": "/product.html?slug=pendentif-nacre-doree",
+      "permanent": true
+    },
+    {
+      "source": "/boutique/boucles-doreilles/boucle-doreille-nacre-doree",
+      "destination": "/product.html?slug=boucle-doreille-nacre-doree",
+      "permanent": true
+    },
+    {
+      "source": "/boutique/bagues/bague-cornaline",
+      "destination": "/product.html?slug=bague-cornaline",
+      "permanent": true
+    },
+    {
+      "source": "/boutique/bagues/bague-nacre-doree",
+      "destination": "/product.html?slug=bague-nacre-doree",
+      "permanent": true
+    },
+    {
+      "source": "/boutique/bracelets/bracelets-cuir-noir",
+      "destination": "/product.html?slug=bracelets-cuir-noir",
+      "permanent": true
+    },
+    {
+      "source": "/boutique/collection-spinea/pendentif-onyx-et-diamants",
+      "destination": "/product.html?slug=pendentif-onyx-et-diamants",
+      "permanent": true
+    },
+    {
+      "source": "/boutique/collection-spinea/pendentif-nacre",
+      "destination": "/product.html?slug=pendentif-nacre",
+      "permanent": true
+    },
+    {
+      "source": "/boutique/collection-spinea/pendentif-oeil-de-tigre",
+      "destination": "/product.html?slug=pendentif-oeil-de-tigre",
+      "permanent": true
+    },
+    {
+      "source": "/boutique/collection-spinea/pendentif-onyx",
+      "destination": "/product.html?slug=pendentif-onyx",
+      "permanent": true
+    },
+    {
+      "source": "/boutique/boucles-doreilles/puce-doreille-nacre",
+      "destination": "/product.html?slug=puce-doreille-nacre",
+      "permanent": true
+    },
+    {
+      "source": "/boutique/boucles-doreilles/puce-doreille-oeil-de-tigre",
+      "destination": "/product.html?slug=puce-doreille-oeil-de-tigre",
+      "permanent": true
+    },
+    {
+      "source": "/boutique/boutons/boutons-onyx-et-diamants",
+      "destination": "/product.html?slug=boutons-onyx-et-diamants",
+      "permanent": true
+    },
+    {
+      "source": "/boutique/boutons/boutons-nacre",
+      "destination": "/product.html?slug=boutons-nacre",
+      "permanent": true
+    },
+    {
+      "source": "/boutique/boutons/boutons-oeil-de-tigre",
+      "destination": "/product.html?slug=boutons-oeil-de-tigre",
+      "permanent": true
+    },
+    {
+      "source": "/boutique/bagues/bague-nacre",
+      "destination": "/product.html?slug=bague-nacre",
+      "permanent": true
+    },
+    {
+      "source": "/boutique/bagues/bague-oeil-de-tigre",
+      "destination": "/product.html?slug=bague-oeil-de-tigre",
+      "permanent": true
+    },
+    {
+      "source": "/boutique/boucles-doreilles/boucle-doreille-onyx",
+      "destination": "/product.html?slug=boucle-doreille-onyx",
+      "permanent": true
+    },
+    {
+      "source": "/boutique/boutons/boutons-onyx",
+      "destination": "/product.html?slug=boutons-onyx",
+      "permanent": true
+    },
+    {
+      "source": "/boutique/bagues/bague-onyx",
+      "destination": "/product.html?slug=bague-onyx",
+      "permanent": true
     }
   ]
 }

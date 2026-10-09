@@ -81,6 +81,12 @@
       "product.size.choose": "Choisir la taille",
       "product.size.guide":
         "Taille européenne : circonférence intérieure, en millimètres. Le diamètre du doigt figure entre parenthèses.",
+      "product.bracelet.length": "Longueur",
+      "product.bracelet.length.choose": "Choisir la longueur",
+      "product.bracelet.color": "Couleur",
+      "product.bracelet.color.choose": "Choisir la couleur",
+      "product.color.noir": "Noir",
+      "product.color.bordeaux": "Bordeaux",
       "product.assurances":
         "Sur commande, trois à cinq semaines. Or jaune 750/1000, poinçons de garantie. Livraison DHL. Retours sous 14 jours, hors pièces personnalisées. <a href=\"shipping.html\">Livraison</a> · <a href=\"returns.html\">Retours</a> · <a href=\"care.html\">Entretien</a>.",
       "panier.size": "Taille",
@@ -271,6 +277,12 @@
       "product.size.choose": "Choose a size",
       "product.size.guide":
         "European size: inner circumference, in millimetres. Finger diameter is shown in parentheses.",
+      "product.bracelet.length": "Length",
+      "product.bracelet.length.choose": "Choose a length",
+      "product.bracelet.color": "Colour",
+      "product.bracelet.color.choose": "Choose a colour",
+      "product.color.noir": "Black",
+      "product.color.bordeaux": "Bordeaux",
       "product.assurances":
         "Made to order, three to five weeks. 18k yellow gold 750/1000, hallmarks of guarantee. DHL delivery. Returns within 14 days, except personalised pieces. <a href=\"shipping.html\">Shipping</a> · <a href=\"returns.html\">Returns</a> · <a href=\"care.html\">Care</a>.",
       "panier.size": "Size",
@@ -462,6 +474,12 @@
       "product.size.choose": "サイズを選ぶ",
       "product.size.guide":
         "欧州サイズ：内周（ミリメートル）。括弧内は指の直径です。",
+      "product.bracelet.length": "長さ",
+      "product.bracelet.length.choose": "長さを選ぶ",
+      "product.bracelet.color": "カラー",
+      "product.bracelet.color.choose": "カラーを選ぶ",
+      "product.color.noir": "ノワール",
+      "product.color.bordeaux": "ボルドー",
       "product.assurances":
         "受注制作、3〜5週間。イエローゴールド750/1000、保証の刻印。DHL配送。受領後14日以内の返品（特注を除く）。<a href=\"shipping.html\">配送</a> · <a href=\"returns.html\">返品</a> · <a href=\"care.html\">お手入れ</a>。",
       "panier.size": "サイズ",
@@ -651,6 +669,12 @@
       "product.size.choose": "사이즈 선택",
       "product.size.guide":
         "유럽 사이즈: 안쪽 둘레(밀리미터). 괄호 안은 손가락 지름입니다.",
+      "product.bracelet.length": "길이",
+      "product.bracelet.length.choose": "길이 선택",
+      "product.bracelet.color": "컬러",
+      "product.bracelet.color.choose": "컬러 선택",
+      "product.color.noir": "블랙",
+      "product.color.bordeaux": "보르도",
       "product.assurances":
         "주문 제작, 3~5주. 옐로우 골드 750/1000, 보증 펀치. DHL 배송. 수령 후 14일 이내 반품(맞춤 제작 제외). <a href=\"shipping.html\">배송</a> · <a href=\"returns.html\">반품</a> · <a href=\"care.html\">관리</a>.",
       "panier.size": "사이즈",

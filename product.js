@@ -9,9 +9,10 @@
   const t = (key) => (window.VonloviI18n ? VonloviI18n.t(key) : key);
 
   const RING_FAMILLES = new Set(["Bagues", "Bagues petit modèle"]);
-  const RING_SIZES = [44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62];
+  const BRACELET_FAMILLES = new Set(["Bracelets"]);
 
   let product = null;
+  let woo = null;
 
   function catParam(famille) {
     const map = {
@@ -25,46 +26,169 @@
     return map[famille] || "pendentifs";
   }
 
-  function needsSize(item) {
-    return RING_FAMILLES.has(item?.famille);
+  function variations() {
+    return Array.isArray(woo?.variations) ? woo.variations : [];
+  }
+
+  function isRing() {
+    return RING_FAMILLES.has(product?.famille) && variations().some((v) => v.size);
+  }
+
+  function isBracelet() {
+    return BRACELET_FAMILLES.has(product?.famille) && variations().some((v) => v.length || v.color);
   }
 
   function diameterMm(eu) {
     return (Number(eu) / Math.PI).toFixed(1).replace(".", ",");
   }
 
+  function unique(values) {
+    return [...new Set(values.filter(Boolean))];
+  }
+
+  function colorLabel(code) {
+    const key = `product.color.${code}`;
+    const translated = t(key);
+    return translated === key ? code : translated;
+  }
+
+  function lengthLabel(raw) {
+    return String(raw).replace(/mm$/i, " mm");
+  }
+
+  function selectedSize() {
+    return document.getElementById("ring-size")?.value || "";
+  }
+
+  function selectedLength() {
+    return document.getElementById("bracelet-length")?.value || "";
+  }
+
+  function selectedColor() {
+    return document.getElementById("bracelet-color")?.value || "";
+  }
+
+  function findVariation() {
+    const vars = variations();
+    if (isRing()) {
+      const size = selectedSize();
+      return vars.find((v) => String(v.size) === String(size)) || null;
+    }
+    if (isBracelet()) {
+      const length = selectedLength();
+      const color = selectedColor();
+      return (
+        vars.find(
+          (v) => String(v.length) === String(length) && String(v.color) === String(color)
+        ) || null
+      );
+    }
+    return null;
+  }
+
+  function shopHref() {
+    const variation = findVariation();
+    if (variation?.id && window.VonloviCart?.addToCartUrl) {
+      return VonloviCart.addToCartUrl(variation.id);
+    }
+    if (woo?.type === "variable" || isRing() || isBracelet()) {
+      return woo?.url || product?.url || "";
+    }
+    const id = woo?.id || product?.id;
+    if (id && window.VonloviCart?.addToCartUrl) return VonloviCart.addToCartUrl(id);
+    return woo?.url || product?.url || "";
+  }
+
+  function optionsReady() {
+    if (isRing()) return Boolean(selectedSize() && findVariation());
+    if (isBracelet()) return Boolean(selectedLength() && selectedColor() && findVariation());
+    return Boolean(woo?.id || product?.id || woo?.url || product?.url);
+  }
+
   function sizeOptionsHtml(selected) {
+    const sizes = unique(variations().map((v) => v.size)).sort((a, b) => Number(a) - Number(b));
     const choose = t("product.size.choose");
-    const opts = RING_SIZES.map((eu) => {
-      const label = `${eu} — Ø ${diameterMm(eu)} mm`;
-      const sel = String(selected) === String(eu) ? " selected" : "";
-      return `<option value="${eu}"${sel}>${label}</option>`;
-    }).join("");
+    const opts = sizes
+      .map((eu) => {
+        const label = `${eu} — Ø ${diameterMm(eu)} mm`;
+        const sel = String(selected) === String(eu) ? " selected" : "";
+        return `<option value="${eu}"${sel}>${label}</option>`;
+      })
+      .join("");
     return `<option value="">${choose}</option>${opts}`;
+  }
+
+  function braceletSelectHtml(id, label, choose, values, selected, format) {
+    const opts = values
+      .map((value) => {
+        const sel = String(selected) === String(value) ? " selected" : "";
+        return `<option value="${value}"${sel}>${format(value)}</option>`;
+      })
+      .join("");
+    return `
+        <div class="product__size">
+          <label class="product__size-label" for="${id}">${label}</label>
+          <select id="${id}" name="${id}" required>
+            <option value="">${choose}</option>
+            ${opts}
+          </select>
+        </div>
+    `;
+  }
+
+  function optionsHtml() {
+    if (isRing()) {
+      return `
+        <div class="product__size">
+          <label class="product__size-label" for="ring-size">${t("product.size")}</label>
+          <select id="ring-size" name="size" required>
+            ${sizeOptionsHtml(selectedSize())}
+          </select>
+          <p class="product__size-guide">${t("product.size.guide")}</p>
+        </div>
+      `;
+    }
+    if (isBracelet()) {
+      const lengths = unique(variations().map((v) => v.length));
+      const colors = unique(variations().map((v) => v.color));
+      return (
+        braceletSelectHtml(
+          "bracelet-length",
+          t("product.bracelet.length"),
+          t("product.bracelet.length.choose"),
+          lengths,
+          selectedLength(),
+          lengthLabel
+        ) +
+        braceletSelectHtml(
+          "bracelet-color",
+          t("product.bracelet.color"),
+          t("product.bracelet.color.choose"),
+          colors,
+          selectedColor(),
+          colorLabel
+        )
+      );
+    }
+    return "";
   }
 
   function assurancesHtml() {
     return `<p class="product__assurances" data-i18n="product.assurances" data-i18n-html>${t("product.assurances")}</p>`;
   }
 
-  function sizeBlockHtml(selected) {
-    if (!needsSize(product)) return "";
-    return `
-        <div class="product__size">
-          <label class="product__size-label" for="ring-size">${t("product.size")}</label>
-          <select id="ring-size" name="size" required>
-            ${sizeOptionsHtml(selected)}
-          </select>
-          <p class="product__size-guide">${t("product.size.guide")}</p>
-        </div>
-    `;
+  function syncCta(cta) {
+    if (!cta) return;
+    const href = shopHref();
+    const ready = optionsReady() && href;
+    cta.setAttribute("href", ready ? href : "#");
+    cta.classList.toggle("is-waiting", !ready);
+    cta.setAttribute("aria-disabled", ready ? "false" : "true");
   }
 
   function render() {
     if (!product) return;
-    const loc = window.VonloviI18n
-      ? VonloviI18n.localizeProduct(product)
-      : product;
+    const loc = window.VonloviI18n ? VonloviI18n.localizeProduct(product) : product;
     const familleLabel =
       loc.famille ||
       (window.VonloviI18n ? VonloviI18n.localizeFamille(product.famille) : product.famille) ||
@@ -75,8 +199,6 @@
       .map((img) => img.local)
       .filter(Boolean)
       .map((src) => (window.VonloviAsset ? VonloviAsset.url(src) : src));
-
-    const previousSize = document.getElementById("ring-size")?.value || "";
 
     root.innerHTML = `
       <div class="product__gallery" data-chrome-surface>
@@ -92,8 +214,8 @@
         <h1 class="product__title">${loc.nom}</h1>
         <p class="product__price">${product.prix || ""}</p>
         <p class="product__desc">${loc.description || ""}</p>
-        ${sizeBlockHtml(previousSize)}
-        <button type="button" class="product__cta" id="add-to-cart">${t("product.add")}</button>
+        ${optionsHtml()}
+        <a class="product__cta" id="add-to-cart" href="#">${t("product.add")}</a>
         ${assurancesHtml()}
         <a class="product__back" href="collection.html?cat=${catParam(product.famille)}">← ${familleLabel || "Collection"}</a>
       </div>
@@ -101,24 +223,28 @@
     root.setAttribute("aria-busy", "false");
     window.dispatchEvent(new Event("scroll"));
 
-    const sizeSelect = document.getElementById("ring-size");
-    const addBtn = document.getElementById("add-to-cart");
-
-    addBtn?.addEventListener("click", () => {
-      if (!window.VonloviCart) return;
-      if (needsSize(product)) {
-        const size = sizeSelect?.value || "";
-        if (!size) {
-          sizeSelect?.focus();
-          addBtn.classList.add("is-waiting");
-          return;
-        }
-        VonloviCart.add(product, 1, { size });
-      } else {
-        VonloviCart.add(product, 1);
-      }
-      window.location.href = "panier.html";
+    const cta = document.getElementById("add-to-cart");
+    root.querySelectorAll("select").forEach((select) => {
+      select.addEventListener("change", () => syncCta(cta));
     });
+    cta?.addEventListener("click", (event) => {
+      if (optionsReady() && shopHref()) return;
+      event.preventDefault();
+      const firstEmpty = [...root.querySelectorAll("select")].find((el) => !el.value);
+      firstEmpty?.focus();
+      cta.classList.add("is-waiting");
+    });
+    syncCta(cta);
+  }
+
+  async function loadWoo(productSlug) {
+    try {
+      const res = await fetch("/data/woo.json", { cache: "no-store" });
+      const data = await res.json();
+      return data.products?.[productSlug] || null;
+    } catch {
+      return null;
+    }
   }
 
   async function init() {
@@ -135,6 +261,10 @@
       if (!product) {
         root.innerHTML = `<p class="product__status">${t("product.missing")}</p>`;
         return;
+      }
+      woo = await loadWoo(product.slug);
+      if (!woo && product.id) {
+        woo = { id: product.id, type: "simple", url: product.url, variations: [] };
       }
       render();
     } catch {
