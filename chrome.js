@@ -164,12 +164,99 @@
     }
   }
 
+  function sampleVideoAtClientPoint(video, clientX, clientY) {
+    if (!video?.videoWidth) return 0.22;
+
+    const rect = video.getBoundingClientRect();
+    if (!rect.width || !rect.height) return 0.22;
+
+    const nw = video.videoWidth;
+    const nh = video.videoHeight;
+    const fit = getComputedStyle(video).objectFit || "cover";
+    const scaleCover = Math.max(rect.width / nw, rect.height / nh);
+    const scaleContain = Math.min(rect.width / nw, rect.height / nh);
+    const scale = fit === "contain" ? scaleContain : scaleCover;
+    const dispW = nw * scale;
+    const dispH = nh * scale;
+    const offsetX = (dispW - rect.width) / 2;
+    const offsetY = (dispH - rect.height) / 2;
+    const imgX = (clientX - rect.left + offsetX) / scale;
+    const imgY = (clientY - rect.top + offsetY) / scale;
+    const patch = 48;
+    const sx = Math.max(0, Math.min(nw - 1, Math.round(imgX - patch / 2)));
+    const sy = Math.max(0, Math.min(nh - 1, Math.round(imgY - patch / 2)));
+    const sw = Math.max(1, Math.min(patch, nw - sx));
+    const sh = Math.max(1, Math.min(patch, nh - sy));
+    const t = Math.round((video.currentTime || 0) * 4);
+    const cacheKey = `vid:${video.currentSrc || ""}|${t}|${sx},${sy},${sw},${sh}`;
+    if (luminanceCache.has(cacheKey)) return luminanceCache.get(cacheKey);
+
+    try {
+      const canvas = document.createElement("canvas");
+      canvas.width = sw;
+      canvas.height = sh;
+      const ctx = canvas.getContext("2d", { willReadFrequently: true });
+      if (!ctx) return 0.22;
+      ctx.drawImage(video, sx, sy, sw, sh, 0, 0, sw, sh);
+      const data = ctx.getImageData(0, 0, sw, sh).data;
+      let total = 0;
+      let count = 0;
+      for (let i = 0; i < data.length; i += 4) {
+        total += (0.2126 * data[i] + 0.7152 * data[i + 1] + 0.0722 * data[i + 2]) / 255;
+        count += 1;
+      }
+      const avg = count ? total / count : 0.22;
+      luminanceCache.set(cacheKey, avg);
+      return avg;
+    } catch {
+      return 0.22;
+    }
+  }
+
   function sampleSurfaceAtPoint(el, x, y) {
     if (!el) return null;
-    if (el.tagName === "VIDEO") return 0.22;
+    if (el.tagName === "VIDEO") return sampleVideoAtClientPoint(el, x, y);
     const region = sampleImageAtClientPoint(el, x, y);
     if (region != null) return region;
     return sampleFullImage(el);
+  }
+
+  function sampleUnderElement(el) {
+    if (!el) return null;
+    const r = el.getBoundingClientRect();
+    if (!r.width || !r.height) return null;
+    const points = [
+      { x: r.left + r.width / 2, y: r.top + r.height / 2 },
+      { x: r.left + Math.min(10, r.width * 0.2), y: r.top + r.height / 2 },
+      { x: r.right - Math.min(10, r.width * 0.2), y: r.top + r.height / 2 },
+    ];
+    let sum = 0;
+    let n = 0;
+    for (const { x, y } of points) {
+      const under = elementUnderPoint(x, y);
+      if (!under) continue;
+      const lum = sampleSurfaceAtPoint(under, x, y);
+      if (lum == null) continue;
+      sum += lum;
+      n += 1;
+    }
+    return n ? sum / n : null;
+  }
+
+  function updateMenuInk(mode) {
+    const forceDark = mode === "dark" || body.classList.contains("page--about-film");
+    document.querySelectorAll(".site-chrome__link, .site-shop__trigger").forEach((el) => {
+      if (el.closest(".site-shop__panel")) return;
+      const lum = sampleUnderElement(el);
+      let onDark;
+      if (lum == null) {
+        onDark = forceDark;
+      } else {
+        const was = el.classList.contains("is-on-dark");
+        onDark = was ? lum < 0.58 : lum < 0.44;
+      }
+      el.classList.toggle("is-on-dark", onDark);
+    });
   }
 
   /** Average luminance under the logo (multi-point for busy mobile crops). */
@@ -241,6 +328,7 @@
     ensureAccentWordmarks();
     const mode = body.getAttribute("data-chrome") || "auto";
     const { lum, key } = sampleUnderLogo();
+    updateMenuInk(mode);
 
     if (mode === "light") {
       body.classList.remove("is-chrome-dark");

@@ -107,8 +107,10 @@
     slides.forEach((slide, n) => {
       slide.classList.toggle("is-active", n === index);
     });
-    // Refresh chrome contrast against the new slide
+    // Refresh chrome contrast against the new slide (and once the pixels have settled)
     window.dispatchEvent(new Event("scroll"));
+    setTimeout(() => window.dispatchEvent(new Event("scroll")), 80);
+    setTimeout(() => window.dispatchEvent(new Event("scroll")), 420);
   }
 
   function next() {
