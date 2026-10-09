@@ -87,6 +87,8 @@
       "product.add": "Ajouter au panier",
       "product.size": "Taille",
       "product.size.choose": "Choisir la taille",
+      "product.size.error": "Choisissez une taille.",
+      "product.options.error": "Choisissez la longueur et la couleur.",
       "product.size.guide":
         "Taille européenne : circonférence intérieure, en millimètres. Le diamètre du doigt figure entre parenthèses.",
       "product.bracelet.length": "Longueur",
@@ -291,6 +293,8 @@
       "product.add": "Add to bag",
       "product.size": "Size",
       "product.size.choose": "Choose a size",
+      "product.size.error": "Choose a size.",
+      "product.options.error": "Choose a length and a colour.",
       "product.size.guide":
         "European size: inner circumference, in millimetres. Finger diameter is shown in parentheses.",
       "product.bracelet.length": "Length",
@@ -496,6 +500,8 @@
       "product.add": "カートに入れる",
       "product.size": "サイズ",
       "product.size.choose": "サイズを選ぶ",
+      "product.size.error": "サイズを選んでください。",
+      "product.options.error": "長さとカラーを選んでください。",
       "product.size.guide":
         "欧州サイズ：内周（ミリメートル）。括弧内は指の直径です。",
       "product.bracelet.length": "長さ",
@@ -699,6 +705,8 @@
       "product.add": "장바구니에 담기",
       "product.size": "사이즈",
       "product.size.choose": "사이즈 선택",
+      "product.size.error": "사이즈를 선택해 주세요.",
+      "product.options.error": "길이와 컬러를 선택해 주세요.",
       "product.size.guide":
         "유럽 사이즈: 안쪽 둘레(밀리미터). 괄호 안은 손가락 지름입니다.",
       "product.bracelet.length": "길이",

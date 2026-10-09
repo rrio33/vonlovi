@@ -5,10 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="theme-color" content="#ffffff" />
     <title>Collection — VONLOVI</title>
+    <meta
+      name="description"
+      content="Collection Vonlovi — pendentifs, bagues, boucles d'oreille, boutons et bracelets. Or jaune 750, sur commande."
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png" />
+    <link rel="shortcut icon" href="assets/favicon.ico" />
     <link rel="icon" type="image/png" href="assets/logo-v-mark.png" />
     <meta property="og:title" content="Collection — VONLOVI" />
-    <meta property="og:description" content="Vonlovi — joaillerie sculpturale." />
-    <meta property="og:url" content="https://vonlovi.vercel.app/collection.html" />
+    <meta property="og:description" content="Collection Vonlovi — pendentifs, bagues, boucles d'oreille, boutons et bracelets. Or jaune 750, sur commande." />
+    <meta property="og:url" content="https://vonlovi.vercel.app/collection" />
+    <link rel="canonical" href="https://vonlovi.vercel.app/collection" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="VONLOVI" />
     <meta property="og:image" content="https://vonlovi.vercel.app/assets/og-image.png?v=1" />
@@ -25,8 +33,8 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="chrome.css?v=9" />
-    <link rel="stylesheet" href="collection.css" />
+    <link rel="stylesheet" href="chrome.css?v=10" />
+    <link rel="stylesheet" href="collection.css?v=2" />
   </head>
   <body class="page--collection" data-chrome="light">
     <div class="site-chrome" id="site-chrome">
@@ -136,12 +144,19 @@
       <header class="collection__intro">
         <h1 class="collection__title" id="collection-title">Collection</h1>
       </header>
-      <div class="collection__grid" id="collection-grid"></div>
+      <div class="collection__grid" id="collection-grid">
+        <span class="collection__card is-skeleton" aria-hidden="true"></span>
+        <span class="collection__card is-skeleton" aria-hidden="true"></span>
+        <span class="collection__card is-skeleton" aria-hidden="true"></span>
+        <span class="collection__card is-skeleton" aria-hidden="true"></span>
+        <span class="collection__card is-skeleton" aria-hidden="true"></span>
+        <span class="collection__card is-skeleton" aria-hidden="true"></span>
+      </div>
     </main>
 
-    <script src="i18n.js?v=5"></script>
+    <script src="i18n.js?v=6"></script>
     <script src="cart.js?v=3"></script>
-    <script src="chrome.js?v=7" defer></script>
-    <script src="collection.js?v=2" defer></script>
+    <script src="chrome.js?v=9" defer></script>
+    <script src="collection.js?v=3" defer></script>
   </body>
 </html>

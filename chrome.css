@@ -139,7 +139,7 @@ body[data-mark-accent="purple"] .site-chrome__mark-img--purple {
   padding: 0;
   margin: 0;
   cursor: pointer;
-  transition: opacity 200ms ease, color 280ms ease;
+  transition: opacity 200ms ease, color 280ms ease, text-shadow 280ms ease;
   white-space: nowrap;
   pointer-events: auto;
   line-height: 1.2;
@@ -147,7 +147,9 @@ body[data-mark-accent="purple"] .site-chrome__mark-img--purple {
   text-shadow: 0 0 12px rgba(255, 255, 255, 0.55);
 }
 
-/* Logo may invert with the photo; corner labels stay dark unless the page is a dark film */
+/* Each label samples the photo under it: pale ground → dark ink, dark ground → light ink */
+.site-chrome__link.is-on-dark,
+.site-shop__trigger.is-on-dark,
 body[data-chrome="dark"] .site-chrome__link,
 body[data-chrome="dark"] .site-shop__trigger,
 body.page--about-film .site-chrome__link,
