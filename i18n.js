@@ -1,7 +1,7 @@
 (() => {
   const STORAGE_KEY = "vonlovi-lang";
   const DEFAULT = "fr";
-  const SUPPORTED = ["fr", "en", "ja", "ko"];
+  const SUPPORTED = ["fr", "en", "ja"];
 
   const dict = {
     fr: {
@@ -823,7 +823,6 @@
     if (!lang) return DEFAULT;
     const raw = String(lang).toLowerCase().trim();
     if (raw === "jp" || raw === "jap" || raw.startsWith("japan")) return "ja";
-    if (raw === "kr" || raw.startsWith("korea")) return "ko";
     const short = raw.slice(0, 2);
     return SUPPORTED.includes(short) ? short : DEFAULT;
   }
@@ -942,7 +941,7 @@
   }
 
   function set(lang) {
-    const next = normalize(lang);
+    const next = SUPPORTED.includes(normalize(lang)) ? normalize(lang) : DEFAULT;
     persist(next);
     document.documentElement.lang = next;
     document.documentElement.dataset.lang = next;

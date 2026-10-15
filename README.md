@@ -50,7 +50,7 @@ npx vercel@58.9.0          # preview
 npx vercel@58.9.0 --prod   # production
 ```
 
-Live: https://vonlovi.vercel.app
+Live: https://vonlovi.com
 
 Or push to GitHub and import the repo at [vercel.com/new](https://vercel.com/new). `vercel.json` sets clean URLs and long-cache headers for `assets/`.
 

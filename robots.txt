@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://vonlovi.vercel.app/sitemap.xml
+Disallow: /panier.html
+Disallow: /checkout.html
+
+Sitemap: https://vonlovi.com/sitemap.xml

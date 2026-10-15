@@ -336,3 +336,83 @@ body.page--about-film .site-cookie {
     letter-spacing: 0.18em;
   }
 }
+
+/* Cookie consent — CNIL: refuse as easy as accept */
+.cookie-banner {
+  position: fixed;
+  z-index: 80;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 16px 18px calc(16px + env(safe-area-inset-bottom, 0px));
+  background: rgba(250, 249, 247, 0.96);
+  border-top: 1px solid rgba(26, 26, 26, 0.12);
+  color: #1a1a1a;
+  font-family: "Cormorant Garamond", "Times New Roman", serif;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: opacity 200ms ease, transform 200ms ease;
+}
+
+.cookie-banner.is-leaving {
+  opacity: 0;
+  transform: translateY(8px);
+  pointer-events: none;
+}
+
+.cookie-banner__inner {
+  max-width: 920px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px 28px;
+}
+
+.cookie-banner__text {
+  flex: 1 1 280px;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.45;
+  letter-spacing: 0.02em;
+}
+
+.cookie-banner__link {
+  color: inherit;
+  margin-left: 0.35em;
+  text-underline-offset: 2px;
+}
+
+.cookie-banner__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.cookie-banner__btn {
+  min-width: 7.5rem;
+  padding: 9px 16px;
+  font-family: inherit;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 1px solid #1a1a1a;
+  background: transparent;
+  color: #1a1a1a;
+}
+
+.cookie-banner__btn--accept {
+  background: #1a1a1a;
+  color: #faf9f7;
+}
+
+.cookie-banner__btn:hover {
+  opacity: 0.78;
+}
+
+.cookie-banner__btn:focus-visible {
+  outline: 2px solid #1a1a1a;
+  outline-offset: 2px;
+}
