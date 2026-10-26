@@ -92,11 +92,12 @@
     return `${prefix} EU ${size} — Ø ${mm} mm`;
   }
 
+  // Woo till on checkout subdomain — no /cart path (Florent).
   const WOO_CART = {
-    fr: "https://vonlovi.com/panier/",
-    en: "https://vonlovi.com/en/cart/",
-    ja: "https://vonlovi.com/en/cart/",
-    ko: "https://vonlovi.com/en/cart/",
+    fr: "https://checkout.vonlovi.com/",
+    en: "https://checkout.vonlovi.com/en/",
+    ja: "https://checkout.vonlovi.com/en/",
+    ko: "https://checkout.vonlovi.com/en/",
   };
 
   function lang() {

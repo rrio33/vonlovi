@@ -1,10 +1,10 @@
 {
-  "origin": "https://vonlovi.com",
+  "origin": "https://checkout.vonlovi.com",
   "cart": {
-    "fr": "https://vonlovi.com/panier/",
-    "en": "https://vonlovi.com/en/cart/",
-    "ja": "https://vonlovi.com/en/cart/",
-    "ko": "https://vonlovi.com/en/cart/"
+    "fr": "https://checkout.vonlovi.com/",
+    "en": "https://checkout.vonlovi.com/en/",
+    "ja": "https://checkout.vonlovi.com/en/",
+    "ko": "https://checkout.vonlovi.com/en/"
   },
   "products": {
     "bague-nacre-doree-petit-modele": {
