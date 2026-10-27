@@ -75,31 +75,17 @@ body.page--intro {
   background-size: 220px 220px;
 }
 
-/* Whole jewelry set visible; fill the viewport, dissolve side letterbox into the field */
+/* Full-bleed film — cover the viewport edge to edge */
 .intro__video {
-  position: relative;
+  position: absolute;
+  inset: 0;
   z-index: 1;
   width: 100%;
   height: 100%;
   max-width: none;
-  object-fit: contain;
+  object-fit: cover;
   object-position: center center;
   background: var(--intro-void);
-  /* Wide soft side fades (no oval cutout) so letterbox merges with the field */
-  -webkit-mask-image: linear-gradient(
-    90deg,
-    transparent 0%,
-    #000 12%,
-    #000 88%,
-    transparent 100%
-  );
-  mask-image: linear-gradient(
-    90deg,
-    transparent 0%,
-    #000 12%,
-    #000 88%,
-    transparent 100%
-  );
 }
 
 .intro__veil {
@@ -107,21 +93,13 @@ body.page--intro {
   inset: 0;
   z-index: 1;
   pointer-events: none;
-  background:
-    linear-gradient(
-      90deg,
-      var(--intro-void) 0%,
-      transparent 18%,
-      transparent 82%,
-      var(--intro-void) 100%
-    ),
-    linear-gradient(
-      180deg,
-      rgba(10, 9, 8, 0.35) 0%,
-      transparent 22%,
-      transparent 78%,
-      rgba(10, 9, 8, 0.45) 100%
-    );
+  background: linear-gradient(
+    180deg,
+    rgba(10, 9, 8, 0.28) 0%,
+    transparent 24%,
+    transparent 72%,
+    rgba(10, 9, 8, 0.4) 100%
+  );
 }
 
 .intro__stage {
