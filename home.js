@@ -28,6 +28,20 @@
 
   paint();
 
+  // Black campaign still: white chrome on the hero, dark chrome once past it.
+  function syncHeroChrome() {
+    const heroH = root.getBoundingClientRect().height || window.innerHeight;
+    const overHero = window.scrollY < heroH * 0.72;
+    const mode = overHero ? "dark" : "light";
+    document.body.setAttribute("data-chrome", mode);
+    document.body.classList.toggle("is-chrome-dark", overHero);
+    window.dispatchEvent(new Event("scroll"));
+  }
+
+  syncHeroChrome();
+  window.addEventListener("scroll", syncHeroChrome, { passive: true });
+  window.addEventListener("resize", syncHeroChrome);
+
   const newsForm = document.getElementById("newsletter-form");
   const newsInput = document.getElementById("newsletter-email");
   const newsError = document.getElementById("newsletter-error");
