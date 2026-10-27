@@ -68,6 +68,30 @@ body.page--collection {
   background: linear-gradient(to top, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0));
 }
 
+.collection__break {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  gap: clamp(14px, 2.5vw, 28px);
+  margin: clamp(10px, 2vh, 22px) 0 clamp(4px, 1vh, 10px);
+}
+
+.collection__break-line {
+  flex: 1 1 auto;
+  height: 1px;
+  background: rgba(26, 26, 26, 0.18);
+}
+
+.collection__break-label {
+  flex: 0 0 auto;
+  font-size: clamp(11px, 1vw, 13px);
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(26, 26, 26, 0.55);
+  white-space: nowrap;
+}
+
 .collection__empty {
   grid-column: 1 / -1;
   text-align: center;
