@@ -89,10 +89,10 @@
     if (!size) return "";
     const mm = (Number(size) / Math.PI).toFixed(1).replace(".", ",");
     const prefix = typeof translate === "function" ? translate("panier.size") : "Taille";
-    return `${prefix} EU ${size} — Ø ${mm} mm`;
+    return `${prefix} EU ${size}, Ø ${mm} mm`;
   }
 
-  // Woo till on checkout subdomain — no /cart path (Florent).
+  // Woo till on checkout subdomain, no /cart path (Florent).
   // Japanese is display-only: no online purchase; point to L'Envers.
   const JA_STOCKIST = "stockists.html#envers";
   const WOO_CART = {

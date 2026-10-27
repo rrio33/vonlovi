@@ -1,7 +1,7 @@
 (function () {
   "use strict";
 
-  // Single campaign still — no carousel (chrome contrast was unreliable across slides).
+  // Single campaign still , no carousel (chrome contrast was unreliable across slides).
   const HERO_SRC = "assets/hero/01-hero.jpg";
   const HERO_ALT = "VONLOVI";
 

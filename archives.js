@@ -57,7 +57,7 @@
 
       const img = document.createElement("img");
       img.src = image.src;
-      img.alt = image.alt || "Vonlovi — archives";
+      img.alt = image.alt || "Vonlovi · archives";
       img.decoding = i === 0 ? "sync" : "async";
       if (i === 0) img.fetchPriority = "high";
       else img.loading = "lazy";

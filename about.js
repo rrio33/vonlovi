@@ -16,7 +16,7 @@
     const p = video.play();
     if (p && typeof p.catch === "function") {
       p.catch(() => {
-        // Autoplay blocked — poster still shows; retry on first tap
+        // Autoplay blocked , poster still shows; retry on first tap
         const unlock = () => {
           video.play().catch(() => {});
           document.removeEventListener("pointerdown", unlock);

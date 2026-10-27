@@ -80,7 +80,7 @@
 
   /**
    * Luminance of the image region actually under a client point
-   * (object-fit: cover / contain aware — fixes mobile crop mismatch).
+   * (object-fit: cover / contain aware, fixes mobile crop mismatch).
    */
   function sampleImageAtClientPoint(img, clientX, clientY) {
     if (!img?.naturalWidth) return null;

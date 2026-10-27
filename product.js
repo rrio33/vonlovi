@@ -118,7 +118,7 @@
     const choose = t("product.size.choose");
     const opts = sizes
       .map((eu) => {
-        const label = `${eu} — Ø ${diameterMm(eu)} mm`;
+        const label = `${eu}, Ø ${diameterMm(eu)} mm`;
         const sel = String(selected) === String(eu) ? " selected" : "";
         return `<option value="${eu}"${sel}>${label}</option>`;
       })
@@ -202,7 +202,7 @@
       (window.VonloviI18n ? VonloviI18n.localizeFamille(product.famille) : product.famille) ||
       "";
 
-    document.title = `${loc.nom} — VONLOVI`;
+    document.title = `${loc.nom} · VONLOVI`;
     const images = (product.images || [])
       .map((img) => img.local)
       .filter(Boolean)
