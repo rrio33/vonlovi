@@ -93,22 +93,28 @@
   }
 
   // Woo till on checkout subdomain — no /cart path (Florent).
+  // Japanese is display-only: no online purchase; point to L'Envers.
+  const JA_STOCKIST = "stockists.html#envers";
   const WOO_CART = {
     fr: "https://checkout.vonlovi.com/",
     en: "https://checkout.vonlovi.com/en/",
-    ja: "https://checkout.vonlovi.com/en/",
-    ko: "https://checkout.vonlovi.com/en/",
   };
 
   function lang() {
     return window.VonloviI18n?.get?.() || "fr";
   }
 
+  function isBrowseOnly(code = lang()) {
+    return code === "ja";
+  }
+
   function cartUrl(code = lang()) {
+    if (isBrowseOnly(code)) return JA_STOCKIST;
     return WOO_CART[code] || WOO_CART.fr;
   }
 
   function addToCartUrl(productId) {
+    if (isBrowseOnly()) return JA_STOCKIST;
     const url = new URL(cartUrl());
     url.searchParams.set("add-to-cart", String(productId));
     return url.toString();
@@ -116,13 +122,17 @@
 
   function bindShopCartLinks() {
     const href = cartUrl();
+    const browseOnly = isBrowseOnly();
     document.querySelectorAll("[data-cart-link]").forEach((el) => {
       el.setAttribute("href", href);
+      el.classList.toggle("is-browse-only", browseOnly);
     });
+    document.documentElement.classList.toggle("is-browse-only", browseOnly);
   }
 
   function updateBadges() {
-    const n = count();
+    const browseOnly = isBrowseOnly();
+    const n = browseOnly ? 0 : count();
     document.querySelectorAll("[data-cart-count]").forEach((el) => {
       el.textContent = n > 0 ? String(n) : "";
       el.hidden = n <= 0;
@@ -149,9 +159,10 @@
     cartUrl,
     addToCartUrl,
     bindShopCartLinks,
+    isBrowseOnly,
   };
 
   document.addEventListener("DOMContentLoaded", updateBadges);
-  window.addEventListener("vonlovi:lang", bindShopCartLinks);
+  window.addEventListener("vonlovi:lang", updateBadges);
   updateBadges();
 })();

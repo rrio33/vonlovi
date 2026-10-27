@@ -85,6 +85,8 @@
       "cookie.ok": "Continuer",
       "cookie.more": "Confidentialité",
       "product.add": "Ajouter au panier",
+      "product.ja.note":
+        "Au Japon, l'achat en ligne n'est pas disponible. Merci de contacter L'Envers Showroom.",
       "product.size": "Taille",
       "product.size.choose": "Choisir la taille",
       "product.size.guide":
@@ -128,15 +130,17 @@
       "checkout.done.home": "Retour à l'accueil",
       "stockists.title": "Stockists",
       "stockists.intro":
-        "Retrouvez Vonlovi en ligne et auprès de partenaires sélectionnés. Pour toute demande de référencement, écrivez-nous.",
+        "Retrouvez Vonlovi en ligne et auprès de partenaires sélectionnés. Au Japon, les pièces se découvrent via L'Envers Showroom (pas d'achat en ligne). Pour toute demande de référencement, écrivez-nous.",
       "stockists.online": "Boutique en ligne",
-      "stockists.online.text": "Commandez directement sur vonlovi.com — pièces réalisées sur commande, délai 3 à 5 semaines.",
+      "stockists.online.text":
+        "Commandez directement sur vonlovi.com hors Japon — pièces réalisées sur commande, délai 3 à 5 semaines. Au Japon, contactez L'Envers Showroom.",
       "stockists.beige.name": "Beige Habilleur",
       "stockists.beige.place": "France",
       "stockists.beige.text": "Boutique — 86 rue Bonaparte, 75006 Paris.",
       "stockists.envers.name": "L'Envers Showroom",
       "stockists.envers.place": "Japan",
-      "stockists.envers.text": "Showroom — Japon.",
+      "stockists.envers.text":
+        "Showroom — Japon. Point de contact pour découvrir et acquérir Vonlovi au Japon (pas d'achat en ligne).",
       "stockists.paris": "Paris",
       "stockists.paris.text": "Showroom sur rendez-vous — contactez-nous pour organiser une présentation privée.",
       "stockists.jura": "Jura",
@@ -289,6 +293,8 @@
       "cookie.ok": "Continue",
       "cookie.more": "Privacy",
       "product.add": "Add to bag",
+      "product.ja.note":
+        "Online purchase is not available in Japan. Please contact L'Envers Showroom.",
       "product.size": "Size",
       "product.size.choose": "Choose a size",
       "product.size.guide":
@@ -332,16 +338,17 @@
       "checkout.done.home": "Back to home",
       "stockists.title": "Stockists",
       "stockists.intro":
-        "Find Vonlovi online and with selected partners. For stockist enquiries, write to us.",
+        "Find Vonlovi online and with selected partners. In Japan, pieces are available through L'Envers Showroom (no online purchase). For stockist enquiries, write to us.",
       "stockists.online": "Online boutique",
       "stockists.online.text":
-        "Order directly at vonlovi.com — each piece made to order, three to five weeks.",
+        "Order directly at vonlovi.com outside Japan — each piece made to order, three to five weeks. In Japan, please contact L'Envers Showroom.",
       "stockists.beige.name": "Beige Habilleur",
       "stockists.beige.place": "France",
       "stockists.beige.text": "Boutique — 86 rue Bonaparte, 75006 Paris.",
       "stockists.envers.name": "L'Envers Showroom",
       "stockists.envers.place": "Japan",
-      "stockists.envers.text": "Showroom — Japan.",
+      "stockists.envers.text":
+        "Showroom — Japan. Contact point to discover and acquire Vonlovi in Japan (no online purchase).",
       "stockists.paris": "Paris",
       "stockists.paris.text": "Showroom by appointment — contact us to arrange a private viewing.",
       "stockists.jura": "Jura",
@@ -416,7 +423,7 @@
     },
     ja: {
       "nav.shop": "ショップ",
-      "nav.panier": "カート",
+      "nav.panier": "L'Envers",
       "nav.about": "について",
       "nav.press": "プレス",
       "nav.regards": "Regards",
@@ -493,7 +500,9 @@
       "cookie.text": "この場所は、来訪を覚えます。",
       "cookie.ok": "続ける",
       "cookie.more": "プライバシー",
-      "product.add": "カートに入れる",
+      "product.add": "L'Enversに問い合わせる",
+      "product.ja.note":
+        "日本ではオンライン購入はできません。L'Envers Showroomへお問い合わせください。",
       "product.size": "サイズ",
       "product.size.choose": "サイズを選ぶ",
       "product.size.guide":
@@ -537,16 +546,17 @@
       "checkout.done.home": "ホームへ戻る",
       "stockists.title": "取扱店舗",
       "stockists.intro":
-        "Vonloviはオンラインおよび選定されたパートナーでご覧いただけます。取扱いのご相談はお問い合わせください。",
+        "Vonloviはオンラインおよび選定されたパートナーでご覧いただけます。日本ではオンライン購入はできず、L'Envers Showroomへお問い合わせください。取扱いのご相談はお問い合わせください。",
       "stockists.online": "オンラインブティック",
       "stockists.online.text":
-        "vonlovi.com から直接ご注文ください — 受注制作、納期3〜5週間。",
+        "日本以外の地域では vonlovi.com からご注文いただけます（受注制作、納期3〜5週間）。日本のお客様は L'Envers Showroom へご連絡ください。",
       "stockists.beige.name": "Beige Habilleur",
       "stockists.beige.place": "フランス",
       "stockists.beige.text": "ブティック — 86 rue Bonaparte, 75006 Paris.",
       "stockists.envers.name": "L'Envers Showroom",
       "stockists.envers.place": "日本",
-      "stockists.envers.text": "ショールーム — 日本.",
+      "stockists.envers.text":
+        "ショールーム — 日本。日本でVonloviをご覧・ご購入いただくための窓口です（オンライン購入不可）。",
       "stockists.paris": "パリ",
       "stockists.paris.text": "ショールームはご予約制です — プライベートビューイングをご希望の方はご連絡ください。",
       "stockists.jura": "ジュラ",

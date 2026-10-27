@@ -86,7 +86,14 @@
     return null;
   }
 
+  function browseOnly() {
+    return Boolean(window.VonloviCart?.isBrowseOnly?.() || window.VonloviI18n?.get?.() === "ja");
+  }
+
   function shopHref() {
+    if (browseOnly()) {
+      return window.VonloviCart?.cartUrl?.() || "stockists.html#envers";
+    }
     const variation = findVariation();
     if (variation?.id && window.VonloviCart?.addToCartUrl) {
       return VonloviCart.addToCartUrl(variation.id);
@@ -100,6 +107,7 @@
   }
 
   function optionsReady() {
+    if (browseOnly()) return true;
     if (isRing()) return Boolean(selectedSize() && findVariation());
     if (isBracelet()) return Boolean(selectedLength() && selectedColor() && findVariation());
     return Boolean(woo?.id || product?.id || woo?.url || product?.url);
@@ -216,7 +224,12 @@
         <p class="product__desc">${loc.description || ""}</p>
         ${optionsHtml()}
         <a class="product__cta" id="add-to-cart" href="#">${t("product.add")}</a>
-        ${assurancesHtml()}
+        ${
+          browseOnly()
+            ? `<p class="product__ja-note" data-i18n="product.ja.note">${t("product.ja.note")}</p>`
+            : ""
+        }
+        ${browseOnly() ? "" : assurancesHtml()}
         <a class="product__back" href="collection.html?cat=${catParam(product.famille)}">← ${familleLabel || "Collection"}</a>
       </div>
     `;

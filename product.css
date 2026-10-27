@@ -108,6 +108,16 @@ body.page--product {
   opacity: 0.5;
 }
 
+.product__ja-note {
+  margin: -0.4em 0 1.4em;
+  max-width: 28em;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.55;
+  letter-spacing: 0.02em;
+  color: rgba(26, 26, 26, 0.62);
+}
+
 .product__size {
   margin: 0 0 1.6em;
 }
