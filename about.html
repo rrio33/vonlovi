@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <meta name="theme-color" content="#0a0908" />
+    <meta name="theme-color" content="#ffffff" />
     <title>About · VONLOVI</title>
     <meta
       name="description"
@@ -32,86 +32,10 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="chrome.css?v=10" />
-    <link rel="stylesheet" href="about-page.css?v=6" />
-    <style>
-      /* Critical film styles, always apply even if external CSS is cached/blocked */
-      body.page--about-film {
-        margin: 0;
-        background: #0a0908 !important;
-        color: #f7f3ef;
-        --chrome-ink: #fff;
-      }
-      .about-bg {
-        position: fixed;
-        inset: 0;
-        z-index: 0;
-        overflow: hidden;
-        pointer-events: none;
-        background: #0a0908 url("assets/about/polishing-poster.jpg") center / cover no-repeat;
-      }
-      .about-bg__video {
-        position: absolute;
-        inset: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-      }
-      .about-bg__veil {
-        position: absolute;
-        inset: 0;
-        background: linear-gradient(
-          180deg,
-          rgba(10, 9, 8, 0.5) 0%,
-          rgba(10, 9, 8, 0.28) 45%,
-          rgba(10, 9, 8, 0.62) 100%
-        );
-      }
-      body.page--about-film .about {
-        position: relative;
-        z-index: 1;
-        background: transparent !important;
-        color: #f7f3ef;
-      }
-      body.page--about-film .about__label,
-      body.page--about-film .about__p,
-      body.page--about-film .about__assurances {
-        color: rgba(247, 243, 239, 0.88) !important;
-      }
-      body.page--about-film .about__poincon-img--maker {
-        width: 36px !important;
-        max-width: 36px !important;
-        height: auto !important;
-      }
-      body.page--about-film .about__poincon-img--750 {
-        width: 48px !important;
-        max-width: 48px !important;
-        height: auto !important;
-      }
-      body.page--about-film .site-chrome__logo {
-        top: 0 !important;
-        transform: translate(-50%, 0) !important;
-      }
-    </style>
+    <link rel="stylesheet" href="chrome.css?v=11" />
+    <link rel="stylesheet" href="about-page.css?v=7" />
   </head>
-  <body class="page--about page--about-film is-chrome-dark" data-chrome="dark">
-    <div class="about-bg" aria-hidden="true">
-      <video
-        class="about-bg__video"
-        autoplay
-        muted
-        loop
-        playsinline
-        preload="auto"
-        poster="assets/about/polishing-poster.jpg"
-        disablepictureinpicture
-      >
-        <source src="assets/about/polishing.mp4?v=2" type="video/mp4" />
-      </video>
-      <div class="about-bg__veil"></div>
-    </div>
-
+  <body class="page--about" data-chrome="light">
     <div class="site-chrome" id="site-chrome">
       <header class="site-chrome__header">
         <div class="site-chrome__corner site-chrome__corner--tl site-chrome__corner--stack">
@@ -293,6 +217,5 @@
     <script src="cart.js?v=4"></script>
     <script src="cookies.js" defer></script>
     <script src="chrome.js?v=7" defer></script>
-    <script src="about.js?v=5" defer></script>
   </body>
 </html>

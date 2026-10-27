@@ -149,9 +149,7 @@ body[data-mark-accent="purple"] .site-chrome__mark-img--purple {
 
 /* Logo may invert with the photo; corner labels stay dark unless the page is a dark film */
 body[data-chrome="dark"] .site-chrome__link,
-body[data-chrome="dark"] .site-shop__trigger,
-body.page--about-film .site-chrome__link,
-body.page--about-film .site-shop__trigger {
+body[data-chrome="dark"] .site-shop__trigger {
   color: #f7f3ef;
   -webkit-text-stroke: 0;
   text-shadow: 0 0 14px rgba(0, 0, 0, 0.55);
@@ -316,8 +314,7 @@ body.is-chrome-dark .site-shop__panel {
   opacity: 0.45;
 }
 
-body.is-chrome-dark .site-cookie,
-body.page--about-film .site-cookie {
+body.is-chrome-dark .site-cookie {
   background: rgba(10, 9, 8, 0.88);
   color: #f7f3ef;
 }
