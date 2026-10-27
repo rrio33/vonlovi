@@ -202,7 +202,7 @@
       (window.VonloviI18n ? VonloviI18n.localizeFamille(product.famille) : product.famille) ||
       "";
 
-    document.title = `${loc.nom} · VONLOVI`;
+    document.title = `${loc.nom} | VONLOVI`;
     const images = (product.images || [])
       .map((img) => img.local)
       .filter(Boolean)

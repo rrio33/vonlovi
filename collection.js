@@ -25,7 +25,7 @@
   function render() {
     const label = t(meta.labelKey);
     if (titleEl) titleEl.textContent = label;
-    document.title = `${label} · VONLOVI`;
+    document.title = `${label} | VONLOVI`;
 
     if (!products.length) {
       grid.innerHTML = `<p class="collection__empty">${t("collection.empty")}</p>`;

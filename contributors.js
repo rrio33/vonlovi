@@ -82,7 +82,7 @@
   }
 
   function renderIndex(list) {
-    document.title = `${t("contributors.title")} · VONLOVI`;
+    document.title = `${t("contributors.title")} | VONLOVI`;
     const withCover = list.filter((person) => person.cover);
     root.innerHTML = `
       <div class="contributors__stage">
@@ -117,7 +117,7 @@
   }
 
   function renderPerson(person) {
-    document.title = `${person.name} · VONLOVI`;
+    document.title = `${person.name} | VONLOVI`;
     const shots = (person.images || [])
       .map((src) => {
         if (isVideo(src, person)) {
