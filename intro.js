@@ -1,9 +1,6 @@
 (function () {
   "use strict";
 
-  const buttons = document.querySelectorAll("[data-lang]");
-  if (!buttons.length || !window.VonloviI18n) return;
-
   const video = document.querySelector(".intro__video");
   let langsReleased = false;
 
@@ -22,6 +19,21 @@
     video.setAttribute("webkit-playsinline", "");
     video.loop = true;
     video.preload = "auto";
+
+    // One film per device — only that file is requested.
+    // Prefer a src already set by the inline boot script in index.html.
+    if (!video.getAttribute("src") && !video.currentSrc) {
+      const mobileSrc =
+        video.getAttribute("data-intro-mobile") ||
+        "assets/intro/bg-mobile.mp4?v=1";
+      const desktopSrc =
+        video.getAttribute("data-intro-desktop") ||
+        "assets/intro/bg-desktop.mp4?v=1";
+      video.src = window.matchMedia("(max-width: 767px)").matches
+        ? mobileSrc
+        : desktopSrc;
+      video.load();
+    }
 
     const tryPlay = () => {
       const p = video.play();
@@ -52,7 +64,7 @@
       if (document.visibilityState === "visible") wakeFilm();
     });
 
-    // Hold FR/EN/JA/KO until the chain is already moving on the dark field.
+    // Hold FR/EN/JA until the chain is already moving on the dark field.
     video.addEventListener(
       "playing",
       () => window.setTimeout(releaseLangs, 1100),
@@ -63,6 +75,9 @@
 
   // Never trap the visitor on a silent intro if the film 404s or autoplay is blocked.
   window.setTimeout(releaseLangs, 2400);
+
+  const buttons = document.querySelectorAll("[data-lang]");
+  if (!buttons.length || !window.VonloviI18n) return;
 
   buttons.forEach((btn) => {
     btn.addEventListener("click", () => {
