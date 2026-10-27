@@ -98,29 +98,9 @@ html {
   transform: translate(-50%, -50%) scale(1);
 }
 
-/* Left / right click zones + small slider cues */
+/* Carousel hits removed — single still only */
 .home-hero__hit {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 42%;
-  z-index: 4;
-  border: 0;
-  padding: 0;
-  margin: 0;
-  background: transparent;
-  cursor: pointer;
-  color: #111111;
-}
-
-.home-hero__hit--prev {
-  left: 0;
-  cursor: w-resize;
-}
-
-.home-hero__hit--next {
-  right: 0;
-  cursor: e-resize;
+  display: none;
 }
 
 .home-hero__arrow {

@@ -128,7 +128,7 @@ body[data-mark-accent="purple"] .site-chrome__mark-img--purple {
 .site-chrome__link,
 .site-shop__trigger {
   font-family: var(--chrome-serif);
-  font-size: clamp(9px, 0.72vw, 11px);
+  font-size: clamp(12px, 0.9vw, 14px);
   font-weight: 300;
   letter-spacing: 0.22em;
   text-transform: uppercase;
@@ -284,7 +284,7 @@ body.is-chrome-dark .site-shop__panel {
   background: rgba(244, 240, 236, 0.92);
   color: #0a0908;
   font-family: var(--chrome-serif);
-  font-size: 10px;
+  font-size: 13px;
   font-weight: 300;
   letter-spacing: 0.14em;
   pointer-events: auto;
@@ -303,6 +303,7 @@ body.is-chrome-dark .site-shop__panel {
   padding: 0;
   margin: 0;
   font: inherit;
+  font-size: 13px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: inherit;
@@ -332,7 +333,7 @@ body.page--about-film .site-cookie {
 
   .site-chrome__link,
   .site-shop__trigger {
-    font-size: 10px;
+    font-size: 13px;
     letter-spacing: 0.18em;
   }
 }
