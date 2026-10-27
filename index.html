@@ -32,13 +32,13 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="intro.css?v=4" />
+    <link rel="stylesheet" href="intro.css?v=5" />
     <style>
       body.page--intro.is-leaving .intro__stage {
         opacity: 0;
         transition: opacity 260ms ease;
       }
-      body.page--intro.is-leaving .intro__video,
+      body.page--intro.is-leaving .intro__field,
       body.page--intro.is-leaving .intro__veil {
         opacity: 0;
         transition: opacity 260ms ease;
@@ -47,17 +47,19 @@
   </head>
   <body class="page--intro">
     <main class="intro" aria-label="VONLOVI">
-      <video
-        class="intro__video"
-        autoplay
-        muted
-        loop
-        playsinline
-        preload="auto"
-        aria-hidden="true"
-      >
-        <source src="assets/intro/bg.mp4?v=2" type="video/mp4" />
-      </video>
+      <div class="intro__field" aria-hidden="true">
+        <div class="intro__texture"></div>
+        <video
+          class="intro__video"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="auto"
+        >
+          <source src="assets/intro/bg.mp4?v=3" type="video/mp4" />
+        </video>
+      </div>
       <div class="intro__veil" aria-hidden="true"></div>
       <div class="intro__stage">
         <img

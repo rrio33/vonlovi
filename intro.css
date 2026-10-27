@@ -1,5 +1,5 @@
 /* =========================================================
-   VONLOVI — language intro
+   VONLOVI · language intro
    ========================================================= */
 
 :root {
@@ -7,6 +7,7 @@
   --intro-ink: #ffffff;
   --intro-muted: rgba(255, 255, 255, 0.4);
   --intro-serif: "Cormorant Garamond", "Times New Roman", Georgia, serif;
+  --intro-void: #070605;
 }
 
 *,
@@ -26,7 +27,7 @@ body.page--intro {
   min-height: 100dvh;
   font-family: var(--intro-serif);
   color: var(--intro-ink);
-  background: #0a0908;
+  background: var(--intro-void);
   overflow: hidden;
 }
 
@@ -38,27 +39,79 @@ body.page--intro {
   min-height: 100vh;
   min-height: 100dvh;
   padding: clamp(24px, 6vw, 48px);
-  background: #0a0908;
+  background: var(--intro-void);
   overflow: hidden;
 }
 
-.intro__video {
+/* Full-bleed black field with soft grain so the film can sit smaller inside */
+.intro__field {
   position: absolute;
   inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  /* Lift framing so the pendant stays in view on wide desktop crops */
-  object-position: center 68%;
   z-index: 0;
+  display: grid;
+  place-items: center;
   pointer-events: none;
+  overflow: hidden;
+  background: var(--intro-void);
+}
+
+.intro__texture {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 70% 60% at 50% 48%, rgba(28, 24, 20, 0.55) 0%, transparent 72%),
+    radial-gradient(ellipse 100% 100% at 50% 50%, #0c0a08 0%, var(--intro-void) 100%);
+  opacity: 1;
+}
+
+.intro__texture::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.22;
+  mix-blend-mode: soft-light;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 240 240' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E");
+  background-size: 180px 180px;
+  pointer-events: none;
+}
+
+/* Film kept whole (contain) and smaller so pendant + earring stay in frame */
+.intro__video {
+  position: relative;
+  z-index: 1;
+  width: min(92vw, 1080px);
+  height: min(78vh, 78dvh, 720px);
+  max-width: 100%;
+  object-fit: contain;
+  object-position: center center;
+  background: transparent;
+  /* Soft blend into the black field instead of a hard crop edge */
+  -webkit-mask-image: radial-gradient(
+    ellipse 72% 68% at 50% 50%,
+    #000 42%,
+    rgba(0, 0, 0, 0.85) 62%,
+    transparent 88%
+  );
+  mask-image: radial-gradient(
+    ellipse 72% 68% at 50% 50%,
+    #000 42%,
+    rgba(0, 0, 0, 0.85) 62%,
+    transparent 88%
+  );
+  filter: contrast(1.02) saturate(0.96);
 }
 
 @media (min-width: 900px) {
   .intro__video {
-    object-position: center 78%;
-    transform: scale(1.12);
-    transform-origin: center 70%;
+    width: min(78vw, 1120px);
+    height: min(74vh, 74dvh, 760px);
+  }
+}
+
+@media (max-width: 560px) {
+  .intro__video {
+    width: min(96vw, 560px);
+    height: min(62vh, 62dvh, 520px);
   }
 }
 
@@ -67,11 +120,11 @@ body.page--intro {
   inset: 0;
   z-index: 1;
   pointer-events: none;
-  background: linear-gradient(
-    180deg,
-    rgba(10, 9, 8, 0.28) 0%,
-    rgba(10, 9, 8, 0.18) 45%,
-    rgba(10, 9, 8, 0.42) 100%
+  background: radial-gradient(
+    ellipse 80% 70% at 50% 45%,
+    transparent 30%,
+    rgba(7, 6, 5, 0.28) 70%,
+    rgba(7, 6, 5, 0.55) 100%
   );
 }
 
@@ -86,7 +139,6 @@ body.page--intro {
 }
 
 .intro__logo {
-  /* Match site chrome logo */
   width: clamp(96px, 14vw, 156px);
   height: auto;
   display: block;
