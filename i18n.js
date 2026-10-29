@@ -59,6 +59,7 @@
       "contributors.role.cristian-hunter": "Photographie de campagne",
       "contributors.role.maxime-wolff": "Photographie d'archives",
       "contributors.role.delawhere": "Film de campagne",
+      "contributors.role.iris-haverkamp-begemann": "Photographie de campagne",
       "contributors.role.ls-archives": "Collaborative archives",
       "footer.service": "Service client",
       "footer.livraison": "Livraison",
@@ -141,6 +142,9 @@
       "stockists.envers.place": "Japan",
       "stockists.envers.text":
         "Showroom au Japon. Point de contact pour découvrir et acquérir Vonlovi au Japon (pas d'achat en ligne).",
+      "stockists.musterwerk.name": "MusterWerk",
+      "stockists.musterwerk.place": "Osaka",
+      "stockists.musterwerk.text": "Boutique, 2-5-18 Utsubohommachi, Nishi-ku, Osaka.",
       "stockists.paris": "Paris",
       "stockists.paris.text": "Showroom sur rendez-vous. Contactez-nous pour organiser une présentation privée.",
       "stockists.jura": "Jura",
@@ -211,6 +215,7 @@
       "about.label3": "L'artiste",
       "about.p3":
         "De Rrusie est peintre. Sur ses toiles, il met en scène l'immensité et l'abstraction des ciels. Avec Vonlovi, il s'intéresse au précieux, se rapproche de l'infiniment petit, du délicat. Les bijoux qui en naissent sont physiques, personnels et sensuels.",
+      "about.portrait.credit": "De Rrusie. Photo Iris Haverkamp Begemann.",
       "about.label4": "Contact",
     },
     en: {
@@ -268,6 +273,7 @@
       "contributors.role.cristian-hunter": "Campaign photography",
       "contributors.role.maxime-wolff": "Archive photography",
       "contributors.role.delawhere": "Campaign film",
+      "contributors.role.iris-haverkamp-begemann": "Campaign photography",
       "contributors.role.ls-archives": "Collaborative archives",
       "footer.service": "Client services",
       "footer.livraison": "Shipping",
@@ -349,6 +355,9 @@
       "stockists.envers.place": "Japan",
       "stockists.envers.text":
         "Showroom in Japan. Contact point to discover and acquire Vonlovi in Japan (no online purchase).",
+      "stockists.musterwerk.name": "MusterWerk",
+      "stockists.musterwerk.place": "Osaka",
+      "stockists.musterwerk.text": "Boutique, 2-5-18 Utsubohommachi, Nishi-ku, Osaka.",
       "stockists.paris": "Paris",
       "stockists.paris.text": "Showroom by appointment. Contact us to arrange a private viewing.",
       "stockists.jura": "Jura",
@@ -419,6 +428,7 @@
       "about.label3": "The artist",
       "about.p3":
         "De Rrusie is a painter. On his canvases he stages the immensity and abstraction of skies. With Vonlovi he turns to the precious, drawing closer to the infinitely small, the delicate. The jewels that follow are physical, personal and sensual.",
+      "about.portrait.credit": "De Rrusie. Photo Iris Haverkamp Begemann.",
       "about.label4": "Contact",
     },
     ja: {
@@ -476,6 +486,7 @@
       "contributors.role.cristian-hunter": "写真, キャンペーン",
       "contributors.role.maxime-wolff": "写真, アーカイブ",
       "contributors.role.delawhere": "フィルム, キャンペーン",
+      "contributors.role.iris-haverkamp-begemann": "写真, キャンペーン",
       "contributors.role.ls-archives": "アーカイブ, コラボレーション",
       "footer.service": "カスタマーサービス",
       "footer.livraison": "配送",
@@ -557,6 +568,9 @@
       "stockists.envers.place": "日本",
       "stockists.envers.text":
         "ショールーム, 日本。日本でVonloviをご覧・ご購入いただくための窓口です（オンライン購入不可）。",
+      "stockists.musterwerk.name": "MusterWerk",
+      "stockists.musterwerk.place": "大阪",
+      "stockists.musterwerk.text": "ブティック, 大阪市西区靱本町2-5-18",
       "stockists.paris": "パリ",
       "stockists.paris.text": "ショールームはご予約制です, プライベートビューイングをご希望の方はご連絡ください。",
       "stockists.jura": "ジュラ",
@@ -627,6 +641,7 @@
       "about.label3": "アーティスト",
       "about.p3":
         "De Rrusie は画家です。キャンバスでは空の広大さと抽象を描き、Vonloviでは貴さへ、無限に小さなもの、繊細さへと近づきます。そこから生まれるジュエリーは身体的で、個人的で、官能的です。",
+      "about.portrait.credit": "De Rrusie. Photo Iris Haverkamp Begemann.",
       "about.label4": "お問い合わせ",
     },
     ko: {
@@ -682,6 +697,7 @@
       "contributors.role.cristian-hunter": "사진, 캠페인",
       "contributors.role.maxime-wolff": "사진, 아카이브",
       "contributors.role.delawhere": "필름, 캠페인",
+      "contributors.role.iris-haverkamp-begemann": "사진, 캠페인",
       "contributors.role.ls-archives": "아카이브, 협업",
       "footer.service": "고객 서비스",
       "footer.livraison": "배송",
@@ -756,6 +772,9 @@
       "stockists.envers.name": "L'Envers Showroom",
       "stockists.envers.place": "일본",
       "stockists.envers.text": "쇼룸, 일본.",
+      "stockists.musterwerk.name": "MusterWerk",
+      "stockists.musterwerk.place": "오사카",
+      "stockists.musterwerk.text": "부티크, 2-5-18 Utsubohommachi, Nishi-ku, Osaka.",
       "stockists.paris": "파리",
       "stockists.paris.text": "쇼룸은 예약제입니다, 프라이빗 뷰잉을 원하시면 연락해 주세요.",
       "stockists.jura": "쥐라",
@@ -825,6 +844,7 @@
       "about.label3": "아티스트",
       "about.p3":
         "De Rrusie는 화가입니다. 캔버스에서는 하늘의 광대함과 추상을 그리고, Vonlovi에서는 귀함으로, 무한히 작은 것, 섬세함으로 다가갑니다. 그로부터 태어나는 주얼리는 신체적이고, 개인적이며, 감각적입니다.",
+      "about.portrait.credit": "De Rrusie. Photo Iris Haverkamp Begemann.",
       "about.label4": "문의"
     },
   };
