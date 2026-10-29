@@ -57,6 +57,18 @@
     if (titleEl) titleEl.textContent = label;
     document.title = `${label} | VONLOVI`;
 
+    if (window.VonloviSeo?.applyPage) {
+      const catQs = cat && cat !== "all" ? `?cat=${encodeURIComponent(cat)}` : "";
+      const url = `https://vonlovi.com/collection.html${catQs}`;
+      const description = `${label}. Collection Vonlovi, joaillerie sculpturale en or jaune 750.`;
+      VonloviSeo.applyPage({
+        title: `${label} | VONLOVI`,
+        description,
+        url,
+        image: products[0]?.images?.[0]?.local,
+      });
+    }
+
     if (!products.length) {
       grid.innerHTML = `<p class="collection__empty">${t("collection.empty")}</p>`;
       return;

@@ -208,6 +208,14 @@
       .filter(Boolean)
       .map((src) => (window.VonloviAsset ? VonloviAsset.url(src) : src));
 
+    if (window.VonloviSeo?.applyProduct) {
+      VonloviSeo.applyProduct(product, {
+        localeName: loc.nom,
+        localeDescription: loc.description,
+        imagePath: product.images?.[0]?.local,
+      });
+    }
+
     root.innerHTML = `
       <div class="product__gallery" data-chrome-surface>
         ${images
