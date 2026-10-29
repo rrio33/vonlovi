@@ -17,13 +17,18 @@
     return /\.(mp4|webm|mov)(\?|$)/i.test(src || "");
   }
 
+  function fitClass(person) {
+    return person?.fit === "contain" ? " contributors__media--contain" : "";
+  }
+
   function mediaMarkup(person, { visible = false, eager = false } = {}) {
     const src = person.cover;
     if (!src) return "";
+    const fit = fitClass(person);
     if (isVideo(src, person)) {
       return `
         <video
-          class="contributors__media${visible ? " is-visible" : ""}"
+          class="contributors__media${fit}${visible ? " is-visible" : ""}"
           data-id="${person.id}"
           src="${src}"
           muted
@@ -35,7 +40,7 @@
     }
     return `
       <img
-        class="contributors__media${visible ? " is-visible" : ""}"
+        class="contributors__media${fit}${visible ? " is-visible" : ""}"
         src="${src}"
         alt=""
         data-id="${person.id}"
@@ -118,6 +123,7 @@
 
   function renderPerson(person) {
     document.title = `${person.name} | VONLOVI`;
+    const contain = person.fit === "contain";
     const shots = (person.images || [])
       .map((src) => {
         if (isVideo(src, person)) {
@@ -128,7 +134,7 @@
           `;
         }
         return `
-          <figure class="contributors__shot">
+          <figure class="contributors__shot${contain ? " contributors__shot--contain" : ""}">
             <img src="${src}" alt="${person.name}" loading="lazy" />
           </figure>
         `;

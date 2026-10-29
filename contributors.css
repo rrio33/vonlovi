@@ -85,9 +85,20 @@ body.page--contributors {
   pointer-events: none;
 }
 
+.contributors__preview .contributors__media--contain {
+  object-fit: contain;
+  object-position: center center;
+  background: #0a0908;
+  transform: none;
+}
+
 .contributors__preview .contributors__media.is-visible {
   opacity: 1;
   transform: scale(1);
+}
+
+.contributors__preview .contributors__media--contain.is-visible {
+  transform: none;
 }
 
 .contributors__preview video.contributors__media {
@@ -142,6 +153,19 @@ body.page--contributors {
   height: 100%;
   object-fit: cover;
   display: block;
+}
+
+.contributors__shot--contain {
+  grid-column: 1 / -1;
+  aspect-ratio: auto;
+  max-width: 520px;
+  background: #0a0908;
+}
+
+.contributors__shot--contain img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 .contributors__shot--video {

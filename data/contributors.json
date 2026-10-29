@@ -71,9 +71,10 @@
     {
       "id": "iris-haverkamp-begemann",
       "name": "Iris Haverkamp Begemann",
-      "cover": "assets/contributors/iris-haverkamp-begemann/01.jpg?v=2",
+      "cover": "assets/contributors/iris-haverkamp-begemann/01.jpg?v=3",
+      "fit": "contain",
       "images": [
-        "assets/contributors/iris-haverkamp-begemann/01.jpg?v=2"
+        "assets/contributors/iris-haverkamp-begemann/01.jpg?v=3"
       ]
     },
     {
