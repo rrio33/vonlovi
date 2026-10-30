@@ -49,8 +49,8 @@
     <script>
       /* Boot the device film ASAP so the request starts before other scripts. */
       (function () {
-        var mobile = "assets/intro/bg-mobile.mp4?v=1";
-        var desktop = "assets/intro/bg-desktop.mp4?v=1";
+        var mobile = "assets/intro/bg-mobile.mp4?v=2";
+        var desktop = "assets/intro/bg-desktop.mp4?v=2";
         var src =
           window.matchMedia && window.matchMedia("(max-width: 767px)").matches
             ? mobile
@@ -75,14 +75,19 @@
           muted
           loop
           playsinline
+          webkit-playsinline
           preload="auto"
-          data-intro-mobile="assets/intro/bg-mobile.mp4?v=1"
-          data-intro-desktop="assets/intro/bg-desktop.mp4?v=1"
+          data-intro-mobile="assets/intro/bg-mobile.mp4?v=2"
+          data-intro-desktop="assets/intro/bg-desktop.mp4?v=2"
         ></video>
         <script>
           (function () {
             var el = document.currentScript.previousElementSibling;
             if (!el || el.tagName !== "VIDEO") return;
+            el.muted = true;
+            el.defaultMuted = true;
+            el.setAttribute("muted", "");
+            el.playsInline = true;
             var src =
               window.__VONLOVI_INTRO_SRC__ ||
               (window.matchMedia &&
@@ -92,6 +97,8 @@
             if (src) {
               el.src = src;
               el.load();
+              var p = el.play();
+              if (p && p.catch) p.catch(function () {});
             }
           })();
         </script>
@@ -133,6 +140,6 @@
     <script src="i18n.js?v=9"></script>
     <script src="cookies.js"></script>
     <script src="chrome.js?v=7"></script>
-    <script src="intro.js?v=7"></script>
+    <script src="intro.js?v=8"></script>
   </body>
 </html>
